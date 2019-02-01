@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_common" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_dqsj" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="当前手机号:"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_sm_01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:text="更换手机号码后,下次可使用新手机号码登录。\n这会同时更新您在货运集的联系手机信息。"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+    <com.yaoguang.widget.edittext.ClearEditText
+        android:id="@+id/etMobile"
+        style="@style/hintcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_phone_001"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_phone_001"
+        android:hint="请输入新的手机号码"
+        android:inputType="phone"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/actvCode"
+            style="@style/hintcolor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_yz"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_yz"
+            android:hint="@string/pleaseenterqrcode"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <include layout="@layout/view_btngetcode" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acbSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_selector_primary_no_enable"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white_text" />
+
+</LinearLayout>

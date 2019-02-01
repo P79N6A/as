@@ -1,0 +1,8 @@
+include ':app', ':interactor', ':interfaces'
+include':library'
+project(':library').projectDir = new File('../library/');
+include ':library:yaoguang.fragmentation'
+include ':library:yaoguang.style'
+include ':library:yaoguang.greendao'
+include ':library:easemob'
+include ':library:datasource'

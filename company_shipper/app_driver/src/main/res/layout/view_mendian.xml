@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/view_notedsc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="12dp"
+                            android:src="@drawable/ic_dingwei_da"/>
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_below="@+id/tvNodeName"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/interval"
+                            android:textSize="@dimen/sp14"
+                            android:text="节点地址"
+                            android:textColor="@color/order_detail_key_text" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/alertImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/ic_ti_01"
+                                android:gravity="center"
+                                android:text="提"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/sp14" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@color/line_grey" />
+
+                    <LinearLayout
+                        android:id="@+id/llBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvMobile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/ic_telephone2"
+                                android:textSize="@dimen/sp14"
+                                android:drawablePadding="@dimen/interval"
+                                android:padding="5dp"
+                                android:text="电话" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_grey"
+                            android:paddingBottom="@dimen/interval" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlRoadPlan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvNavi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="@dimen/sp14"
+                                android:layout_centerVertical="true"
+                                android:drawableLeft="@drawable/ic_dh"
+                                android:drawablePadding="@dimen/interval"
+                                android:padding="5dp"
+                                android:text="导航" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:text="到达\n这里"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/sp18" />
+</LinearLayout>

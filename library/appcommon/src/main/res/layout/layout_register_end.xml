@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="恭喜您，注册完成。"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/grey600"
+            android:text="等待48小时，审核结果以短信发给您，请注意查收。" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btnRegister"
+        style="@style/Button.Register"
+        android:text="@string/back_login" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\drawable-v21\\notification_action_background.xml"
+    }
+]

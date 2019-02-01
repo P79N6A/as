@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEEEE"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarCommon"
+        layout="@layout/toolbar_common" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout style="@style/RowRL">
+
+        <TextView
+            style="@style/RowMyImgTitle"
+            android:text="新消息提醒" />
+
+        <Switch
+            android:id="@+id/sPush"
+            style="@style/RowTVValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        style="@style/RowRL"
+        android:layout_height="42dp"
+        android:background="#EFEEEE">
+
+        <TextView
+            style="@style/RowMyImgTitle"
+            android:text="提醒方式" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout style="@style/RowRL">
+
+        <TextView
+            style="@style/RowMyImgTitle"
+            android:text="铃声提醒" />
+
+        <Switch
+            android:id="@+id/sSound"
+            style="@style/RowTVValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout style="@style/RowRL">
+
+        <TextView
+            style="@style/RowMyImgTitle"
+            android:text="震动提醒" />
+
+        <Switch
+            android:id="@+id/sVibrate"
+            style="@style/RowTVValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey" />
+
+</LinearLayout>

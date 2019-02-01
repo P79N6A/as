@@ -1,0 +1,36 @@
+<resources>
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>en_us</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="app_name">gaodemap</string>
+    <string name="no_result">没有搜索到结果</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="speechapp_id">597ed7ed</string>
+    <string name="record">录音</string>
+    <string name="stop">停止</string>
+    <string name="keydownquitnavi">再按一次退出导航</string>
+    <string name="ifquitnav">是否要退出导航？</string>
+    <string name="confirmquitnavi">按确定退出</string>
+    <string name="confirrm">确定</string>
+    <string name="cancel">取消</string>
+</resources>

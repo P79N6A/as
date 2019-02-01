@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#efeeee">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbarCommon"
+                    layout="@layout/toolbar_common" />
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/line_grey2" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvNameTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="群组名称"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etNameValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvNameTitle"
+                                android:layout_toRightOf="@+id/tvNameTitle"
+                                android:background="@null"
+                                android:gravity="end|center_vertical"
+                                android:hint="请输入名称"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/line_grey2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="14dp"
+                            android:text="mac地址"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/line_grey2" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"/>
+
+                        <RelativeLayout
+                            android:id="@+id/rlAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:src="@drawable/ic_newly_added" />
+
+                            <TextView
+                                android:id="@+id/tvOneValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageView4"
+                                android:layout_toRightOf="@+id/imageView4"
+                                android:gravity="end"
+                                android:paddingBottom="16dp"
+                                android:paddingTop="16dp"
+                                android:text="从最近连接过的WiFi网络中添加"
+                                android:textColor="@color/black333"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/imgOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_shape_2_5_null_primary"
+                android:gravity="center"
+                android:text="删除预订单"
+                android:textColor="@color/primary"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnComit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_shape_2_5_primary"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_video.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_video.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\change_background_menu.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\change_background_menu.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_video2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_video2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_contid.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\yaoguang.greendao\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_contid.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_phone3.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_phone3.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_audio2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_audio2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_phone.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_phone.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_two.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_two.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\alldelete.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\alldelete.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_phone2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_phone2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\main_menu.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\sheet_head_portrait_audio.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\menu\\sheet_head_portrait_audio.xml"
+    }
+]

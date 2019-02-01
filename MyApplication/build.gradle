@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url "https://maven.google.com"}
+        maven { url "https://dl.google.com/dl/android/maven2/"}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+        classpath "com.tencent.bugly:tinker-support:1.0.8"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories"
+        }
+        maven { url "https://jitpack.io" }
+        //网络发布:捕获异常
+        maven {
+            url "http://maven.bughd.com/public"
+        }
+        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url "https://maven.google.com"}
+        maven { url "https://dl.google.com/dl/android/maven2/"}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    releaseVersionCode = 32
+    releaseVersionName = '1.0.32'
+
+    androidCompileSdkVersion = 26
+    androidBuildToolsVersion = '26.0.2'
+    androidSupportSdkVersion = '27.0.2'
+    minSdkVersion = 14
+    targetSdkVersion = 26
+
+    junitVersion = '4.12'
+
+    rxjava2Version = '2.0.2'
+    retrofit2Version = '2.1.0'
+    gsonVersion = '2.6.2'
+    butterknifeVersion = '8.4.0'
+}

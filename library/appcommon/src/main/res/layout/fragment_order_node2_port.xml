@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/layoutBackground"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <FrameLayout
+                android:id="@+id/flRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include
+                    android:id="@+id/layoutRecyclerview"
+                    layout="@layout/layout_recyclerview" />
+
+            </FrameLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/activity_description_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="正在前往 沙田码头" />
+
+                <TextView
+                    android:id="@+id/tvProblemFeedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="问题反馈"
+                    android:textColor="@color/primary"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnAdjustRoute"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_shape_2_5_null_primary"
+                    android:gravity="center"
+                    android:text="调整路线"
+                    android:textColor="@color/primary"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline50"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_select_drawable_primary_animation"
+                    android:gravity="center"
+                    android:text="……"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline50"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ic_bjg_green"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNextAddress"
+                    app:layout_constraintEnd_toStartOf="@+id/tvNextAddress"
+                    app:layout_constraintTop_toTopOf="@+id/tvNextAddress" />
+
+                <TextView
+                    android:id="@+id/tvNextAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"
+                    android:maxEms="14"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnNext"
+                    tools:text="某某区某某路某某某区某某路某某区某区" />
+
+                <ImageView
+                    android:id="@+id/imgRefreshAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_refresh_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNextAddress"
+                    app:layout_constraintLeft_toRightOf="@+id/tvNextAddress"
+                    app:layout_constraintTop_toTopOf="@+id/tvNextAddress" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

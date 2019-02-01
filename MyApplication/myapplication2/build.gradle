@@ -1,0 +1,126 @@
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+// 依赖插件脚本
+//apply from: 'tinker-support.gradle'
+
+android {
+
+    flavorDimensions "default"
+
+    dexOptions {
+        javaMaxHeapSize "6g"
+    }
+    signingConfigs {
+        signing {
+            keyAlias 'yaoguang'
+            keyPassword '123456'
+            storeFile file('D:/signing/yaoguang.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId "boss.yaoguang.com.myapplication"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.releaseVersionCode
+        versionName rootProject.ext.releaseVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.signing
+
+        //捕获异常
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.signing
+
+            buildConfigField("String", "releaseTime", "\"" + new Date().format("yyyyMMdd") + "\"")
+
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.signing
+
+            buildConfigField("String", "releaseTime", "\"" + new Date().format("yyyyMMdd") + "\"")
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    productFlavors {
+        instant {
+            minSdkVersion 21
+        }
+        app {
+            minSdkVersion 14
+        }
+    }
+    // 启用dataBinding
+    dataBinding {
+        enabled = true
+    }
+}
+
+//greendao的配置
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+        classpath "com.tencent.bugly:tinker-support:1.0.8"
+    }
+}
+//greendao的配置
+greendao {
+    schemaVersion 7//数据库版本号
+    daoPackage 'com.yaoguang.driver.greendao'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //自建包
+    compile project(':library:yaoguang.style')
+    compile project(':library:pushsdk')
+    compile project(':library:taobao')
+    compile project(':library:appcommon')
+    compile project(':divermvp:interactor')
+    compile project(':divermvp:interfaces')
+    compile project(path: ':library:sweetsheet')
+    compile project(path: ':library:yaoguang.greendao')
+    compile project(path: ':library:floatingsearchview')
+    compile project(':library:expandablelayout_library')
+
+    //简化实例化控件的库
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
+
+    testCompile 'junit:junit:4.12'
+    //城市
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile 'com.github.jd-alexander:LikeButton:0.2.3'
+
+}
+
+

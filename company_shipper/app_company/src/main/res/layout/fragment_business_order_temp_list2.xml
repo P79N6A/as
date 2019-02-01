@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_grey2" />
+
+        <RelativeLayout
+            android:id="@+id/rlAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_text">
+
+            <TextView
+                android:id="@+id/tvShipperTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="17.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17.5dp"
+                android:text="无数据新建"
+                android:textColor="@color/black333"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgShipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/right_triangle" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="@color/black666"
+            android:textSize="15sp"
+            android:layout_marginLeft="16dp"
+            android:text="或使用一下模板新建"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:layout_marginStart="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_grey2" />
+
+        <include
+            android:id="@+id/layoutRecyclerview"
+            layout="@layout/layout_recyclerview" />
+
+    </LinearLayout>
+
+</layout>

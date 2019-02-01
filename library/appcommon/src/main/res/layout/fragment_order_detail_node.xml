@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common" />
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"></com.amap.api.maps.TextureMapView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:paddingTop="16dp">
+
+        <com.yaoguang.lib.common.view.LoadingLayout
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <include layout="@layout/view_recyclerview" />
+
+        </com.yaoguang.lib.common.view.LoadingLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 拖车订单跟踪有个.9图片 -->
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efeeee"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <LinearLayout
+                android:id="@+id/llConditionTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbarCommon"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:tag="0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:text="筛选"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="16dp" />
+
+                    <ImageView
+                        android:id="@+id/imgScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="12.25dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_zhankai_grey"
+                        android:layout_marginRight="12.25dp"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="9.5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="9.5dp"
+                    android:background="@drawable/background_shape_4"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/llSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="7dp"
+                            android:gravity="center_vertical"
+                            android:minEms="3"
+                            android:text="登录名"
+                            android:textColor="#666666"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginLeft="7dp" />
+
+                        <ImageView
+                            android:id="@+id/imgSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="7dp"
+                            android:src="@drawable/ic_zhankai_grey"
+                            android:layout_marginRight="7dp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etSpinnerValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请输入关键字搜索"
+                        android:imeOptions="actionSearch"
+                        android:singleLine="true"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vTopLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/llConditionTop"
+                android:background="@color/line_grey2" />
+
+            <View
+                android:id="@+id/vTopLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/vTopLine1"
+                android:layout_marginTop="10dp"
+                android:background="@color/line_grey2" />
+
+            <FrameLayout
+                android:id="@+id/flRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/llBottom"
+                android:layout_below="@+id/vTopLine2">
+
+                <include
+                    android:id="@+id/layoutRecyclerview"
+                    layout="@layout/layout_recyclerview" />
+
+            </FrameLayout>
+
+            <!-- region 筛选的布局 -->
+
+            <FrameLayout
+                android:id="@+id/flScreenContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/vTopLine1"
+                android:background="#40000000"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/llScreenContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="账户是否可用"
+                        android:textSize="@dimen/sp16"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginLeft="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/llShipToCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingTop="16dp">
+
+                        <CheckBox
+                            android:id="@+id/cbUserAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/background_selector_check_type_xzbz_yellow"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:minWidth="73dp"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="全部"
+                            android:textColor="@color/textcolor_selector_check_type_xzbz_yellow"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginLeft="16dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbUserAvailable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:background="@drawable/background_selector_check_type_xzbz_yellow"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minWidth="73dp"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="可用"
+                            android:textColor="@color/textcolor_selector_check_type_xzbz_yellow"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginLeft="12dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbNoUserAvailable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:background="@drawable/background_selector_check_type_xzbz_yellow"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minWidth="73dp"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:paddingTop="10dp"
+                            android:text="不可用"
+                            android:textColor="@color/textcolor_selector_check_type_xzbz_yellow"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginLeft="12dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@color/line_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnEmpty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:text="重置"
+                            android:textColor="@color/black_text" />
+
+                        <Button
+                            android:id="@+id/btnComit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/primary"
+                            android:text="确定"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/line_grey" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- endregion 筛选的布局 -->
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

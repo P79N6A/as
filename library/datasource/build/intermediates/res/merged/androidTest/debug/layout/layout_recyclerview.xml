@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/layout_recyclerview_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            app:srlEnableNestedScrolling="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.yaoguang.lib.common.view.LoadingLayout
+                android:id="@+id/loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+            </com.yaoguang.lib.common.view.LoadingLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <!--<include-->
+            <!--android:id="@+id/layoutRecyclerviewEmptyError"-->
+            <!--layout="@layout/recyclerview_empty_error"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+
+    </FrameLayout>
+
+         

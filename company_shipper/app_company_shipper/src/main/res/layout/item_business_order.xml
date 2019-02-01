@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#fdead6"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imgType"
+                    android:layout_width="18dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tvOrderID"
+                    android:layout_toStartOf="@+id/tvOrderID"
+                    android:src="@drawable/ic_jb_l" />
+
+                <TextView
+                    android:id="@+id/tvOrderID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="16sp"
+                    tools:text="GZYG201705221020512" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/tvOrderID"
+                    android:layout_toRightOf="@+id/tvOrderID"
+                    android:src="@drawable/ic_jb_r" />
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_dr_w" />
+
+
+            </RelativeLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDeparture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="37dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="37dp"
+                    android:maxEms="5"
+                    android:minEms="5"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="起运起起运起运起运起运起运起运起运起运起运起运起运起运起运起运起运起运运" />
+
+                <TextView
+                    android:id="@+id/tvDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="37dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_marginTop="37dp"
+                    android:maxEms="5"
+                    android:minEms="5"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="目起运起起" />
+
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_luxian_01"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvDestination"
+                    app:layout_constraintStart_toEndOf="@+id/tvDeparture"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvGoodsName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/vLine"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/vLine"
+                    app:layout_constraintEnd_toStartOf="@+id/tvDestination"
+                    app:layout_constraintStart_toEndOf="@+id/tvDeparture"
+                    tools:text="货名" />
+
+                <TextView
+
+                    android:id="@+id/tvPeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vLine"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tvDestination"
+                    app:layout_constraintStart_toEndOf="@+id/tvDeparture"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine"
+                    tools:text="托运人" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TableLayout
+                android:id="@+id/tlWait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:stretchColumns="*">
+
+                <TableRow android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_glgx_10" />
+
+                        <TextView
+                            android:id="@+id/tvSonos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            tools:text="柜型柜量" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_ydfy_11" />
+
+                        <TextView
+                            android:id="@+id/tvFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            tools:text="预定费用" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <TableRow android:paddingBottom="14dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_time_fb" />
+
+
+                        <TextView
+                            android:id="@+id/tvOrderTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center"
+                            tools:text="制单时间" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_cztk_10" />
+
+                        <TextView
+                            android:id="@+id/tvCarriageItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            tools:text="DR-DR" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <include layout="@layout/view_line" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_wjx_bg" />
+
+            <com.like.LikeButton
+                android:id="@+id/lbtnStars"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:circle_end_color="#fffbd4af"
+                app:circle_start_color="#fffce1c7"
+                app:dots_primary_color="#fffdeedf"
+                app:dots_secondary_color="#fffbd4af"
+                app:icon_size="16dp"
+                app:like_drawable="@drawable/ic_wjx_01"
+                app:unlike_drawable="@drawable/ic_wjx_01" />
+
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+
+

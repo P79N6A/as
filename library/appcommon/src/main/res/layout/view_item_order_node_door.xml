@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTruckGoodsAddrAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp"
+        tools:text="苏宁易购" />
+
+    <TextView
+        android:id="@+id/tvTruckGoodsAddrContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruckGoodsAddrAddress"
+        tools:text="联系人：胡少少" />
+
+    <TextView
+        android:id="@+id/tvTruckGoodsAddrMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruckGoodsAddrContacts"
+        tools:text="13536428700" />
+
+    <TextView
+        android:id="@+id/tvTruckGoodsAddrPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTruckGoodsAddrMobile"
+        app:layout_constraintTop_toTopOf="@+id/tvTruckGoodsAddrMobile"
+        tools:text="13536428700" />
+
+    <TextView
+        android:id="@+id/tvTruckGoodsAddrRemarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruckGoodsAddrMobile"
+        tools:text="装货说明：胡少少" />
+
+    <TextView
+        android:id="@+id/tvRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_shape_10_primary"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruckGoodsAddrRemarks"
+        tools:text="动态记录" />
+
+
+</android.support.constraint.ConstraintLayout>

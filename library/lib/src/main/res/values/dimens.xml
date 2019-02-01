@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="sp13">13sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <!--订单布局 底部字体-->
+    <dimen name="order_bottom_text">14sp</dimen>
+
+    <dimen name="divider">1dp</dimen>
+    <dimen name="divider5">5dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin0">0dp</dimen>
+    <dimen name="margin11">11dp</dimen>
+
+</resources>

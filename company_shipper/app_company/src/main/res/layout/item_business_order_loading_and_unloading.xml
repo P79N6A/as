@@ -1,0 +1,319 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <TableLayout
+        android:id="@+id/tabLoadingAndUnloadingDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="18dp"
+        android:stretchColumns="*">
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单位 ︱"
+                    android:textColor="@color/black999" />
+
+                <TextView
+                    android:id="@+id/tvValueUnitName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    tools:text="1233322dddddddddddddddddddddddddddddd2222" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址 ︱"
+                    android:textColor="@color/black999" />
+
+                <TextView
+                    android:id="@+id/tvValueAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    tools:text="1233322dddddddddddddddddddddddddddddd2222" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人 ︱"
+                    android:textColor="@color/black999" />
+
+                <TextView
+                    android:id="@+id/tvValueLoadingAndUnloadingContacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:singleLine="true"
+                    tools:text="12333222222" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机 ︱"
+                    android:textColor="#999999" />
+
+                <TextView
+                    android:id="@+id/tvValueLoadingAndUnloadingMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:singleLine="true"
+                    tools:text="12333222222" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话 ︱"
+                    android:textColor="@color/black999" />
+
+                <TextView
+                    android:id="@+id/tvValueLoadingAndUnloadingPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:singleLine="true"
+                    tools:text="12333222222" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传真 ︱"
+                    android:textColor="#999999" />
+
+                <TextView
+                    android:id="@+id/tvValueLoadingAndUnloadingFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:singleLine="true"
+                    tools:text="12333222222" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="说明 ︱"
+                    android:textColor="@color/black999" />
+
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/tvValueLoadingAndUnloadingRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    app:trimCollapsedText="显示更多"
+                    app:trimExpandedText="收起"
+                    app:trimLines="2"
+                    tools:text="单位单位单位单单位单位单位单单单位单位单位单单单" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvLat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvLon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvBillsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoadingAndUnloadingAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLoadingAndUnloadingDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tvLoadingAndUnloadingEdit"
+            android:layout_toStartOf="@+id/tvLoadingAndUnloadingEdit"
+            android:background="@drawable/background_shape_10_red"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="12.5dp"
+            android:paddingTop="4dp"
+            android:text="移除"
+            android:textColor="@color/red500"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/tvLoadingAndUnloadingEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/background_shape_10_green"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="12.5dp"
+            android:paddingTop="4dp"
+            android:text="编辑"
+            android:textColor="@color/green_primary"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_grey2" />
+
+</LinearLayout>

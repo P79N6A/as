@@ -1,0 +1,341 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- 各种主题颜色 -->
+    <style name="RedTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryDark">@color/red_primary_dark</item>
+        <item name="colorAccent">@color/red_accent</item>
+    </style>
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+
+    <style name="PinkTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryDark">@color/pink_primary_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+    </style>
+
+    <style name="BrownTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorPrimaryDark">@color/brown_primary_dark</item>
+        <item name="colorAccent">@color/brown_accent</item>
+    </style>
+
+
+    <style name="BlueTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_primary_dark</item>
+        <item name="colorAccent">@color/blue_accent</item>
+    </style>
+
+
+    <style name="dividing_line">
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="BlueGreyTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/blue_grey_primary</item>
+        <item name="colorPrimaryDark">@color/blue_grey_primary_dark</item>
+        <item name="colorAccent">@color/blue_grey_accent</item>
+    </style>
+
+
+    <style name="YellowTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/yellow_primary</item>
+        <item name="colorPrimaryDark">@color/yellow_primary_dark</item>
+        <item name="colorAccent">@color/yellow_accent</item>
+    </style>
+
+
+    <style name="DeepPurpleTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/deep_purple_primary</item>
+        <item name="colorPrimaryDark">@color/deep_purple_primary_dark</item>
+        <item name="colorAccent">@color/deep_purple_accent</item>
+    </style>
+
+
+    <style name="GreenTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_primary_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+    </style>
+
+    <style name="DeepOrangeTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/deep_orange_primary</item>
+        <item name="colorPrimaryDark">@color/deep_orange_primary_dark</item>
+        <item name="colorAccent">@color/deep_orange_accent</item>
+    </style>
+
+    <style name="GreyTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/grey_primary</item>
+        <item name="colorPrimaryDark">@color/grey_primary_dark</item>
+        <item name="colorAccent">@color/grey_accent</item>
+    </style>
+
+    <style name="CyanTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/cyan_primary</item>
+        <item name="colorPrimaryDark">@color/cyan_primary_dark</item>
+        <item name="colorAccent">@color/cyan_accent</item>
+    </style>
+
+    <style name="AmberTheme" parent="Base.Theme.DesignDemo">
+        <item name="colorPrimary">@color/amber_primary</item>
+        <item name="colorPrimaryDark">@color/amber_primary_dark</item>
+        <item name="colorAccent">@color/amber_accent</item>
+    </style>
+
+    <!-- main theme -->
+    <style name="Theme.DesignDemo.Main" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/ic_start</item>-->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:timePickerStyle">@style/TimePickerModeSpinner</item>
+        <!-- 这个到时候换一张有型的背景图 -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <!-- toolbar本身的颜色 -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- toolbar菜单字体颜色 -->
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <!-- toolbar顶部状态栏的颜色 -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <!-- 类似文本框选择之后,5.0版本以下用的styles.xml -->
+        <item name="colorControlNormal">@color/black_dividers_text</item>
+        <!-- 类似文本框没选择之前 -->
+        <item name="android:statusBarColor">@color/primary</item>
+        <!-- MD风格所需要的,透明 -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItemStyle</item>
+        <!-- 按钮颜色 -->
+        <item name="colorButtonNormal">@color/primary</item>
+        <!-- 所有字体颜色 -->
+        <!--<item name="android:textColorPrimary">@color/text_light</item>-->
+        <!-- 修改所有字体. -->
+        <!--<item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>-->
+        <!-- Action Bar Theme -->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <!-- 左侧顶部菜单的控件 -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!-- 跳转动画 -->
+        <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+
+        <!-- 空布局异常布局等样式 -->
+        <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
+
+    </style>
+
+    <style name="Base.Theme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorButtonNormal">@color/orange900</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否悬浮在activity上 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 背景缓存颜色 -->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
+        <!--<item name="llEmptyResId">@layout/_loading_layout_empty</item>-->
+        <!--<item name="llErrorResId">@layout/_loading_layout_error</item>-->
+        <item name="llEmptyImage">@drawable/ic_sj_k</item>
+        <item name="llErrorImage">@drawable/ic_wl_k</item>
+        <item name="llEmptyText">""</item>
+        <item name="llErrorText">""</item>
+    </style>
+
+    <!-- 重新主题去掉activity切换的动画效果  -->
+    <style name="ThemeTips" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <!--<style name="AnimationActivity" parent="@android:style/Animation">-->
+    <!--&lt;!&ndash;<item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>&ndash;&gt;-->
+    <!--<item name="android:activityOpenEnterAnimation">@anim/up_in</item>-->
+    <!--<item name="android:activityOpenExitAnimation">@anim/up_out</item>-->
+    <!--<item name="android:activityCloseEnterAnimation">@anim/down_in</item>-->
+    <!--<item name="android:activityCloseExitAnimation">@anim/down_out</item>-->
+    <!--</style>-->
+
+    <!-- 辅助main样式的,AppTheme ActionBar的样式 -->
+    <style name="AppTheme.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:elevation">8dp</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TextAppearance</item>
+        <item name="android:background">?attr/colorPrimary</item><!-- 使用系统的主颜色 -->
+    </style>
+
+    <!-- 简单文本 -->
+    <style name="AppTheme.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <!-- ActionBar文本 -->
+    <style name="AppTheme.ActionBar.TextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 辅助main样式的,修改所有字体 -->
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 辅助main样式的 -->
+    <style name="SpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--toolbarNavigationButtonStyle-->
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+
+    </style>
+
+    <!-- main菜单的字体样式 -->
+    <!-- 左侧菜单的 -->
+    <style name="MainTextStyleLeft">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_text</item>
+    </style>
+    <!-- 右侧数据的 -->
+    <style name="MainTextStyleRight" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+
+    <!-- 辅助main样式的,Custom Class Styles -->
+    <style name="TextField" parent="android:Widget.Holo.Light.TextView">
+        <!--<main_two_item_head name="android:fontFamily">sans-serif-thin</main_two_item_head>-->
+        <item name="android:textSize">@dimen/abc_text_size_small_material</item>
+    </style>
+
+    <style name="TextAppearance.Holo.Widget.ActionBar.Title.Own" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 辅助main样式的,左侧顶部菜单的控件 -->
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/grey600</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="Diary.TextAppearance.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!-- tab样式,目前应用于员工信息 #tabTextAppearance引用到下方style -->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">500dp</item>
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextColor">@color/black_text</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- 订单专用 -->
+    <style name="fragment_order_detail_content_tab" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">500dp</item>
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabSelectedTextColor">#eea056</item>
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="elevation">0dp</item>
+        <item name="android:textSize">@dimen/sp13</item>
+    </style>
+
+    <!-- #Tab的title是否全大寫，如果Tab上是放icon就設false -->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyCustomTextAppearanceOrder" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+
+    <style name="BottomDialog" parent="style/Base.Theme.DesignDemo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TimePickerModeSpinner" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+</resources>

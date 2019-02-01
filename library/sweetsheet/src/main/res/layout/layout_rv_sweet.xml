@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mingle.widget.FreeGrowUpParentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/freeGrowUpParentF"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:layout_gravity="bottom"
+        app:offset="@dimen/arc_max_height">
+
+        <com.mingle.widget.SweetView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layoutAnimation="@anim/rv_layout_animation"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:gravity="center_vertical"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                tools:text="标题" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:clipChildren="false"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbarSize="3dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <com.mingle.widget.CRImageView
+            android:id="@+id/sliderIM"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_slider_line"
+            android:visibility="gone" />
+
+    </com.mingle.widget.FreeGrowUpParentRelativeLayout>
+</FrameLayout>

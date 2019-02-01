@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userApply"
+            type="com.yaoguang.greendao.entity.UserApply" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="商户名称" />
+
+                    <TextView
+                        android:id="@+id/tvNameValue"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvName"
+                        android:layout_toRightOf="@+id/tvName"
+                        android:hint="未填写"
+                        android:maxLines="2"
+                        android:text="@{userApply.companyName}"
+                        android:textColor="#999999"
+                        tools:text="135364281353642870013536428700135364287001353642870013536428700135364287001353642870013536428700700" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="营业执照号码" />
+
+                    <TextView
+                        android:id="@+id/tvCodeValue"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvCode"
+                        android:layout_toRightOf="@+id/tvCode"
+                        android:hint="未填写"
+                        android:maxLines="2"
+                        android:text="@{userApply.companyCode}"
+                        android:textColor="#999999"
+                        tools:text="135364281353642870013536428700135364287001353642870013536428700135364287001353642870013536428700700" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="地址" />
+
+                    <TextView
+                        android:id="@+id/tvAddressValue"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvAddress"
+                        android:layout_toRightOf="@+id/tvAddress"
+                        android:hint="未填写"
+                        android:maxLines="2"
+                        android:text="@{userApply.province + userApply.city + userApply.district + userApply.companyAddress}"
+                        android:textColor="#999999"
+                        tools:text="135364281353642870013536428700135364287001353642870013536428700135364287001353642870013536428700700" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLockPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:tag="@{userApply.licensePhoto}">
+
+                    <TextView
+                        android:id="@+id/tvLockPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="查看证件" />
+
+                    <ImageView style="@style/RowClickable" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <com.yaoguang.lib.common.view.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/window_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/window_background"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBannerTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="@color/window_background"
+                            android:drawableLeft="@drawable/ic_js_yellow"
+                            android:drawablePadding="7dp"
+                            android:gravity="center|left"
+                            android:text="证件上传"
+                            android:textColor="@color/black666"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivNumberFront"
+                                    style="@style/AuthenticationCredentialImage"
+                                    android:src="@drawable/ic_xsz_car" />
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="16dp"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:id="@+id/ivNumberBack"
+                                    style="@style/AuthenticationCredentialImage"
+                                    android:src="@drawable/ic_xsz_carf" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/window_background"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:paddingTop="8dp"
+                            android:src="@drawable/ic_sm_01" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/window_background"
+                            android:drawablePadding="7dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="5dp"
+                            android:text="上传清晰的证件照，有助于系统自动识别照片并填充以下的空白项"
+                            android:textColor="@color/black666"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        android:id="@+id/llCarNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="车牌号码" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.yaoguang.driver.phone.my.authentication.heavyvehicle.skeyboardview.EditView
+                                android:id="@+id/etCarNumber"
+                                style="@style/AuthenticationKey"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:hint="输入车牌"
+                                android:maxLength="7" />
+
+                            <TextView
+                                android:id="@+id/tvCarNumberGua"
+                                android:layout_width="15dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="16dp"
+                                android:text="挂"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="所有人" />
+
+                        <EditText
+                            android:id="@+id/etName"
+                            style="@style/AuthenticationValue" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="品牌型号" />
+
+                        <EditText
+                            android:id="@+id/etBrandModel"
+                            style="@style/AuthenticationValue" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="注册日期" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvRegistrationDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/ic_right_triangle"
+                                android:hint="未选择"
+                                android:textColor="@color/black999" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <include layout="@layout/view_line2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/window_background" />
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="整备质量" />
+
+                        <EditText
+                            android:id="@+id/etCurbWeight"
+                            style="@style/AuthenticationValue"
+                            android:inputType="number" />
+
+                        <TextView
+                            style="@style/AuthenticationValueUnit"
+                            android:text="Kg" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvQuasitractionTotalKey"
+                            style="@style/AuthenticationKey"
+                            android:text="核定载重总量" />
+
+                        <EditText
+                            android:id="@+id/etQuasitractionTotal"
+                            style="@style/AuthenticationValue"
+                            android:inputType="number"
+                            android:singleLine="true" />
+
+                        <TextView
+                            style="@style/AuthenticationValueUnit"
+                            android:text="Kg" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="车长" />
+
+                        <EditText
+                            android:id="@+id/etVehicleLength"
+                            style="@style/AuthenticationValue"
+                            android:inputType="number"
+                            android:singleLine="true" />
+
+                        <TextView
+                            style="@style/AuthenticationValueUnit"
+                            android:text="mm" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="车宽" />
+
+                        <EditText
+                            android:id="@+id/etVehicleWidth"
+                            style="@style/AuthenticationValue"
+                            android:inputType="number"
+                            android:singleLine="true" />
+
+                        <TextView
+                            style="@style/AuthenticationValueUnit"
+                            android:text="mm" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_left16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/AuthenticationKey"
+                            android:text="车高" />
+
+                        <EditText
+                            android:id="@+id/etVehicleHeight"
+                            style="@style/AuthenticationValue"
+                            android:inputType="number"
+                            android:singleLine="true" />
+
+                        <TextView
+                            style="@style/AuthenticationValueUnit"
+                            android:text="mm" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/window_background"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="328dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:background="@drawable/shape_submit"
+                            android:gravity="center"
+                            android:text="提交审核"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="先保存，下次再提交审核"
+                            android:textColor="@color/orange500"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/tvAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="5dp"
+                            android:text="* 若只先保存，身份证号码和姓名即可"
+                            android:textColor="@color/black666"
+                            android:textSize="@dimen/sp13" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#d1d4dd"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.yaoguang.driver.phone.my.authentication.heavyvehicle.skeyboardview.SKeyboardView
+                android:id="@+id/keyboardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d1d4dd"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keyBackground="@drawable/selector_keyboard_key"
+                android:keyPreviewHeight="@dimen/default_keyPreviewHeight"
+                android:keyPreviewLayout="@layout/view_keyboard_preview"
+                android:keyTextColor="@color/default_keyTextColor"
+                android:keyTextSize="@dimen/sp15"
+                android:labelTextSize="@dimen/default_labelTextSize"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:shadowColor="@color/default_keyShadowColor"
+                android:shadowRadius="0.0"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+    </com.yaoguang.lib.common.view.CustomFrameLayout>
+</layout>

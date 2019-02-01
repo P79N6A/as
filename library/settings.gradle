@@ -1,0 +1,4 @@
+include ':app', ':yaoguang.common', ':yaoguang.fragmentation', ':yaoguang.greendao', ':yaoguang.style', ':gaodemap', ':netmodule', ':qrcodescandemo', ':lib',
+        ':taobao', ':pushsdk', ':camerakit', ':appcommon', ':sweetsheet', ':takephoto_library',':expandablelayout_library',":twinklingrefreshlayout_library",":test",
+        ":qrcodescan"
+//':croplib'

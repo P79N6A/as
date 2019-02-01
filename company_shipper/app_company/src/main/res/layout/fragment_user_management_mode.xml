@@ -1,0 +1,1897 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#efeeee">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbarCommon"
+                    layout="@layout/toolbar_common" />
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- region 基本信息 -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/window_background" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <ImageView
+                                android:id="@+id/imgEntrustment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:src="@drawable/ic_dh_10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="17dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="17dp"
+                                android:layout_toEndOf="@+id/imgEntrustment"
+                                android:layout_toRightOf="@+id/imgEntrustment"
+                                android:text="基本信息"
+                                android:textColor="@color/black333"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tvEntrustmentState"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:textColor="@color/black999"
+                                android:textSize="16sp"
+                                tools:text="12332     12222" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvNameTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="姓名"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etNameValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvNameTitle"
+                                android:layout_toRightOf="@+id/tvNameTitle"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:gravity="end|center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:hint="tips" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlLoginName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvLoginNameTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="登录名"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etLoginNameValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvLoginNameTitle"
+                                android:layout_toRightOf="@+id/tvLoginNameTitle"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:gravity="end|center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:hint="tips" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvTypeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="用户类型"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etTypeValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvTypeTitle"
+                                android:layout_toRightOf="@+id/tvTypeTitle"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:gravity="end|center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:hint="tips" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlMechanism"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvMechanismTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="归属机构"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etMechanismValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvMechanismTitle"
+                                android:layout_toRightOf="@+id/tvMechanismTitle"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:gravity="end|center_vertical"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:hint="tips" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlRoles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvRolesTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="用户角色"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvRolesValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvRolesTitle"
+                                android:layout_toRightOf="@+id/tvRolesTitle"
+                                android:gravity="end"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgRoles"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion 基本信息 -->
+
+                        <!-- region 账户设置 -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/window_background" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <ImageView
+                                android:id="@+id/imgAccountSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:src="@drawable/ic_zhsz_pink" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="17dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="17dp"
+                                android:layout_toEndOf="@+id/imgAccountSettings"
+                                android:layout_toRightOf="@+id/imgAccountSettings"
+                                android:text="账户设置"
+                                android:textColor="@color/black333"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tvAccountSettings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:textColor="@color/black999"
+                                android:textSize="16sp"
+                                tools:text="12332     12222" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlAvailability"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAvailabilityTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="账户是否可用"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shAvailabilityValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true" />
+
+                        </RelativeLayout>
+
+                        <!-- endregion 账户设置 -->
+
+                        <!-- region Web设置 -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fdf2e8"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:text="Web端设置"
+                            android:textColor="@color/primary"
+                            android:textSize="17sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlIsItLoggedInWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvIsItLoggedInWebTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="是否可登录"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shIsItLoggedInWebValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlScanLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvScanLoginTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="只允许扫描登录"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shScanLoginValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="false" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion Web设置 -->
+
+                        <!-- region Web端登录时间 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlAllowedLogonTimeWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeWebTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="允许登录时间"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeWebReelect"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAllowedLogonTimeWebTitle"
+                                android:layout_toRightOf="@+id/tvAllowedLogonTimeWebTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <LinearLayout
+                            android:id="@+id/llAllowedLogonTimeWebDelete"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlAllowedLogonTimeWebDelete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white_text">
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeWebDeleteTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="17.5dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="17.5dp"
+                                    android:textColor="@color/black333"
+                                    android:textSize="16sp"
+                                    tools:text="群组标题" />
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeWebDelete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@drawable/background_shape_10_red"
+                                    android:gravity="center"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12.5dp"
+                                    android:paddingRight="12.5dp"
+                                    android:paddingTop="4dp"
+                                    android:text="移除"
+                                    android:textColor="@color/red_primary"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:background="@color/line_grey" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAllowedLogonTimeWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvExpandAllowedLogonTimeWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/flAllowedLogonTimeWebAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择登录时间方案"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion 登录时间 -->
+
+                        <!-- region Web端浏览器授权 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlWebAuthorizationWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvWebAuthorizationWebTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="浏览器是否需要被授权"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shWebAuthorizationWebValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlAuthorizationWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationWebTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="已授权的浏览器"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationWebValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAuthorizationWebTitle"
+                                android:layout_toRightOf="@+id/tvAuthorizationWebTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="授权历史"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAuthorizationWeb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion Web端浏览器授权 -->
+
+                        <!-- region 物流设置 -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#eaf2f8"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:text="物流端设置"
+                            android:textColor="#307fb8"
+                            android:textSize="17sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlIsItLoggedInCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvIsItLoggedInCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="是否可登录"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shIsItLoggedInCompanyValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion 物流设置 -->
+
+                        <!-- region 物流端登录时间 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlAllowedLogonTimeCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="允许登录时间"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeCompanyReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAllowedLogonTimeCompanyTitle"
+                                android:layout_toRightOf="@+id/tvAllowedLogonTimeCompanyTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <LinearLayout
+                            android:id="@+id/llAllowedLogonTimeCompanyDelete"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlAllowedLogonTimeCompanyDelete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white_text">
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeCompanyDeleteTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="17.5dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="17.5dp"
+                                    android:textColor="@color/black333"
+                                    android:textSize="16sp"
+                                    tools:text="群组标题" />
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeCompanyDelete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@drawable/background_shape_10_red"
+                                    android:gravity="center"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12.5dp"
+                                    android:paddingRight="12.5dp"
+                                    android:paddingTop="4dp"
+                                    android:text="移除"
+                                    android:textColor="@color/red_primary"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:background="@color/line_grey" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAllowedLogonTimeCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvExpandAllowedLogonTimeCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/flAllowedLogonTimeCompanyAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择登录时间方案"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion 物流登录时间 -->
+
+                        <!-- region 物流WiFi网络环境 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlNetworkEnvironmentCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvNetworkEnvironmentCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="登录时验证WiFi网络环境"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvNetworkEnvironmentCompanyReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvNetworkEnvironmentCompanyTitle"
+                                android:layout_toRightOf="@+id/tvNetworkEnvironmentCompanyTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <LinearLayout
+                            android:id="@+id/llNetworkEnvironmentCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <FrameLayout
+                            android:id="@+id/flNetworkEnvironmentCompanyAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择WiFi网络群组"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <!-- endregion 物流WiFi网络环境 -->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- region 物流地理位置 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlLocationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvLocationCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="登录时验证地理位置"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvLocationCompanyReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvLocationCompanyTitle"
+                                android:layout_toRightOf="@+id/tvLocationCompanyTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvLocationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvLocationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/flLocationCompanyAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择地理位置"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <!-- endregion 物流地理位置 -->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- region 物流授权设备 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlWebAuthorizationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvWebAuthorizationCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="设备是否需要被授权"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shWebAuthorizationCompanyValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlAuthorizationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="已授权的设备"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationCompanyValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAuthorizationCompanyTitle"
+                                android:layout_toRightOf="@+id/tvAuthorizationCompanyTitle"
+                                android:gravity="end"
+                                android:text="授权历史"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAuthorizationCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <!-- endregion 物流授权设备 -->
+
+                        <!-- region Boss端设置 -->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#eaf5ee"
+                            android:paddingBottom="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingStart="16dp"
+                            android:paddingTop="16dp"
+                            android:text="Boss端设置"
+                            android:textColor="#349a5c"
+                            android:textSize="17sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlIsItLoggedInBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvIsItLoggedInBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="是否可登录"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shIsItLoggedInBossValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion Boss端设置 -->
+
+                        <!-- region Boss端登录时间 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlAllowedLogonTimeBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="允许登录时间"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAllowedLogonTimeBossReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAllowedLogonTimeBossTitle"
+                                android:layout_toRightOf="@+id/tvAllowedLogonTimeBossTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <LinearLayout
+                            android:id="@+id/llAllowedLogonTimeBossDelete"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rlAllowedLogonTimeBossDelete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white_text">
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeBossDeleteTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginBottom="17.5dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="17.5dp"
+                                    android:textColor="@color/black333"
+                                    android:textSize="16sp"
+                                    tools:text="群组标题" />
+
+                                <TextView
+                                    android:id="@+id/tvAllowedLogonTimeBossDelete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@drawable/background_shape_10_red"
+                                    android:gravity="center"
+                                    android:paddingBottom="4dp"
+                                    android:paddingLeft="12.5dp"
+                                    android:paddingRight="12.5dp"
+                                    android:paddingTop="4dp"
+                                    android:text="移除"
+                                    android:textColor="@color/red_primary"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:background="@color/line_grey" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAllowedLogonTimeBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvExpandAllowedLogonTimeBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/flAllowedLogonTimeBossAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择登录时间方案"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- endregion Boss端登录时间 -->
+
+                        <!-- region Boss端WiFi网络环境 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlNetworkEnvironmentBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvNetworkEnvironmentBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="登录时验证WiFi网络环境"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvNetworkEnvironmentBossReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvNetworkEnvironmentBossTitle"
+                                android:layout_toRightOf="@+id/tvNetworkEnvironmentBossTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvNetworkEnvironmentBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvNetworkEnvironmentBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/llNetworkEnvironmentBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                        <FrameLayout
+                            android:id="@+id/flNetworkEnvironmentBossAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择WiFi网络群组"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <!-- endregion Boss端WiFi网络环境 -->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- region Boss端地理位置 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlLocationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvLocationBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="登录时验证地理位置"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvLocationBossReelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvLocationBossTitle"
+                                android:layout_toRightOf="@+id/tvLocationBossTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="重选"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                android:visibility="gone"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvLocationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvLocationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingBottom="18dp"
+                            android:paddingTop="18dp"
+                            android:text="展开  ∨"
+                            android:textColor="#999999"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/flLocationBossAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginTop="17.5dp"
+                                android:drawableLeft="@drawable/ic_newly_added"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/ic_newly_added"
+                                android:text="选择地理位置"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                        </FrameLayout>
+
+                        <!-- endregion Boss端地理位置 -->
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <!-- region Boss端授权设备 -->
+
+                        <RelativeLayout
+                            android:id="@+id/rlWebAuthorizationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvWebAuthorizationBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="设备是否需要被授权"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <Switch
+                                android:id="@+id/shWebAuthorizationBossValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:checked="true" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlAuthorizationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationBossTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="已授权的设备"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:id="@+id/tvAuthorizationBossValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_toEndOf="@+id/tvAuthorizationBossTitle"
+                                android:layout_toRightOf="@+id/tvAuthorizationBossTitle"
+                                android:gravity="end"
+                                android:paddingBottom="17.5dp"
+                                android:paddingTop="17.5dp"
+                                android:text="授权历史"
+                                android:textColor="@color/primary"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAuthorizationBoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                        <!-- endregion Boss端授权设备 -->
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnComit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_shape_2_5_primary"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

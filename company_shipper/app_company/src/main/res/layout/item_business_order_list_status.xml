@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlShipper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17.5dp"
+        tools:text="托运人"
+        android:textColor="@color/black333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/tvTitle"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:layout_toLeftOf="@+id/imgSelect"
+        android:layout_toStartOf="@+id/imgSelect"
+        android:gravity="end"
+        android:textColor="@color/black333"
+        android:textSize="16sp"
+        android:text="不限" />
+
+    <ImageView
+        android:id="@+id/imgSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_xsj_05" />
+
+</RelativeLayout>

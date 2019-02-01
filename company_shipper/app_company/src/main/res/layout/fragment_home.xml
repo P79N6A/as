@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_home" />
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tr_enable_loadmore="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_home_top" />
+
+                <!-- 所有权限的 -->
+                <LinearLayout
+                    android:id="@+id/llAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    tools:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="2.5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllForwarderQuotationInquiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ffa041"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="1px">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllForwarderQuotationInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_htbjcx" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllForwarderQuotationInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="货代报价查询"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllShipSchedule"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ffa041"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllShipSchedule"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_cqcx" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllShipSchedule"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="船期查询"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllTrailerQuoteInquiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#7fb740"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllTrailerQuoteInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_tcbjcx" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllTrailerQuoteInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="拖车报价查询"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvForwarderShipPositioning"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#7fb740"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgForwarderShipPositioning"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_cbdw_tc" />
+
+                                    <TextView
+                                        android:id="@+id/tvForwarderShipPositioning"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="船位查询"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllMy"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#05a8f7"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllMy"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_my" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllMy"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="我的"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="2.5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="2.5dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllForwarderPreOrder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ba68c8"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllForwarderPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_htddgz" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllForwarderPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginTop="8dp"
+                                        android:text="货代工作单管理"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllTrailerPreOrder"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ba68c8"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllTrailerPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_tcddgz" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllTrailerPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginTop="8dp"
+                                        android:text="拖车工作单管理"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="2.5dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllForwarderOperator"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ff6060"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="1px">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllForwarderOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_hdrw_hd" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllForwarderOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="货代办单员任务"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvAllTrailerOperator"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ff6060"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgAllTrailerOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_tcrw_tc" />
+
+                                    <TextView
+                                        android:id="@+id/tvAllTrailerOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:text="拖车办单员任务"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 货代的 -->
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/clForwarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderForwarderQuotationInquiry"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#7e86ff"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="1px"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelineH65Forwarder"
+                        app:layout_constraintEnd_toStartOf="@+id/guidelineV67Forwarder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/guidelineH33Forwarder">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderForwarderQuotationInquiry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_htbjcx_hd" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderForwarderQuotationInquiry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="货代报价查询"
+                                android:textColor="@color/white_text"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderShipSchedule"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#ffa041"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="1px"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelineH33Forwarder"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineV33Forwarder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderShipSchedule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_cqcx_tc" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderShipSchedule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="船期查询"
+                                android:textColor="@color/white_text" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderForwarderShipPositioning"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#7Fb740"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="1px"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelineH33Forwarder"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineV67Forwarder"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineV33Forwarder"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderForwarderShipPositioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_cbdw_tc" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderForwarderShipPositioning"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="船位查询"
+                                android:textColor="@color/white_text" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderMy"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#6cbbf6"
+                        app:cardCornerRadius="4dp"
+                        app:layout_constraintBottom_toTopOf="@+id/guidelineH65Forwarder"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineV67Forwarder"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_heightPercent="17.36%"
+                        app:layout_widthPercent="33.333333%">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderMy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_my_tc" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderMy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="我的"
+                                android:textColor="@color/white_text"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderPreOrder"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#ff7b7b"
+                        app:cardCornerRadius="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/guidelineV50Forwarder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/guidelineH65Forwarder">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderPreOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_htddgz_hd" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderPreOrder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="10dp"
+                                android:text="货代工作单管理"
+                                android:textColor="@color/white_text"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvForwarderForwarderOperator"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardBackgroundColor="#ba68c8"
+                        app:cardCornerRadius="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/guidelineV50Forwarder"
+                        app:layout_constraintTop_toBottomOf="@+id/guidelineH65Forwarder">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imgForwarderForwarderOperator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_hdrw_hd" />
+
+                            <TextView
+                                android:id="@+id/tvForwarderForwarderOperator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="10dp"
+                                android:text="货代办单员任务"
+                                android:textColor="@color/white_text"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guidelineV33Forwarder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.3371428571428571" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guidelineV50Forwarder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5071428571428571" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guidelineV67Forwarder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.6742857142857143" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guidelineH33Forwarder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.3388157894736842" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guidelineH65Forwarder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.65814696485623" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <!-- 拖车的 -->
+                <LinearLayout
+                    android:id="@+id/llTrailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvTrailerTrailerQuotationInquiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ffa041"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="1px">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgTrailerTrailerQuotationInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_htbjcx_hd" />
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerTrailerQuotationInquiry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="拖车报价查询"
+                                        android:textColor="@color/white_text"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvTrailerShipPositioning"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#a1d75f"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgTrailerShipPositioning"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_cbdw_tc" />
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerShipPositioning"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="船位查询"
+                                        android:textColor="@color/white_text" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvTrailerMy"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginEnd="2.5dp"
+                                android:layout_marginRight="2.5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#7e86ff"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgTrailerMy"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_my_tc" />
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerMy"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="我的"
+                                        android:textColor="@color/white_text"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvTrailerTrailerOperator"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ff6060"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgTrailerTrailerOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_tcrw_tc" />
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerTrailerOperator"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginTop="10dp"
+                                        android:text="拖车办单员任务"
+                                        android:textColor="@color/white_text"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cvTrailerPreOrder"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginLeft="2.5dp"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:layout_weight="1"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardBackgroundColor="#ba68c8"
+                                app:cardCornerRadius="4dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imgTrailerPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_tcddgz" />
+
+                                    <TextView
+                                        android:id="@+id/tvTrailerPreOrder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginTop="10dp"
+                                        android:text="拖车工作单管理"
+                                        android:textColor="@color/white_text"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

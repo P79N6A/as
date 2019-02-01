@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout    >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rlWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/imgWeather"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                tools:src="@drawable/ic_return" />
+
+            <TextView
+                android:id="@+id/tvWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgWeather"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/imgWeather"
+                android:layout_toRightOf="@+id/imgWeather"
+                android:text="获取天气中.."
+                android:textColor="@color/white_text"
+                android:textSize="12sp"
+                tools:text="23℃" />
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvWeather"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imgWeather"
+                android:layout_toRightOf="@+id/imgWeather"
+                android:text="获取城市中.."
+                android:textColor="@color/white_text"
+                android:textSize="12sp"
+                tools:text="23℃" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white_text"
+            android:textSize="20sp"
+            tools:text="123" />
+
+    </android.support.v7.widget.Toolbar>
+</layout>
+
+

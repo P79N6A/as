@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeeee"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarCommon"
+        layout="@layout/toolbar_common" />
+
+    <RelativeLayout
+        android:id="@+id/rlRegionId"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvRegionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="地址"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgRegionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvRegionId"
+            android:layout_toRightOf="@+id/tvRegionId"
+            android:src="@drawable/xinghao" />
+
+        <TextView
+            android:id="@+id/tvValueRegionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imgRegionId"
+            android:layout_toRightOf="@+id/imgRegionId"
+            android:gravity="end"
+            android:hint="请选择省、市、区"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_triangle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddr"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="详细地址"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvAddr"
+            android:layout_toRightOf="@+id/tvAddr"
+            android:src="@drawable/xinghao" />
+
+        <EditText
+            android:id="@+id/etValueAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imgAddr"
+            android:layout_toRightOf="@+id/imgAddr"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入详细地址"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlLinkman"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvLinkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="联系人"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgLinkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvLinkman"
+            android:layout_toRightOf="@+id/tvLinkman"
+            android:src="@drawable/xinghao" />
+
+        <EditText
+            android:id="@+id/etValueLinkman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/imgLinkman"
+            android:layout_toRightOf="@+id/imgLinkman"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入联系人名称"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlRemark"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="说明"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/etValueRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvRemark"
+            android:layout_toRightOf="@+id/tvRemark"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入说明"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:singleLine="false"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlLinkmanMp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvLinkmanMp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="手机"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueLinkmanMp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="4dp"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlLinkmanTel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvLinkmanTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="联系电话"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueLinkmanTelOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toLeftOf="@+id/vLine"
+            android:layout_toStartOf="@+id/vLine"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="区号"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="16dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/etValueLinkmanTelTwo"
+            android:layout_toStartOf="@+id/etValueLinkmanTelTwo"
+            android:background="@color/line_grey" />
+
+        <EditText
+            android:id="@+id/etValueLinkmanTelTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="4dp"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="固定号码"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/xinghao" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="手机和电话至少要输入其中一项" />
+
+    </LinearLayout>
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnComit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white_text"
+        app:cpb_cornerRadius="2.5dp"
+        app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+        app:cpb_textIdle="@string/submit" />
+
+</LinearLayout>

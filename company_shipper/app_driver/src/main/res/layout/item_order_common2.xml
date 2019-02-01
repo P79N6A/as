@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey2" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/amap_bus" />
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+        app:layout_constraintStart_toEndOf="@+id/imgLogo"
+        app:layout_constraintTop_toTopOf="@+id/imgLogo"
+        tools:text="企业标题" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCompanyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCompanyName"
+        tools:text="状态" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/line_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <TextView
+        android:id="@+id/tvContQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_huogui"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_huogui"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine"
+        tools:text="1*20GP" />
+
+    <View
+        android:id="@+id/vLine2"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContQty"
+        app:layout_constraintStart_toEndOf="@+id/tvContQty"
+        app:layout_constraintTop_toTopOf="@+id/tvContQty" />
+
+    <TextView
+        android:id="@+id/tvDriverOrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine2"
+        app:layout_constraintStart_toEndOf="@+id/vLine2"
+        app:layout_constraintTop_toTopOf="@+id/vLine2"
+        tools:text="重出吉回" />
+
+    <TextView
+        android:id="@+id/tvShipCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_ship"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_ship"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContQty"
+        tools:text="中原船公司" />
+
+    <TextView
+        android:id="@+id/tvDeliveryPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_time_z"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_time_z"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShipCompany"
+        tools:text="05-16 卸货" />
+
+    <TextView
+        android:id="@+id/tvDeliveryRoute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_matou"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_matou"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryPlaces"
+        tools:text="黄埔码头 到 xx码头 到娃娃码头" />
+
+    <ImageView
+        android:id="@+id/imgEditAddless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/ic_most_yellow"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDeliveryRoute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDeliveryRoute"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/vLine3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/line_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveryRoute" />
+
+    <TextView
+        android:id="@+id/tvVehiclePrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3"
+        tools:text="￥1200.00" />
+
+    <TextView
+        android:id="@+id/tvRefuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/background_shape_2_5_red"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:text="拒绝"
+        android:textColor="@color/red_primary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine4"
+        app:layout_constraintEnd_toStartOf="@+id/tvAccept"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/background_shape_2_5_green"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:text="接单"
+        android:textColor="@color/green_primary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey2" />
+
+    <View
+        android:id="@+id/vLine4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/line_grey2"
+        app:layout_constraintBottom_toTopOf="@+id/vLine5" />
+
+    <View
+        android:id="@+id/vLine5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/layoutBackground"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+

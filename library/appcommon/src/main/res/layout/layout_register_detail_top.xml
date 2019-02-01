@@ -1,0 +1,258 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+
+    <RelativeLayout
+        android:id="@+id/rlCommpanyApplyType"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvApplyTypeTitle"
+            style="@style/RowTVTitle"
+            android:text="业务类型" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvApplyTypeTitle"
+            android:layout_toRightOf="@+id/tvApplyTypeTitle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvApplyTypeTitle"
+            android:layout_toRightOf="@+id/tvApplyTypeTitle"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbApplyType0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货代" />
+
+            <CheckBox
+                android:id="@+id/cbApplyType1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车队" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlShipperApplyStatus"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvApplyStatusTitle"
+            style="@style/RowTVTitle"
+            android:text="业务类型" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvApplyStatusTitle"
+            android:layout_toRightOf="@+id/tvApplyStatusTitle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvApplyStatusTitle"
+            android:layout_toRightOf="@+id/tvApplyStatusTitle"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbApplyStatus0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:checked="true"
+                    android:text="企业" />
+
+                <RadioButton
+                    android:id="@+id/rbApplyStatus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyName"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyNameTitle"
+            style="@style/RowTVTitle"
+            android:text="商户名称" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvCompanyNameTitle"
+            android:layout_toRightOf="@+id/tvCompanyNameTitle" />
+
+        <EditText
+            android:id="@+id/etValueDepartureTitle"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyNameTitle"
+            android:layout_toRightOf="@+id/tvCompanyNameTitle"
+            android:hint="请输入商户名称"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvAddressTitle"
+            style="@style/RowTVTitle"
+            android:text="地区" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvAddressTitle"
+            android:layout_toRightOf="@+id/tvAddressTitle" />
+
+        <TextView
+            android:id="@+id/tvAddressValue"
+            style="@style/RowTVValue32"
+            android:layout_toEndOf="@+id/tvAddressTitle"
+            android:layout_toRightOf="@+id/tvAddressTitle"
+            android:hint="省市区" />
+
+        <ImageView style="@style/RowClickable" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyAddress"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyAddressTitle"
+            style="@style/RowTVTitle"
+            android:text="详细地址" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvCompanyAddressTitle"
+            android:layout_toRightOf="@+id/tvCompanyAddressTitle" />
+
+        <EditText
+            android:id="@+id/etValueCompanyAddress"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyAddressTitle"
+            android:layout_toRightOf="@+id/tvCompanyAddressTitle"
+            android:hint="道路、门牌号" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlName"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvTitleName"
+            style="@style/RowTVTitle"
+            android:text="联系人" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvTitleName"
+            android:layout_toRightOf="@+id/tvTitleName" />
+
+        <EditText
+            android:id="@+id/etNameValue"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvTitleName"
+            android:layout_toRightOf="@+id/tvTitleName"
+            android:hint="商户的联系人姓名"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlMobile"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvTitleMobile"
+            style="@style/RowTVTitle"
+            android:text="电话" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvTitleMobile"
+            android:layout_toRightOf="@+id/tvTitleMobile" />
+
+        <EditText
+            android:layout_toEndOf="@+id/tvTitleMobile"
+            android:layout_toRightOf="@+id/tvTitleMobile"
+            android:id="@+id/etValueMobile"
+            style="@style/RowETValue"
+            android:hint="手机/区号-座机号" />
+
+    </RelativeLayout>
+
+
+</merge>

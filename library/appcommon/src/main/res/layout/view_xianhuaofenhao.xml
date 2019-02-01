@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContSeal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner"
+        android:orientation="horizontal"
+        android:background="@color/banner">
+
+        <TextView
+            android:text="柜号与封号"
+            android:drawableLeft="@drawable/ic_huogui_01"
+            style="@style/xiaohuaofenhao_banner" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlContNoFirst"
+        style="@style/xianhuaofenhao_ll">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/xianhaofenhaoTv"
+            android:text="柜号一" />
+
+        <EditText
+            android:id="@+id/etContNoFirst"
+            style="@style/xianhaofenhaoEt"
+            android:hint="请输入柜号一" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/side_interval"
+        android:layout_marginRight="@dimen/side_interval">
+
+        <include layout="@layout/view_line2" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rlSealNoFirst"
+        style="@style/xianhuaofenhao_ll">
+
+        <TextView
+            style="@style/xianhaofenhaoTv"
+            android:text="封号一" />
+
+        <EditText
+            android:id="@+id/etSealNoFirst"
+            style="@style/xianhaofenhaoEt"
+            android:hint="请输入封号一" />
+
+
+    </LinearLayout>
+
+    <!-- 只有在查看动态记录中才显示 -->
+    <FrameLayout
+        android:id="@+id/flSealNoFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/side_interval"
+        android:layout_marginRight="@dimen/side_interval">
+
+        <include layout="@layout/view_line2" />
+    </FrameLayout>
+
+    <!--cb第一个-->
+    <LinearLayout
+        android:id="@+id/llCbNo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/flSelectFirstLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginRight="@dimen/side_interval">
+
+            <include layout="@layout/view_line2" />
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/xianhuaofenhao_ll2">
+
+            <CheckBox
+                android:id="@+id/cbSelectFirst"
+                style="@style/xiaohuaofenhao_cbselect"
+                android:text="已完成整柜卸货" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第二个柜子-->
+    <LinearLayout
+        android:id="@+id/llSecondNo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/flLineSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/view_line_5dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/rlContNoSecond"
+            style="@style/xianhuaofenhao_ll">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/xianhaofenhaoTv"
+                android:text="柜号二" />
+
+            <EditText
+                android:id="@+id/etContNoSecond"
+                style="@style/xianhaofenhaoEt"
+                android:hint="请输入柜号二" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flSealNoSecondLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginRight="@dimen/side_interval">
+
+            <include layout="@layout/view_line2" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/rlSealNoSecond"
+            style="@style/xianhuaofenhao_ll">
+
+            <TextView
+                style="@style/xianhaofenhaoTv"
+                android:text="封号二" />
+
+
+            <EditText
+                android:id="@+id/etSealNoSecond"
+                style="@style/xianhaofenhaoEt"
+                android:hint="请输入封号二" />
+
+        </LinearLayout>
+
+        <!--cb no2-->
+        <LinearLayout
+            android:id="@+id/llCbNo2"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/flSelectSecondLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/side_interval"
+                android:layout_marginRight="@dimen/side_interval">
+
+                <include layout="@layout/view_line2" />
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/xianhuaofenhao_ll2">
+
+                <CheckBox
+                    android:id="@+id/cbSelectSecond"
+                    style="@style/xiaohuaofenhao_cbselect"
+                    android:text="已完成整柜卸货" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

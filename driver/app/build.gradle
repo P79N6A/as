@@ -1,0 +1,158 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.aspectj:aspectjtools:1.8.1'
+    }
+}
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias 'yaoguang'
+            keyPassword '123456'
+            storeFile file('D:/signing/yaoguang.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId "com.yaoguang.driver"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.releaseVersionCode
+        versionName rootProject.ext.releaseVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi'  //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "releaseTime", "\"" + new Date().format("yyyyMMdd") + "\"")
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField("String", "releaseTime", "\"" + new Date().format("yyyyMMdd") + "\"")
+            signingConfig signingConfigs.config
+        }
+    }
+    // java版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+//greendao的配置
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+    dependencies {
+    }
+}
+//greendao的配置
+greendao {
+    schemaVersion 5//数据库版本号
+    daoPackage 'com.yaoguang.driver.greendao'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+    //targetGenDirTest：设置生成单元测试目录
+    //generateTests：设置自动生成单元测试用例
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //自建包
+    compile project(':lib')
+    compile project(':library:yaoguang.style')
+    compile project(':library:pushsdk')
+    compile project(':library:taobao')
+    compile project(':divermvp:interactor')
+    compile project(':divermvp:interfaces')
+    compile project(path: ':library:appcommon')
+    compile project(path: ':library:yaoguang.greendao')
+    //简化实例化控件的库
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    testCompile 'junit:junit:4.12'
+    //无限循环的banner
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.orhanobut:dialogplus:1.11@aar'
+    compile('com.alibaba.android:vlayout:1.1.0@aar') {
+        transitive = true
+    }
+
+    annotationProcessor project(':apt')
+    // aspectj
+    compile 'org.aspectj:aspectjrt:1.8.1'
+    implementation 'com.android.support:support-annotations:27.0.2'
+}
+
+
+// TODO 不知道小韦干嘛的
+final def log = project.logger
+final def variants = project.android.applicationVariants
+
+variants.all { variant ->
+    if (!variant.buildType.isDebuggable()) {
+        log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
+        return;
+    }
+
+    JavaCompile javaCompile = variant.javaCompile
+    javaCompile.doLast {
+        String[] args = ["-showWeaveInfo",
+                         "-1.5",
+                         "-inpath", javaCompile.destinationDir.toString(),
+                         "-aspectpath", javaCompile.classpath.asPath,
+                         "-d", javaCompile.destinationDir.toString(),
+                         "-classpath", javaCompile.classpath.asPath,
+                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
+        log.debug "ajc args: " + Arrays.toString(args)
+
+        MessageHandler handler = new MessageHandler(true);
+        new Main().run(args, handler);
+        for (IMessage message : handler.getMessages(null, true)) {
+            switch (message.getKind()) {
+                case IMessage.ABORT:
+                case IMessage.ERROR:
+                case IMessage.FAIL:
+                    log.error message.message, message.thrown
+                    break;
+                case IMessage.WARNING:
+                    log.warn message.message, message.thrown
+                    break;
+                case IMessage.INFO:
+                    log.info message.message, message.thrown
+                    break;
+                case IMessage.DEBUG:
+                    log.debug message.message, message.thrown
+                    break;
+            }
+        }
+    }
+}

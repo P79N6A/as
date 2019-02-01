@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yaoguang.driver">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_driver"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyDriverStyle"
+        tools:replace="android:icon, android:theme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b7d936bd391503d30f7681802418da4f" />
+
+        <activity
+            android:name=".activitys.StartActivity"
+            android:icon="@drawable/ic_app_driver"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Splash"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.yaoguang.driver.nav.RouteNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MyDriverStyle"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.yaoguang.appcommon.common.base.LookPhotoActivity"
+            android:label="@string/look_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".activitys.ForgetPasswordStep1Activity"
+            android:label="@string/modity_pass"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.ForgetPasswordStep2Activity"
+            android:screenOrientation="portrait"
+            android:label="@string/modity_pass"
+            android:theme="@style/MyDriverStyle"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activitys.GuidanceActivity"
+            android:label="@string/guidance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/main"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle" >
+            <intent-filter>
+                <action android:name="android.provider.MediaStore.RECORD_SOUND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register.RegisterActivity"
+            android:label="@string/register"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDriverStyle" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yaoguang.driver.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58ec4fb5f29d98462000114b"></meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="483917c4572f79516f914cfde274d6a7"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="QU_360"></meta-data>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name=".activitys.FestivalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@style/Base.Theme.DesignDemo" />
+
+
+    </application>
+
+</manifest>

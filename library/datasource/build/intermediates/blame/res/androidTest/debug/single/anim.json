@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\back2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\anim\\back2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\show_from_bottom.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\show_from_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\pop_exit_no_anim.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\pop_exit_no_anim.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_tooltip_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_out_to_right.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_slide_out_to_right.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\h_fragment_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\h_fragment_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\design_snackbar_out.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_tooltip_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_in_from_left.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_slide_in_from_left.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\v_fragment_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\v_fragment_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\wheel.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\anim\\wheel.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fade_in.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fade_out.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\top_out.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\top_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\v_fragment_pop_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\v_fragment_pop_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_out_to_left.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_slide_out_to_left.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\rider.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\anim\\rider.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\pickerview_slide_out_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\anim\\pickerview_slide_out_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sum.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\anim\\sum.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\v_fragment_pop_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\v_fragment_pop_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\top_in.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\top_in.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_in_from_right.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_slide_in_from_right.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\hide_to_bottom.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\anim\\hide_to_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\item_duang_show.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\anim\\item_duang_show.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_scale_up.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_scale_up.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\rv_layout_animation.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\anim\\rv_layout_animation.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\pickerview_dialog_scale_out.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\anim\\pickerview_dialog_scale_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\pickerview_slide_in_bottom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\anim\\pickerview_slide_in_bottom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\gradually.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\anim\\gradually.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\h_fragment_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\h_fragment_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\item_duang_show2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\anim\\item_duang_show2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\no_anim.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\no_anim.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\v_fragment_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\v_fragment_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\h_fragment_pop_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\h_fragment_pop_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\back1.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\anim\\back1.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\pickerview_dialog_scale_in.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\anim\\pickerview_dialog_scale_in.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\h_fragment_pop_exit.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fragmentation-core-1.1.7.aar\\a130d1e6f30bfd5efa3c65e3d9cec1b5\\res\\anim\\h_fragment_pop_exit.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_scale_down.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\fab-1.6.4.aar\\b5d3edbb9a8b13f210c43a69af9be4db\\res\\anim\\fab_scale_down.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\design_snackbar_in.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\anim\\design_snackbar_in.xml"
+    }
+]

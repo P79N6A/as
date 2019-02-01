@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <RelativeLayout
+                android:id="@+id/rlRegionId"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvContId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="柜型"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tvValueContId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="4dp"
+                    android:gravity="end"
+                    android:hint="请选择柜型"
+                    android:text="20GP"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/right_triangle"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlContNo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvContNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="柜号"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/etValueContNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toEndOf="@+id/tvContNo"
+                    android:layout_toRightOf="@+id/tvContNo"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="请输入柜号"
+                    android:maxLength="11"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlSealNo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvSealNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="封号"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+
+                <EditText
+                    android:id="@+id/etValueSealNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toEndOf="@+id/tvSealNo"
+                    android:layout_toRightOf="@+id/tvSealNo"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="请输入封号"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlCarryPort"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvCarryPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="提柜点"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgCarryPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@+id/tvCarryPort"
+                    android:layout_toRightOf="@+id/tvCarryPort"
+                    android:src="@drawable/xinghao"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvValueCarryPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/imgCarryPort"
+                    android:layout_toRightOf="@+id/imgCarryPort"
+                    android:gravity="end"
+                    android:hint="请选择提柜点"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/right_triangle"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlGetPort"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvGetPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="还柜点"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgGetPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@+id/tvGetPort"
+                    android:layout_toRightOf="@+id/tvGetPort"
+                    android:src="@drawable/xinghao"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvValueGetPort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/imgGetPort"
+                    android:layout_toRightOf="@+id/imgGetPort"
+                    android:gravity="end"
+                    android:hint="请选择还柜点"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/right_triangle"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/cpbConfirm"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/cpb_white"
+                    app:cpb_cornerRadius="2.5dp"
+                    app:cpb_iconComplete="@drawable/ic_action_accept"
+                    app:cpb_iconError="@drawable/ic_action_cancel"
+                    app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+                    app:cpb_textIdle="@string/confirm" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

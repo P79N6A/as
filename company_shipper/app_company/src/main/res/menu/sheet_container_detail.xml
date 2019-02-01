@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action0"
+        android:orderInCategory="1"
+        android:title="无"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action1"
+        android:orderInCategory="1"
+        android:title="前位"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action2"
+        android:orderInCategory="1"
+        android:title="中位"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action4"
+        android:orderInCategory="1"
+        android:title="后位"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action5"
+        android:orderInCategory="1"
+        android:title="不放中间"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+</menu>

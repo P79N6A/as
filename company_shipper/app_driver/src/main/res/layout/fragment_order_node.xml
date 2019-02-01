@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efeeee"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <FrameLayout
+                android:id="@+id/flRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include
+                    android:id="@+id/layoutRecyclerview"
+                    layout="@layout/layout_recyclerview" />
+
+            </FrameLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/activity_description_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_qdy_yellow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxEms="3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgNext"
+                    app:layout_constraintEnd_toEndOf="@+id/imgNext"
+                    app:layout_constraintStart_toStartOf="@+id/imgNext"
+                    app:layout_constraintTop_toTopOf="@+id/imgNext"
+                    tools:text="到达提柜点" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ic_bjg_green"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNextAddress"
+                    app:layout_constraintEnd_toStartOf="@+id/tvNextAddress"
+                    app:layout_constraintTop_toTopOf="@+id/tvNextAddress" />
+
+                <TextView
+                    android:id="@+id/tvNextAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="8dp"
+                    android:maxEms="14"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgNext"
+                    tools:text="某某区某某路某某某区某某路某某区某区" />
+
+                <ImageView
+                    android:id="@+id/imgRefreshAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_refresh_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNextAddress"
+                    app:layout_constraintLeft_toRightOf="@+id/tvNextAddress"
+                    app:layout_constraintTop_toTopOf="@+id/tvNextAddress" />
+
+                <TextView
+                    android:id="@+id/tvProblemFeedback"
+                    android:layout_width="76dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_shape_2_5_null"
+                    android:gravity="center"
+                    android:text="问题反馈"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,454 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlShopDetail"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvShopDetailTitle"
+            style="@style/RowTVTitle"
+            android:text="商户简介" />
+
+        <TextView
+            android:id="@+id/tvShopDetailTitleValue"
+            style="@style/RowTVValue32"
+            android:layout_toEndOf="@+id/tvShopDetailTitle"
+            android:layout_toRightOf="@+id/tvShopDetailTitle"
+            android:hint="请描述商户基本情况" />
+
+        <ImageView style="@style/RowClickable" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyCode"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyCodeTitle"
+            style="@style/RowTVTitle"
+            android:text="营业执照号码" />
+
+        <ImageView
+            style="@style/RowAsterisk"
+            android:layout_toEndOf="@+id/tvCompanyCodeTitle"
+            android:layout_toRightOf="@+id/tvCompanyCodeTitle" />
+
+        <EditText
+            android:id="@+id/etCompanyCodeValue"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyCodeTitle"
+            android:layout_toRightOf="@+id/tvCompanyCodeTitle"
+            android:hint="营业执照号码" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <LinearLayout
+        android:id="@+id/llCompanyPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/flLicensePhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llLicensePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgLicensePhotoAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="营业执照"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgLicensePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                style="@style/RowAsterisk"
+                android:layout_gravity="right"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flShopLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llShopLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgShopLogoAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="商户Logo"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgShopLogo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imgShopLogoClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_sc_01"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flShopPhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llShopPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgShopPhotoAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="商户照片"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgShopPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imgShopPhotoClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_sc_01"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llShipperPhoto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/flIdPhoto1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llIdPhoto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgIdPhoto1Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="身份证正面"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgIdPhoto1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                style="@style/RowAsterisk"
+                android:layout_gravity="right"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flIdPhoto2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llIdPhoto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgIdPhoto2Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="身份证反面"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgIdPhoto2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                style="@style/RowAsterisk"
+                android:layout_gravity="right"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flShipperShopLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llShipperShopLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgShipperShopLogoAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="商户Logo"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgShipperShopLogo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imgShipperShopLogoClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_sc_01"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llShipperPhoto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/flShipperShopPhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_kk_01">
+
+            <LinearLayout
+                android:id="@+id/llShipperShopPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgShipperShopPhotoAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/ic_jia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="商户照片"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgShipperShopPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                tools:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/imgShipperShopPhotoClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_sc_01"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</merge>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarCommon"
+        layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            tools:text="v1.0" />
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:autoLink="all"
+            android:text="更新日志"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            tools:text="软件名称" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white_text"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:id="@+id/llMobile"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="客服电话"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/llMobile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tvMobile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:gravity="end|center_vertical"
+                        android:text="020-82592165"
+                        android:textColor="#999999"
+                        android:textColorHint="@color/black_hint_text"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_telephone_02" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:id="@+id/llOfficialWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="官方网站"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvOfficialWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="4dp"
+                    android:gravity="end|center_vertical"
+                    android:text="http://yaoguangsoft.com"
+                    android:textColor="#999999"
+                    android:textColorHint="@color/black_hint_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:gravity="bottom"
+            android:text="Copyright © 2017 广州瑶光软件科技有限公司"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+</LinearLayout>

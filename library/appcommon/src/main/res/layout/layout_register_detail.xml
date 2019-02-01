@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_register_detail_top" />
+
+            <include layout="@layout/layout_register_detail_bottom" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/cpbRegister"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:textColor="@color/cpb_white"
+                app:cpb_cornerRadius="2.5dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+                app:cpb_textIdle="@string/complete" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

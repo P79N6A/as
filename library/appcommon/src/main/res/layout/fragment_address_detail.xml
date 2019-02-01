@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/flMainMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.amap.api.maps.TextureMapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/ic_dingwei_20" />
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/imgIcon"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            tools:text="123321233211233211233211233211233211233211233211233211233211233211233211233211233211"
+                            android:textColor="@color/black333"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvRadius"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tvAddress"
+                            android:layout_alignStart="@+id/tvAddress"
+                            android:layout_below="@+id/tvAddress"
+                            android:layout_marginTop="12dp"
+                            tools:text="123321"
+                            android:textColor="@color/black999"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</layout>

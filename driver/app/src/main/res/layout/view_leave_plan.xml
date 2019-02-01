@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llLeaveRemove"
+            style="@style/view_driver_status_plan_ll"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/view_driver_status_plan_left_tv"
+                android:drawableLeft="@drawable/ic_xjjh"
+                android:text="休假计划" />
+
+            <ImageView
+                android:id="@+id/ivRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_remove" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/llLeaveRemove_line"
+            layout="@layout/view_dividing_line" />
+
+
+        <LinearLayout style="@style/view_driver_status_plan_ll">
+
+            <TextView
+                android:id="@+id/tvWaitStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_kssj_hh"
+                android:drawablePadding="5dp"
+                android:text="开始时间：2017-08-29 13:30"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvStartTimeLogo"
+                style="@style/view_driver_status_plan_left_tv"
+                android:drawableLeft="@drawable/ic_kssj_01"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/startTime"
+                style="@style/view_driver_status_plan_right_tv"
+                android:text="2017-08-29 13:30" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vWaitStartTimeLine"
+            layout="@layout/view_dividing_line" />
+
+        <LinearLayout style="@style/view_driver_status_plan_ll">
+
+            <TextView
+                android:id="@+id/tvWaitEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_kssj_hh"
+                android:drawablePadding="5dp"
+                android:text="结束时间：2017-08-29 13:30"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvEndTimeLogo"
+                style="@style/view_driver_status_plan_left_tv"
+                android:drawableLeft="@drawable/ic_jscj"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/endTime"
+                style="@style/view_driver_status_plan_right_tv"
+                android:text="2017-08-29 13:30" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vWaitEndTimeLine"
+            layout="@layout/view_dividing_line" />
+
+        <LinearLayout
+            style="@style/view_driver_status_plan_ll"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvAllowOrder"
+                style="@style/view_driver_status_plan_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@drawable/ic_kxwpd"
+                android:visibility="gone"
+                android:text="可向我派单" />
+
+            <CheckBox
+                android:id="@+id/cbAllowOrder"
+                style="@style/view_driver_status_plan_left_tv"
+                android:text="可向我派单" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/vAllowOrderLine"
+            layout="@layout/view_dividing_line" />
+
+        <LinearLayout
+            android:id="@+id/llReason"
+            style="@style/view_driver_status_plan_ll"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvReason"
+                style="@style/view_driver_status_plan_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_qtyy_01"
+                android:layout_marginLeft="6dp"
+                android:text="无"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cbVacation"
+                style="@style/view_driver_status_plan_left_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="休假" />
+
+            <CheckBox
+                android:id="@+id/cbMaintain"
+                style="@style/view_driver_status_plan_left_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="车辆维修"
+                android:textColor="@color/dark_grey" />
+
+            <CheckBox
+                android:id="@+id/cbOther"
+                style="@style/view_driver_status_plan_left_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="其它原因"
+                android:textColor="@color/dark_grey" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/llReason_line"
+            layout="@layout/view_dividing_line" />
+
+        <include layout="@layout/view_media" />
+    </LinearLayout>
+
+</LinearLayout>

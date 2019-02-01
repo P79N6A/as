@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_text"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rlInsuranceCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvInsuranceCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="保险公司"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsuranceCompany"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvInsuranceCompanyTitle"
+                                android:layout_toRightOf="@+id/tvInsuranceCompanyTitle"
+                                android:gravity="end"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgInsuranceCompany"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlConsigneeIdonsigneeId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvConsigneeIdonsigneeIdTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="保险单号"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etConsigneeIdonsigneeId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvConsigneeIdonsigneeIdTitle"
+                                android:layout_toRightOf="@+id/tvConsigneeIdonsigneeIdTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlInsuranceType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvInsuranceTypeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="保险类型"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsuranceType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvInsuranceTypeTitle"
+                                android:layout_toRightOf="@+id/tvInsuranceTypeTitle"
+                                android:gravity="end"
+                                android:hint="选择类型"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgInsuranceType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlInsuranceTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvInsuranceTimeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="投保时间"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsuranceTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvInsuranceTimeTitle"
+                                android:layout_toRightOf="@+id/tvInsuranceTimeTitle"
+                                android:gravity="end"
+                                android:hint="选择日期"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgInsuranceTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlThousands"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvThousandsTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="货值(万元)"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etThousands"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvThousandsTitle"
+                                android:layout_toRightOf="@+id/tvThousandsTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvRateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="费率(万分)"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvRateTitle"
+                                android:layout_toRightOf="@+id/tvRateTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlInsurancePremium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvInsurancePremiumTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="保险费(元)"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etInsurancePremium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvInsurancePremiumTitle"
+                                android:layout_toRightOf="@+id/tvInsurancePremiumTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/line_grey" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnComit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/background_shape_2_5_primary"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

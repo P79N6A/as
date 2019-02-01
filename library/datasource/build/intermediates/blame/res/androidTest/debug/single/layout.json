@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_test.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_test.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_selectcameraoralbum.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_selectcameraoralbum.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\search_suggestion_item.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\search_suggestion_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\spinner_list_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\nice-spinner-1.3.4.aar\\8db74ae79f1251b050c9624843a0bed7\\res\\layout\\spinner_list_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_rv_sweet.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_rv_sweet.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_basepickerview.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_tooltip.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_tooltip.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_tmp.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_tmp.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_vp_sweet.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_vp_sweet.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_action.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_options.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\search_suggestions_section.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\search_suggestions_section.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\include_top_bar.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\include_top_bar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\toolbar_custom.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\toolbar_custom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\photoview.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\photoview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_all_view_ids.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_all_view_ids.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_custom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_dividing_line.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_dividing_line.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_time_picker.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_time_picker.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\overflow_action_item_layout.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\overflow_action_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_vertical_rv.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\item_vertical_rv.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_image_preview.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_image_preview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_sinaheader.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\twinklingrefreshlayout_library\\build\\intermediates\\bundles\\debug\\res\\layout\\view_sinaheader.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_horizon_rv.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\item_horizon_rv.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\headview.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\headview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_recyclerview.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_recyclerview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\headview2.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\headview2.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_footer.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\item_footer.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_image_grid.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_image_grid.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\adapter_camera_item.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\adapter_camera_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_numberprogressbar.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\view_numberprogressbar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pop_folder.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\pop_folder.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\view_bezier.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\twinklingrefreshlayout_library\\build\\intermediates\\bundles\\debug\\res\\layout\\view_bezier.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_search_view.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_common.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_common.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\_loading_layout_empty.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\bundles\\debug\\res\\layout\\_loading_layout_empty.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\toolbar_common.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\toolbar_common.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\adapter_folder_list_item.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\adapter_folder_list_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pickerview_time.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PickerView-3.2.5.aar\\c89c1594d5dfe3ae406ab330b3b87ebd\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\adapter_image_list_item.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\adapter_image_list_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\widget_number_textview.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\widget_number_textview.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\_loading_layout_error.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\bundles\\debug\\res\\layout\\_loading_layout_error.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\floating_search_layout.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\floating_search_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_tips.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_tips.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\_loading_layout_loading.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\loadinglayout_library\\build\\intermediates\\bundles\\debug\\res\\layout\\_loading_layout_loading.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\search_query_section.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\search_query_section.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\spinner_dropdown_list.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\spinner_dropdown_list.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\action_item_layout.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\floatingsearchview\\build\\intermediates\\bundles\\debug\\res\\layout\\action_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_media.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\c938d1a2b11a834ec85a251bcf76c2e9\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_image_crop.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\imagepicker\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_image_crop.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\item_foot.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\item_foot.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_grid_menu.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_grid_menu.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_operate_windows.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\SelectableTextHelper_library\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_operate_windows.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\spinner_dropdown_item.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\lib\\build\\intermediates\\bundles\\debug\\res\\layout\\spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\97f9d19238eadc54c34002c5deed5b8b\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\layout_custom_sweet.xml",
+        "source": "H:\\mobile\\code\\trunk\\as\\library\\sweetsheet\\build\\intermediates\\bundles\\debug\\res\\layout\\layout_custom_sweet.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\design_navigation_menu.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\f99e6064e0632d3357299794f6d92620\\res\\layout\\design_navigation_menu.xml"
+    }
+]

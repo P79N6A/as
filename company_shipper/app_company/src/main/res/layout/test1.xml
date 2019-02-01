@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tr_enable_loadmore="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_home_top" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/prlAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllForwarderQuotationInquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ffa041"
+                    app:cardElevation="1px"
+                    app:layout_heightPercent="18%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllForwarderQuotationInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_htbjcx" />
+
+                        <TextView
+                            android:id="@+id/tvAllForwarderQuotationInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="货代报价查询"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllForwarderFreight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cvAllTrailerOperator"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ffa041"
+                    app:cardElevation="1px"
+                    app:layout_heightPercent="18%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllForwarderFreight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hdrw_hd" />
+
+                        <TextView
+                            android:id="@+id/tvAllForwarderFreight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="货代办单员任务"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllForwarderOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/cvAllForwarderQuotationInquiry"
+                    android:layout_toRightOf="@+id/cvAllForwarderQuotationInquiry"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#a1d75f"
+                    app:layout_heightPercent="18%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgALLForwarderOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_htddgz" />
+
+                        <TextView
+                            android:id="@+id/tvAllForwarderOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="货代订单跟踪"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllTrailerOperator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cvAllForwarderOrder"
+                    android:layout_alignStart="@+id/cvAllForwarderOrder"
+                    android:layout_below="@+id/cvAllForwarderOrder"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/cvAllForwarderFreight"
+                    android:layout_toRightOf="@+id/cvAllForwarderFreight"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#838bff"
+                    app:layout_heightPercent="18%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllTrailerOperator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tcrw_tc" />
+
+                        <TextView
+                            android:id="@+id/tvAllTrailerOperator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="拖车办单员任务"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllForwarderPreOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cvAllForwarderFreight"
+                    android:layout_alignStart="@+id/cvAllForwarderFreight"
+                    android:layout_below="@+id/cvAllForwarderFreight"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ff7b7b"
+                    app:layout_heightPercent="24.30%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllForwarderPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hdddgz" />
+
+                        <TextView
+                            android:id="@+id/tvAllForwarderPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="货代"
+                            android:textColor="@color/white_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvAllForwarderPreOrder2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:text="预订单管理"
+                            android:textColor="@color/white_text"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllTrailerPreOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cvAllForwarderPreOrder"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/cvAllForwarderPreOrder"
+                    android:layout_toRightOf="@+id/cvAllForwarderPreOrder"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#6cbbf6"
+                    app:layout_heightPercent="24.30%"
+                    app:layout_widthPercent="50%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllTrailerPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tcyddgl" />
+
+                        <TextView
+                            android:id="@+id/tvAllTrailerPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="拖车"
+                            android:textColor="@color/white_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvAllTrailerPreOrder2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:text="预订单管理"
+                            android:textColor="@color/white_text"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllShipPositioning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cvAllForwarderPreOrder"
+                    android:layout_alignStart="@+id/cvAllForwarderPreOrder"
+                    android:layout_below="@+id/cvAllForwarderPreOrder"
+                    android:layout_marginTop="4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#6cbbf6"
+                    app:layout_heightPercent="17.36%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllShipPositioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_cbdw" />
+
+                        <TextView
+                            android:id="@+id/tvAllShipPositioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="船舶定位"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllMy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cvAllShipPositioning"
+                    android:layout_alignStart="@+id/cvAllShipPositioning"
+                    android:layout_below="@+id/cvAllShipPositioning"
+                    android:layout_marginTop="4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#6cbbf6"
+                    app:layout_heightPercent="17.36%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllMy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_my" />
+
+                        <TextView
+                            android:id="@+id/tvAllMy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:text="我的"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllShipSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cvAllMy"
+                    android:layout_alignTop="@id/cvAllShipPositioning"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/cvAllShipPositioning"
+                    android:layout_toRightOf="@id/cvAllShipPositioning"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#be8bd8"
+                    app:layout_heightPercent="34.72%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgAllShipSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_cqcx" />
+
+                        <TextView
+                            android:id="@+id/tvAllShipSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="船期查询"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllTrailerQuoteInquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/cvAllShipPositioning"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/cvAllShipSchedule"
+                    android:layout_toRightOf="@id/cvAllShipPositioning"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#3490f3"
+                    app:layout_heightPercent="17.36%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllTrailerQuoteInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tcbjcx" />
+
+                        <TextView
+                            android:id="@+id/tvAllTrailerQuoteInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginStart="4dp"
+                            android:text="拖车报价查询"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAllTrailerOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cvAllShipSchedule"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/cvAllShipSchedule"
+                    android:layout_toRightOf="@id/cvAllShipPositioning"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#3490f3"
+                    app:layout_heightPercent="17.36%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgAllTrailerOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tcddgz" />
+
+                        <TextView
+                            android:id="@+id/tvAllTrailerOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginStart="4dp"
+                            android:text="拖车订单跟踪"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

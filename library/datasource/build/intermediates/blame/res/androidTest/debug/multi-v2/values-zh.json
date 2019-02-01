@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "H:\\mobile\\code\\trunk\\as\\library\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,91",
+                        "endOffsets": "158,250"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "H:\\mobile\\code\\trunk\\as\\library\\datasource\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "H:\\mobile\\code\\trunk\\as\\library\\refresh-layout\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,91",
+                        "endOffsets": "158,250"
+                    }
+                }
+            ]
+        }
+    ]
+}

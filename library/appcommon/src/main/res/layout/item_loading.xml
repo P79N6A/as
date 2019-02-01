@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vLoading"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vLoading"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/ic_biaoqian_lan"
+        android:gravity="center_horizontal"
+        android:paddingTop="2dp"
+        android:textColor="@color/white_text"
+        android:textSize="12sp" />
+
+    <TableLayout
+        android:id="@+id/tlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLoading"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:stretchColumns="*">
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系地址:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvJHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvCompanyLXR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvShipperTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvShipperMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传真:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvConsignerUnitFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发货单位:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvConsignerUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRemark3Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="说明:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvRemark3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/table_value_padding_left"
+                    android:paddingLeft="@dimen/table_value_padding_left"
+                    android:paddingRight="@dimen/table_value_padding_left"
+                    android:paddingStart="@dimen/table_value_padding_left"
+                    android:textSize="@dimen/order_detail_size" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

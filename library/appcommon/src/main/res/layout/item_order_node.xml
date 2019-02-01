@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp14"
+                tools:text="2018-06-21" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/sp12"
+                tools:text="16:03" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flDian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivDian"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_huidain" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="top"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/sp16" />
+
+                    <ImageView
+                        android:id="@+id/ivRemark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_xiangqing" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="7dp"
+                    android:drawableLeft="@drawable/ic_dingwei"
+                    android:drawablePadding="@dimen/interval"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="@dimen/sp13"
+                    tools:text="sdfsadfsadfsadfsadfasdfasdfasdfasdfsadfasdfsadfsadfsadfsadfsdfsdfsdfsdafsdfsadfsadfsadf" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

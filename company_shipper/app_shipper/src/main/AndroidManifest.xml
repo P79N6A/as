@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yaoguang.shipper">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_hz_qdtb"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.DesignDemo"
+        tools:replace="android:icon, android:theme">
+
+        <activity
+            android:name=".activitys.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Splash"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.SplashActivity"
+            android:label="@string/start"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.GuidanceActivity"
+            android:label="@string/guidance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.login.LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activitys.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- 注册 -->
+        <activity
+            android:name=".activitys.register.RegisterActivity"
+            android:label="@string/register"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activitys.forgetpassword.ForgetPasswordStep1Activity"
+            android:label="@string/register"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".activitys.forgetpassword.ForgetPasswordStep2Activity"
+            android:label="@string/register"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+
+        <!-- 注册第二版入口界面 -->
+        <activity
+            android:name=".activitys.register2.RegisterDoorwayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 详细界面 -->
+        <activity
+            android:name=".activitys.register2.RegisterDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 认证界面 -->
+        <activity
+            android:name=".activitys.register2.RegisterAuthenticationSupplementActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activitys.register2.RegisterAuthenticationErrorActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activitys.register2.RegisterAuthenticationIngActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|screenLayout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 节日Activity -->
+        <activity android:name="com.yaoguang.shipper.activitys.FestivalActivity"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 公共界面：提示 -->
+        <activity
+            android:name="com.yaoguang.lib.common.tip.TipsActivity"
+            android:theme="@style/ThemeTips" />
+        <!-- 公共界面：打开图片 -->
+        <activity
+            android:name="com.yaoguang.appcommon.common.base.LookPhotoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yaoguang.shipper.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 友盟推送 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5940d2098f4a9d73f50001a9"></meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="52bf7022efeb1c23183657851520ea5c"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="QU_360"></meta-data>
+
+        <provider
+            android:name="com.umeng.message.provider.MessageProvider"
+            android:authorities="com.yaoguang.shipper.umeng.message"
+            android:exported="false"
+            tools:replace="android:authorities">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+
+        <!-- 地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c319e4bfb4a5f2fdff034d50bb678f41" />
+
+        <receiver android:name="com.yaoguang.lib.broadcastReceiver.NetWorkStateReceiver">
+            <intent-filter>
+                <!-- 进行广播的静态注册 检测网络变化的acton -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 天气服务 -->
+        <!--<receiver android:name="com.yaoguang.appcommon.broadcastreceiver.TimerBroadcastReceiver" />-->
+        <!--<service android:name="com.yaoguang.appcommon.service.UpdateCityWeatherService" />-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,180 @@
+<layout xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNumberInformation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text"
+    android:orientation="vertical"
+    tools:visibility="visible"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/window_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white_text">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_dhxx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="单号信息"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlOrderSn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvOrderSnTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="预定单号"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueOrderSn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvOrderSnTitle"
+            android:layout_toRightOf="@+id/tvOrderSnTitle"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="end"
+            android:inputType="textMultiLine|number"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlCreated"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvCreatedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="提交时间"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvCreatedTitle"
+            android:layout_toRightOf="@+id/tvCreatedTitle"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="end"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlImportTime"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvImportTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="导入时间"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueImportTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvImportTimeTitle"
+            android:layout_toRightOf="@+id/tvImportTimeTitle"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="end"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+</layout>

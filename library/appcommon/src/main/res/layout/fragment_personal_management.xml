@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line_5dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlAddress"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_address" />
+
+                    <TextView
+                        android:id="@+id/tvAddressTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="地址" />
+
+                    <TextView
+                        android:id="@+id/tvValueAddress"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvAddressTitle"
+                        android:layout_toRightOf="@+id/tvAddressTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlAddressDetail"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_xxdz" />
+
+                    <TextView
+                        android:id="@+id/tvAddressDetailTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="详细地址" />
+
+                    <TextView
+                        android:id="@+id/tvValueAddressDetail"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvAddressDetailTitle"
+                        android:layout_toRightOf="@+id/tvAddressDetailTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlUser"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_name" />
+
+                    <TextView
+                        android:id="@+id/tvUserTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="联系人" />
+
+                    <TextView
+                        android:id="@+id/tvValueUser"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvUserTitle"
+                        android:layout_toRightOf="@+id/tvUserTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMobile"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_phone_01" />
+
+                    <TextView
+                        android:id="@+id/tvMobileTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="电话" />
+
+                    <TextView
+                        android:id="@+id/tvValueMobile"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvMobileTitle"
+                        android:layout_toRightOf="@+id/tvMobileTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlShopDetail"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_dpjs" />
+
+                    <TextView
+                        android:id="@+id/tvShopDetailTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="商户简介" />
+
+                    <TextView
+                        android:id="@+id/tvValueShopDetail"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvShopDetailTitle"
+                        android:layout_toRightOf="@+id/tvShopDetailTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlCode"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_yyzz" />
+
+                    <TextView
+                        android:id="@+id/tvCodeTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="执照号码" />
+
+                    <TextView
+                        android:id="@+id/tvValueCode"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvCodeTitle"
+                        android:layout_toRightOf="@+id/tvCodeTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:id="@+id/rlSeeCode"
+                    style="@style/RowRL">
+
+                    <ImageView
+                        style="@style/RowMyImgTitle"
+                        android:src="@drawable/ic_zjzp" />
+
+                    <TextView
+                        android:id="@+id/tvSeeCodeTitle"
+                        style="@style/RowMyTVTitle"
+                        android:text="查看证照" />
+
+                    <TextView
+                        android:id="@+id/tvValueSeeCode"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvSeeCodeTitle"
+                        android:layout_toRightOf="@+id/tvSeeCodeTitle"
+                        android:hint="未填写" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

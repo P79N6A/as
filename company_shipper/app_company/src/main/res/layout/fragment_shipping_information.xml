@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white_text"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rlShipName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvShipNameTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="支线船名"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueShipName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvShipNameTitle"
+                                android:layout_toRightOf="@+id/tvShipNameTitle"
+                                android:gravity="end"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgShipName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlLineVoyage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvLineVoyageTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="支线航次"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etLineVoyage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvLineVoyageTitle"
+                                android:layout_toRightOf="@+id/tvLineVoyageTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:maxLength="30"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlInsuranceTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvInsuranceTimeTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="支线中转期"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsuranceTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvInsuranceTimeTitle"
+                                android:layout_toRightOf="@+id/tvInsuranceTimeTitle"
+                                android:gravity="end"
+                                android:hint="选择日期、时间"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgInsuranceTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlBranchMaturity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvBranchMaturityTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="支线到期"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueBranchMaturity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvBranchMaturityTitle"
+                                android:layout_toRightOf="@+id/tvBranchMaturityTitle"
+                                android:gravity="end"
+                                android:hint="选择日期、时间"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgBranchMaturity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlThreeShipName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvThreeShipNameTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="三程船名"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueThreeShipName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvThreeShipNameTitle"
+                                android:layout_toRightOf="@+id/tvThreeShipNameTitle"
+                                android:gravity="end"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgThreeShipName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlThreeVoyage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvThreeVoyageTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="三程航次"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/etThreeVoyage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvThreeVoyageTitle"
+                                android:layout_toRightOf="@+id/tvThreeVoyageTitle"
+                                android:background="@null"
+                                android:gravity="end"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:singleLine="true"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlThreeWaySailingPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvThreeWaySailingPeriodTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="三程开船期"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueThreeWaySailingPeriod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvThreeWaySailingPeriodTitle"
+                                android:layout_toRightOf="@+id/tvThreeWaySailingPeriodTitle"
+                                android:gravity="end"
+                                android:hint="选择日期、时间"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgThreeWaySailingPeriod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@+id/rlBargeCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text">
+
+                            <TextView
+                                android:id="@+id/tvBargeCompanyTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="17.5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="17.5dp"
+                                android:text="驳船公司"
+                                android:textColor="@color/black333"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueBargeCompany"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="32dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginRight="32dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_toEndOf="@+id/tvBargeCompanyTitle"
+                                android:layout_toRightOf="@+id/tvBargeCompanyTitle"
+                                android:gravity="end"
+                                android:textColorHint="@color/black_hint_text"
+                                android:textSize="14sp"
+                                tools:value="值" />
+
+                            <ImageView
+                                android:id="@+id/imgBargeCompany"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/right_triangle" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/line_grey" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnComit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/background_shape_2_5_primary"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

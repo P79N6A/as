@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#efeeee">
+
+                <FrameLayout
+                    android:layout_weight="0.61"
+                    android:id="@+id/flRecyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toStartOf="@+id/activity_cardview"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <include
+                        android:id="@+id/layoutRecyclerview"
+                        layout="@layout/layout_recyclerview" />
+
+                </FrameLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="0.39"
+                    android:id="@+id/activity_cardview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline66"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="gone"
+                    android:layout_marginRight="16dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/activity_description_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="15dp"
+                            android:includeFontPadding="false"
+                            android:maxLength="10"
+                            android:textColor="#333333"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="正在前往 沙田码沙田码头沙田码头沙田码头头" />
+
+                        <TextView
+                            android:id="@+id/tvProblemFeedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="问题反馈"
+                            android:textColor="@color/primary"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                            tools:ignore="HardcodedText"
+                            android:layout_marginLeft="14dp" />
+
+                        <Button
+                            android:id="@+id/btnAdjustRoute"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_shape_2_5_null_primary"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:minHeight="40dp"
+                            android:text="调整路线"
+                            android:textColor="@color/primary"
+                            android:textSize="19sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvProblemFeedback"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/btnNext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_select_drawable_primary_animation"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:minHeight="40dp"
+                            android:text="……"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnAdjustRoute"
+                            tools:ignore="HardcodedText" />
+
+                        <android.support.v4.widget.Space
+                            android:id="@+id/sp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_weight="4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnNext"
+                            android:layout_marginLeft="14dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:src="@drawable/ic_bjg_green"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tvNextAddress"
+                            android:layout_marginLeft="14dp" />
+
+                        <TextView
+                            android:id="@+id/tvNextAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="-1dp"
+                            android:includeFontPadding="false"
+                            android:textColor="#333333"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/imgRefreshAddress"
+                            app:layout_constraintStart_toEndOf="@+id/imageView2"
+                            tools:text="某某区某某区某某区某某区某某区某某区某某区某某区"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="6dp" />
+
+                        <ImageView
+                            android:id="@+id/imgRefreshAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="14dp"
+                            android:src="@drawable/ic_refresh_yellow"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tvNextAddress"
+                            android:layout_marginRight="14dp" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</layout>

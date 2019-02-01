@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llInformationCompany"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyName"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyNameTitle"
+            style="@style/RowTVTitle"
+            android:text="商户名称"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etValueDepartureTitle"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyNameTitle"
+            android:layout_toRightOf="@+id/tvCompanyNameTitle"
+            android:hint="企业名称"
+            android:inputType="text"
+            android:singleLine="true"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyCode"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyCodeTitle"
+            style="@style/RowTVTitle"
+            android:text="营业执照号码"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etCompanyCodeValue"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyCodeTitle"
+            android:layout_toRightOf="@+id/tvCompanyCodeTitle"
+            android:hint="营业执照号码"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvAddressTitle"
+            style="@style/RowTVTitle"
+            android:text="地区"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvAddressValue"
+            style="@style/RowTVValue32"
+            android:layout_toEndOf="@+id/tvAddressTitle"
+            android:layout_toRightOf="@+id/tvAddressTitle"
+            android:hint="省市区"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            style="@style/RowClickable"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlCompanyAddress"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCompanyAddressTitle"
+            style="@style/RowTVTitle"
+            android:text="详细地址"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etValueCompanyAddress"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCompanyAddressTitle"
+            android:layout_toRightOf="@+id/tvCompanyAddressTitle"
+            android:hint="道路、门牌号"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

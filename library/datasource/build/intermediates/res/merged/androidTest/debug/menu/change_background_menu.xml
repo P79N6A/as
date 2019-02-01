@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_random_background"
+        android:title="随机背景" />
+
+    <item
+        android:id="@+id/action_photograph"
+        android:title="拍照" />
+
+    <item
+        android:id="@+id/action_choose_from_the_album"
+        android:title="从相册中选择" />
+
+    <item
+        android:id="@+id/action_look"
+        android:title="查看" />
+
+</menu>

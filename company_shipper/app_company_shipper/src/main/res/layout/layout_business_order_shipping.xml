@@ -1,0 +1,227 @@
+<layout>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/window_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white_text">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_ship" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="船公司信息"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlPortOfShipment"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvPortShipmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="起运港"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgXPortShipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvPortShipmentTitle"
+            android:layout_toRightOf="@+id/tvPortShipmentTitle"
+            android:src="@drawable/xinghao" />
+
+        <TextView
+            android:id="@+id/tvValuePortShipmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvPortShipmentTitle"
+            android:layout_toRightOf="@+id/tvPortShipmentTitle"
+            android:gravity="end"
+            android:hint="请选择起运港"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/vPortShipmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_triangle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlPortOfDestination"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvPortDestinationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="目的港"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgXPortDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvPortDestinationTitle"
+            android:layout_toRightOf="@+id/tvPortDestinationTitle"
+            android:src="@drawable/xinghao" />
+
+        <TextView
+            android:id="@+id/tvValuePortDestinationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvPortDestinationTitle"
+            android:layout_toRightOf="@+id/tvPortDestinationTitle"
+            android:gravity="end"
+            android:hint="请选择目的港"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/vPortDestinationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_triangle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlTransportationClause"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvTitleTransportationClause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="运输条款"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvValueTransportationClause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/tvTitleTransportationClause"
+            android:layout_toRightOf="@+id/tvTitleTransportationClause"
+            android:gravity="end"
+            android:hint="请选择运输条款"
+            android:text="堆场/堆场"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/vTitleTransportationClause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_triangle" />
+
+    </RelativeLayout>
+
+
+</merge>
+</layout>

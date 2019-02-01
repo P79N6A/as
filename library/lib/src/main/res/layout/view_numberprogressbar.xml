@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在上传，请稍候"
+        android:textSize="12sp"
+        android:textColor="@color/primary" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:progress_reached_bar_height="1.5dp"
+        custom:progress_reached_color="#3498DB"
+        android:layout_marginTop="5dp"
+
+        custom:progress_text_color="#3498DB"
+        custom:progress_text_offset="1dp"
+        custom:progress_text_size="10sp"
+        custom:progress_text_visibility="visible"
+
+        custom:progress_unreached_bar_height="0.75dp"
+        custom:progress_unreached_color="#CCCCCC" />
+</LinearLayout>

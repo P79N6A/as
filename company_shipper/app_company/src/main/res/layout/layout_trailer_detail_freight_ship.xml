@@ -1,0 +1,295 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlFreightShip"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:drawableLeft="@drawable/ic_hangci_10"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_hangci_10"
+                android:text="航次"
+                android:textSize="@dimen/order_detail_title_size" />
+
+            <ImageView
+                android:id="@+id/imgFreightShip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_xiangshang" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/line_grey" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erlFreightShip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="500"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tlFreightShipShip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:stretchColumns="*">
+
+                <TableRow android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="船公司:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueShipCompanyShip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="干线船号:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueVessel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="航次:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueVoyage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运单号:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueMBLNO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="委托单号:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueConsolCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="提货单号:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueThID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预开船期:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueInVesselPlanTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预到船期:"
+                            android:textColor="#999999"
+                            android:textSize="@dimen/order_detail_size" />
+
+                        <TextView
+                            android:id="@+id/tvValueEtaPlan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/table_value_padding_left"
+                            android:paddingLeft="@dimen/table_value_padding_left"
+                            android:paddingRight="@dimen/table_value_padding_left"
+                            android:paddingStart="@dimen/table_value_padding_left"
+                            android:textSize="@dimen/order_detail_size" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

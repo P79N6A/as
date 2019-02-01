@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_background"
+        android:orientation="vertical">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivUserBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@drawable/ic_grbg00" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize" />
+
+                    <FrameLayout
+                        android:id="@+id/llUserBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llTopBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="145dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp">
+
+                                    <ImageView
+                                        android:id="@+id/ivAvatar"
+                                        android:layout_width="67dp"
+                                        android:layout_height="67dp" />
+                                    <!--android:src="@drawable/ic_grtouxiang"-->
+
+                                    <ImageView
+                                        android:id="@+id/tvIdAuditStatus"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right|bottom"
+                                        android:src="@drawable/ic_rz_sf" />
+                                </FrameLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:gravity="left"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvName"
+                                        style="@style/WhiteText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:shadowColor="@color/black"
+                                        android:shadowDx="0"
+                                        android:shadowDy="1"
+                                        android:shadowRadius="1"
+                                        android:text="test"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tvTel"
+                                            style="@style/WhiteText"
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="left"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="0"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="1"
+                                            android:text="17602001236"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="@dimen/sp13" />
+
+                                        <ImageView
+                                            android:id="@+id/tvSwitchBackground"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_bg_qh" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cvDsc"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@android:color/white"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvDsc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:drawableLeft="@drawable/ic_wz_grjj"
+                                    android:drawablePadding="10dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:maxLines="2"
+                                    android:text=""
+                                    android:textColor="@color/greyBBB"
+                                    android:textSize="@dimen/sp14" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/tvDrivingLicense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout style="@style/MyFragmentTabLLTitle">
+
+                                <TextView
+                                    style="@style/MyDrivingSkillTitle"
+                                    android:drawableLeft="@drawable/ic_js_yellow"
+                                    android:text="驾驶技能" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/MyDrivingSkillCircle"
+                                android:src="@drawable/ic_jsjn_yellow" />
+
+                            <TextView
+                                android:id="@+id/tvDrivingSkills"
+                                style="@style/MyDrivingSkillInfo"
+                                android:text="A1A2E" />
+                        </LinearLayout>
+
+                        <include layout="@layout/view_vertical_line" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llMotorTractor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout style="@style/MyFragmentTabLLTitle">
+
+                                <TextView
+                                    style="@style/MyDrivingSkillTitle"
+                                    android:drawableLeft="@drawable/ic_gc_blue"
+                                    android:text="索引车" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/MyDrivingSkillCircle"
+                                android:src="@drawable/ic_qyc_green" />
+
+                            <TextView
+                                android:id="@+id/tvIndexCarLicensePlate"
+                                style="@style/MyDrivingSkillInfo"
+                                android:text="粤A***6" />
+                        </LinearLayout>
+
+                        <include layout="@layout/view_vertical_line" />
+
+                        <LinearLayout
+                            android:id="@+id/llSemiTrailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout style="@style/MyFragmentTabLLTitle">
+
+                                <TextView
+                                    style="@style/MyDrivingSkillTitle"
+                                    android:drawableLeft="@drawable/ic_gc_blue"
+                                    android:text="半挂车" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/MyDrivingSkillCircle"
+                                android:src="@drawable/ic_bgc_blue" />
+
+                            <TextView
+                                android:id="@+id/tvSemiTrailer"
+                                style="@style/MyDrivingSkillInfo"
+                                android:background="@drawable/stroke_gray_corners"
+                                android:text="未认证"
+                                android:textColor="@color/orange500" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/imgReturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_gravity="left"
+                    android:padding="@dimen/side_interval"
+                    android:src="@drawable/ic_return" />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white_text"
+                    android:textSize="20sp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+</layout>

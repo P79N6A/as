@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row"
+        android:background="@color/banner">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/xiaohuaofenhao_banner"
+            android:drawableLeft="@drawable/ic_miaoshu"
+            android:text="详情描述" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="请输入备注"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minHeight="98dp"
+        android:minLines="1"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:paddingTop="10dp"
+        android:textColor="@color/black666"
+        android:textColorHint="@color/black999"
+        android:textSize="@dimen/sp15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_number" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/etRemark_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <include layout="@layout/view_line2" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llAlert"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:text="图片/视频(图片最多上传三张/视频最多上传30秒/语音最多上传1个)"
+            android:textColor="@color/black666"
+            android:drawablePadding="5dp"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <com.yaoguang.widget.WarpLinearLayout
+            android:id="@+id/llPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:grivate="left"
+            app:horizontal_Space="5dp"
+            app:vertical_Space="5dp">
+
+            <FrameLayout
+                android:id="@+id/flCamera1"
+                style="@style/view_media_uploadbox"
+                android:layout_marginLeft="@dimen/side_interval">
+
+                <ImageView
+                    android:id="@+id/ivPhotographOne"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_zhaopian_07"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/tvAlertUploadOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_xinghao"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flCamera2"
+                style="@style/view_media_uploadbox"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivPhotographTwo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_zhaopian_07"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/tvAlertUploadTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flCamera3"
+                style="@style/view_media_uploadbox"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivPhotographThree"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_zhaopian_07"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/tvAlertUploadThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flVideo1"
+                style="@style/view_media_uploadbox">
+
+                <ImageView
+                    android:id="@+id/ivVideo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_shiping_07"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/ivVideoPlayFlag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bofang_02"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivVideoFlag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"></ImageView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flAudio1"
+                style="@style/view_media_uploadbox">
+
+                <ImageView
+                    android:id="@+id/ibAudio"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_yuyin_07"
+                    android:scaleType="matrix" />
+
+                <ImageView
+                    android:id="@+id/ivAudioPlayPlag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_yy_03"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivAudioFlag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"></ImageView>
+            </FrameLayout>
+        </com.yaoguang.widget.WarpLinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/ivLocation_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/view_line_5dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rlLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/side_interval"
+        android:layout_marginRight="@dimen/side_interval"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_dingwei_20" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="地址"
+                android:textColor="@color/black666"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/window_background" />
+    </FrameLayout>
+
+</LinearLayout>

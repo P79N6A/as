@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ListCondition 的一些公共id -->
+    <item name="action_search" type="id" />
+    <item name="rlView" type="id" />
+    <item name="flEmptyError" type="id" />
+    <item name="rlEmpty" type="id" />
+    <item name="rlError" type="id" />
+    <item name="trlView" type="id" />
+    <item name="llTop" type="id" />
+    <item name="cvTop" type="id" />
+    <item name="btnComit" type="id" />
+    <item name="btnEmpty" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="toolbarCommon" type="id" />
+    <item name="layoutRecyclerview" type="id" />
+
+    <!-- 用于设置距离状态栏的高度 -->
+    <item name="toolbar2" type="id" />
+
+    <!-- main -->
+    <item name="vTop" type="id" />
+    <item name="tvMessage" type="id" />
+    <item name="tvOK" type="id" />
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/interval">
+
+                    <ImageView
+                        android:id="@+id/registerNode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_sjzl" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <TextView
+                    style="@style/Text.BigGrey"
+                    android:text="基本资料" />
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="司机姓名" />
+
+                    <EditText
+                        android:id="@+id/readName"
+                        style="@style/RegisterInput"
+                        android:hint="姓名"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="身份证" />
+
+                    <EditText
+                        android:id="@+id/idNumber"
+                        style="@style/RegisterInput"
+                        android:digits="0123456789Xx"
+                        android:hint="请输入身份证号码"
+                        android:inputType="number"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    style="@style/RegisterLL.ImageUpload">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/idNumberFront"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_sfz_z" />
+
+                        <ImageView
+                            android:id="@+id/idNumberFrontFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/idNumberBack"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_sfz_f" />
+
+                        <ImageView
+                            android:id="@+id/idNumberBackFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <TextView
+                    style="@style/Text.BigGrey"
+                    android:text="驾驶证资料" />
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="驾驶证有效期至" />
+
+                    <TextView
+                        android:id="@+id/driverNoDate"
+                        style="@style/RegisterInput"
+                        android:hint="选择驾驶证有效期"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    style="@style/RegisterLL.ImageUpload"
+                    android:layout_marginBottom="20dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/driverFront"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_jsz_z" />
+
+                        <ImageView
+                            android:id="@+id/driverFrontFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+                    </FrameLayout>
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/driverBack"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_jsz_f" />
+
+                        <ImageView
+                            android:id="@+id/driverBackFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <include layout="@layout/view_line2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    style="@style/Button.Register"
+                    android:text="@string/next" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common" />
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_text">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#efeeee"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/layoutEntrusted"
+                        layout="@layout/layout_business_order_trailer_entrusted" />
+
+                    <include
+                        android:id="@+id/layoutShipping"
+                        layout="@layout/layout_business_order_trailer_shipping" />
+
+                    <include
+                        android:id="@+id/layoutLoading"
+                        layout="@layout/layout_business_order_loading" />
+
+                    <include
+                        android:id="@+id/layoutContainer"
+                        layout="@layout/layout_business_order_trailer_container" />
+
+                    <include
+                        android:id="@+id/layoutCostinformation"
+                        layout="@layout/layout_business_order_costinformation" />
+
+                    <include
+                        android:id="@+id/layoutInformation"
+                        layout="@layout/layout_business_order_number_information" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="44dp"
+                        android:layout_marginStart="44dp"
+                        android:background="@color/line_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_shape_2_5_null_primary"
+                            android:gravity="center"
+                            android:text="删除预订单"
+                            android:textColor="@color/primary"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                        <Button
+                            android:id="@+id/btnComit"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_shape_2_5_primary"
+                            android:gravity="center"
+                            android:text="提交"
+                            android:textColor="@color/white"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

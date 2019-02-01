@@ -1,0 +1,227 @@
+[{
+			"codes": "1001",
+			"horizontalGap": "1.85%p",
+			"keyEdgeFlags": "left",
+			"keyLabel": "京",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1002",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "津",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1003",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "渝",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1004",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "沪",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1005",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "冀",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1006",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "晋",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1007",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "辽",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1008",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "吉",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1009",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "黑",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1010",
+			"horizontalGap": "1.85%p",
+			"keyEdgeFlags": "right",
+			"keyLabel": "苏",
+			"keyWidth": "8%p"
+		}, {
+			"codes": "1011",
+			"horizontalGap": "1.85%p",
+			"keyEdgeFlags": "left",
+			"keyLabel": "浙",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1012",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "皖",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1013",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "闽",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1014",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "赣",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1015",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "鲁",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1016",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "豫",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1017",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "鄂",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1018",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "湘",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1019",
+			"horizontalGap": "1.85%p",
+			"keyEdgeFlags": "right",
+			"keyLabel": "粤",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1020",
+			"horizontalGap": "1.85%p",
+			"keyEdgeFlags": "right",
+			"keyLabel": "琼",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1021",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "川",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1022",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "贵",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1023",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "云",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1024",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "陕",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1025",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "甘",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1026",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "青",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1027",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "蒙",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1028",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "桂",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1029",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "宁",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1030",
+			"horizontalGap": "1.85%p",
+			"keyLabel": "新",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1031",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "藏",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1032",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "使",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1033",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "领",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1035",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "警",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1036",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "学",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1037",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "港",
+			"keyWidth": "8%p"
+		},
+		{
+			"codes": "1038",
+			"horizontalGap": "1.65%p",
+			"keyLabel": "澳",
+			"keyWidth": "8%p"
+		}
+	]

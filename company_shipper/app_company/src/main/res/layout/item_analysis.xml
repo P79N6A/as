@@ -1,0 +1,711 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lltop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlPlaceLoading"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/tvContId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="16sp"
+                    tools:text="陶瓷" />
+
+
+                <TextView
+                    android:id="@+id/tvcont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="4dp"
+                    android:gravity="end"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="14sp"
+                    tools:text="2*20GP" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvShipLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="16sp"
+                    tools:text="南沙港→天津港→大连港" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_dotted_line"
+                android:layerType="software" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="费用项目"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTitleStartFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="16dp"
+                    android:text="始驳费"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvValueStartFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvTitleStartFee"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="¥1500.00" />
+
+                <View
+                    android:id="@+id/vStartFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvTitleStartFee"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tvTitleEndFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vStartFee"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="达驳费"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvDestinationTruckCompanyValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vStartFee"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="拖车公司" />
+
+                <TextView
+                    android:id="@+id/tvValueEndFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvTitleEndFee"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="¥1500.00" />
+
+                <View
+                    android:id="@+id/vEndFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvTitleEndFee"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tvTitleOtherFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vEndFee"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="海运费及其他"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvShipCompanyValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vEndFee"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="船公司" />
+
+                <TextView
+                    android:id="@+id/tvValueOtherFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvTitleOtherFee"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="¥1500.00" />
+
+                <View
+                    android:id="@+id/vOtherFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvTitleOtherFee"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tvLoadingTruckCompanyValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/vStartFee"
+                    android:layout_alignLeft="@+id/tvDestinationTruckCompanyValue2"
+                    android:layout_alignStart="@+id/tvDestinationTruckCompanyValue2"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    tools:text="拖车公司" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toLeftOf="@+id/tvTotalFee"
+                    android:layout_toStartOf="@+id/tvTotalFee"
+                    android:text="合计"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toLeftOf="@+id/ivDetail"
+                    android:layout_toStartOf="@+id/ivDetail"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="14sp"
+                    tools:text="¥6000.00" />
+
+                <ImageView
+                    android:id="@+id/ivDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/ic_xiangshang"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/erlDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lltop"
+            android:orientation="vertical"
+            app:ael_duration="400"
+            app:ael_expanded="true"
+            app:ael_interpolator="accelerate">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_dotted_line"
+                android:layerType="software" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDetailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="费用明细"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDockOfLoadingAndPortLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDetailTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="起运地→起运港" />
+
+                <TextView
+                    android:id="@+id/tvLoadingTruckCompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDockOfLoadingAndPortLoading"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="拖车公司:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvLoadingTruckCompanyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvLoadingTruckCompanyTitle"
+                    android:layout_alignBottom="@+id/tvLoadingTruckCompanyTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvLoadingTruckCompanyTitle"
+                    android:layout_toRightOf="@+id/tvLoadingTruckCompanyTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="拖车公司" />
+
+                <TextView
+                    android:id="@+id/tvStartFeeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLoadingTruckCompanyTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="始驳费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvStartFeeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvStartFeeTitle"
+                    android:layout_alignBottom="@+id/tvStartFeeTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvStartFeeTitle"
+                    android:layout_toRightOf="@+id/tvStartFeeTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="¥1500.00" />
+
+
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvStartFeeTitle"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tvPortLoadingAndPortDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v3"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="起运港→目的港" />
+
+                <TextView
+                    android:id="@+id/tvShipCompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPortLoadingAndPortDelivery"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="船公司:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvShipCompanyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvShipCompanyTitle"
+                    android:layout_alignBottom="@+id/tvShipCompanyTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvShipCompanyTitle"
+                    android:layout_toRightOf="@+id/tvShipCompanyTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="船公司" />
+
+                <TextView
+                    android:id="@+id/tvAgentBookingCompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvShipCompanyTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="代理订舱:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvAgentBookingCompanyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvAgentBookingCompanyTitle"
+                    android:layout_alignBottom="@+id/tvAgentBookingCompanyTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvAgentBookingCompanyTitle"
+                    android:layout_toRightOf="@+id/tvAgentBookingCompanyTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="订舱公司" />
+
+                <TextView
+                    android:id="@+id/tvOceanFreightPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAgentBookingCompanyTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="海运费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvOceanFreightPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvOceanFreightPriceTitle"
+                    android:layout_alignBottom="@+id/tvOceanFreightPriceTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvOceanFreightPriceTitle"
+                    android:layout_toRightOf="@+id/tvOceanFreightPriceTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="海运费" />
+
+                <TextView
+                    android:id="@+id/tvPackingPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOceanFreightPriceTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="装箱费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvPackingPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvPackingPriceTitle"
+                    android:layout_alignBottom="@+id/tvPackingPriceTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvPackingPriceTitle"
+                    android:layout_toRightOf="@+id/tvPackingPriceTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="装箱费" />
+
+                <TextView
+                    android:id="@+id/tvOrderPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPackingPriceTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="办单费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvOrderPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvOrderPriceTitle"
+                    android:layout_alignBottom="@+id/tvOrderPriceTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvOrderPriceTitle"
+                    android:layout_toRightOf="@+id/tvOrderPriceTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="办单费" />
+
+                <TextView
+                    android:id="@+id/tvFuelsurPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOrderPriceTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="燃油附加费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvFuelsurPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvFuelsurPriceTitle"
+                    android:layout_alignBottom="@+id/tvFuelsurPriceTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvFuelsurPriceTitle"
+                    android:layout_toRightOf="@+id/tvFuelsurPriceTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="燃油附加费" />
+
+                <TextView
+                    android:id="@+id/tvDockPriceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFuelsurPriceTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="码头包干费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvDockPriceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvDockPriceTitle"
+                    android:layout_alignBottom="@+id/tvDockPriceTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvDockPriceTitle"
+                    android:layout_toRightOf="@+id/tvDockPriceTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="码头包干费" />
+
+                <View
+                    android:id="@+id/vDockPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvDockPriceTitle"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_dotted_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/tvPortDeliveryAndFinalDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vDockPrice"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="目的港→目的地" />
+
+                <TextView
+                    android:id="@+id/tvDestinationTruckCompanyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPortDeliveryAndFinalDestination"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="拖车公司:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvDestinationTruckCompanyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvDestinationTruckCompanyTitle"
+                    android:layout_alignBottom="@+id/tvDestinationTruckCompanyTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvDestinationTruckCompanyTitle"
+                    android:layout_toRightOf="@+id/tvDestinationTruckCompanyTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="拖车公司" />
+
+                <TextView
+                    android:id="@+id/tvEndFeeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDestinationTruckCompanyTitle"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="5dp"
+                    android:text="达驳费:"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size" />
+
+                <TextView
+                    android:id="@+id/tvEndFeeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvEndFeeTitle"
+                    android:layout_alignBottom="@+id/tvEndFeeTitle"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/tvEndFeeTitle"
+                    android:layout_toRightOf="@+id/tvEndFeeTitle"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/order_detail_size"
+                    tools:text="达驳费" />
+
+            </RelativeLayout>
+
+
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

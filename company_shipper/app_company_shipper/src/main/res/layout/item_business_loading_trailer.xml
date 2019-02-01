@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="44dp"
+    android:layout_marginStart="44dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:textSize="14sp"
+        tools:text="bodyb" />
+
+    <TextView
+        android:id="@+id/tvShortName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:textColor="@color/order_detail_key_text"
+        android:textSize="12sp"
+        tools:text="title" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/tvRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:trimCollapsedText="显示更多"
+        app:trimExpandedText="收起"
+        app:trimLines="2"
+        tools:text="单位单位单位单单位单位单位单单单位单位单位单单单" />
+
+    <LinearLayout
+        android:id="@+id/llEditAndDelete"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|end"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:paddingRight="4dp"
+            android:id="@+id/imgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bj_02" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/order_detail_key_text" />
+
+        <ImageView
+            android:paddingRight="4dp"
+            android:id="@+id/imgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sc_12" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/order_detail_key_text" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/line_grey" />
+
+</LinearLayout>
+
+
+
+

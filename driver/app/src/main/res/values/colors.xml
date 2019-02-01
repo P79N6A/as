@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_unselect">#c9c9c9</color>
+
+    <color name="primary">#F08419</color>
+    <color name="primary_dark">#df7b18</color>
+    <color name="accent">@color/pinka200</color>
+    <color name="text_333">#333333</color>
+    <color name="banner">#f6f6f6</color>
+    <color name="black999">#999999</color>
+    <color name="hongdian">#f43434</color>
+    <color name="golden">#d2b167</color>
+
+    <!--自定义键盘的所有颜色值-->
+    <color name="default_keyboard_bg">#999999</color>
+    <color name="default_keyTextColor">@color/black</color>
+    <color name="default_key_pressed">@color/golden</color>
+    <color name="default_key_normal">@color/white</color>
+    <color name="default_keyShadowColor">@color/white</color>
+    <color name="default_keyPreviewTextColor">@color/golden</color>
+</resources>

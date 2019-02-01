@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="orderProcess"
+            type="com.yaoguang.greendao.entity.DriverOrderProgressWrapper"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBannerInfo"
+            style="@style/home_text"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/banner"
+            android:drawableLeft="@drawable/ic_jindu"
+            android:drawablePadding="@dimen/interval"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/side_interval"
+            android:hint="@string/current_mission_process"
+            android:text="@{orderProcess.title}" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.amap.api.maps.TextureMapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"></com.amap.api.maps.TextureMapView>
+
+                <LinearLayout
+                    android:id="@+id/llMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llOrderProcess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout style="@style/order_process">
+
+                        <TextView
+                            android:id="@+id/tvOrderId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@{orderProcess.nodeName}"
+                            android:hint="123123123123123"
+                            android:textColor="@color/text_333"
+                            android:textSize="@dimen/sp13" />
+
+                        <TextView
+                            android:id="@+id/tvOrderType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{orderProcess.orderType}"
+                            android:hint="吉出重回"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/sp13" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line2" />
+
+                    <LinearLayout
+                        style="@style/order_process"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/tvNodeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:text="正在前往提柜点"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp15" />
+
+                        <ImageView
+                            android:id="@+id/ivOverTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hongdian" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/order_process"
+                        android:paddingBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDeliveryRoute"
+                            style="@style/ItemOrderCommonText"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

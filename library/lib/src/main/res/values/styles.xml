@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="dividing_line">
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- 继承dialog后的一种布局 -->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 第一个是dialog的背景色，当然你可以设置图片，不拦大家 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 第二个就是弹出dialog后，下面的activity层的颜色啦-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--这里设置为没有标题栏，如果这里不设置的话，你会发现无论布局怎么改都会出现多一栏白色 -->
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+
+
+
+</resources>

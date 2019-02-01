@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPhotoShipper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <FrameLayout
+            android:id="@+id/flIdPhoto1"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_sck_xx">
+
+            <LinearLayout
+                android:id="@+id/llIdPhoto1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_xj_big"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="身份证正面"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgIdPhoto1"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_bg" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flIdPhoto2"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_sck_xx">
+
+            <LinearLayout
+                android:id="@+id/llIdPhoto2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_xj_big"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="身份证反面"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgIdPhoto2"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_bg" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flIdPhoto3"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_sck_xx">
+
+            <LinearLayout
+                android:id="@+id/llIdPhoto3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_xj_big"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="14dp"
+                    android:text="手持身份证"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp11"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgIdPhoto3"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_bg" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

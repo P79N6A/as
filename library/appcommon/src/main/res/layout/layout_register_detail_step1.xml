@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llStep1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            style="@style/RowRL"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvStep1"
+                style="@style/RowTVTitle"
+                android:text="请选择商户的业务类型" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:id="@+id/llCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:id="@+id/tvCompanyForwarder"
+                android:layout_width="84dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_hdyw_normal"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="0"
+                android:text="货代业务"
+                android:textColor="@color/primary" />
+
+            <TextView
+                android:id="@+id/tvCompanyTrailer"
+                android:layout_width="84dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_hdyw_normal"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="0"
+                android:text="拖车业务"
+                android:textColor="@color/primary" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llShipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp">
+
+            <CheckBox
+                android:id="@+id/cbShipperCompany"
+                android:layout_width="84dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/background_selector_check_type"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="企业"
+                android:textColor="@color/textcolor_selector_check_type" />
+
+            <CheckBox
+                android:id="@+id/cbShipperUser"
+                android:layout_width="84dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/background_selector_check_type"
+                android:button="@null"
+                android:gravity="center"
+                android:text="个人"
+                android:textColor="@color/textcolor_selector_check_type" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/cpbNext"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/cpb_white"
+        app:cpb_cornerRadius="2.5dp"
+        app:cpb_iconComplete="@drawable/ic_action_accept"
+        app:cpb_iconError="@drawable/ic_action_cancel"
+        app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+        app:cpb_textIdle="下一步" />
+
+
+</LinearLayout>

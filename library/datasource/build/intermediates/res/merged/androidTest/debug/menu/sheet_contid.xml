@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_20GP"
+        android:title="20GP" />
+    <item
+        android:id="@+id/action_40GP"
+        android:title="40GP" />
+
+    <item
+        android:id="@+id/action_20HQ"
+        android:title="20HQ" />
+    <item
+        android:id="@+id/action_40HQ"
+        android:title="40HQ" />
+    <item
+        android:id="@+id/action_40RF"
+        android:title="40RF" />
+    <item
+        android:id="@+id/action_45GP"
+        android:title="45GP" />
+    <item
+        android:id="@+id/action_CMB"
+        android:title="CMB" />
+    <item
+        android:id="@+id/action_KGS"
+        android:title="KGS" />
+    <item
+        android:id="@+id/action_20TK"
+        android:title="20TK" />
+    <item
+        android:id="@+id/action_L"
+        android:title="L" />
+    <item
+        android:id="@+id/action_piao"
+        android:title="票" />
+    <item
+        android:id="@+id/action_40HC"
+        android:title="40HC" />
+
+    <item
+        android:id="@+id/action_dun"
+        android:title="吨" />
+
+</menu>

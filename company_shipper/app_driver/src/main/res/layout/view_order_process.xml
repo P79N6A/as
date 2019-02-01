@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llProcess"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll">
+
+    <!-- 当前任务进度 -->
+    <TextView
+        android:id="@+id/tvBannerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner"
+        android:drawableLeft="@drawable/ic_jindu"
+        android:drawablePadding="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:drawableStart="@drawable/ic_jindu"
+        android:gravity="center|start"
+        android:hint="@string/current_mission_process"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--地图 -->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:id="@+id/llMap"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llOrderProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout style="@style/order_process">
+
+                    <TextView
+                        android:id="@+id/tvOrderId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_333"
+                        android:textSize="@dimen/sp13"
+                        tools:hint="123123123123123" />
+
+                    <TextView
+                        android:id="@+id/tvOrderType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/sp13"
+                        tools:hint="吉出重回" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    style="@style/order_process"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tvNodeName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="正在前往提柜点"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp15"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/ivOverTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:src="@drawable/ic_yyplay_yellow"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/order_process"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvDeliveryRoute"
+                        style="@style/ItemOrderCommonText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey2" />
+
+</LinearLayout>

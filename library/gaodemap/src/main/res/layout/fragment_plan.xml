@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/startNav"
+            style="@style/FragmentPlanStartNav"
+            android:text="开始导航" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/llBottomNav"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <TextView
+            android:id="@+id/startMoNiNav"
+            style="@style/FragmentPlanStartNav"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="模拟导航"
+            android:background="@drawable/ic_searchk"
+            android:textColor="@android:color/holo_orange_dark" />
+
+        <Button
+            android:id="@+id/startNav2"
+            android:layout_weight="1"
+            android:text="开始导航"
+            style="@style/FragmentPlanStartNav" />
+    </LinearLayout>
+</LinearLayout>

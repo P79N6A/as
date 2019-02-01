@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#fdead6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tvMBlno"
+                android:layout_toStartOf="@+id/tvMBlno"
+                android:src="@drawable/ic_jb_l" />
+
+            <TextView
+                android:id="@+id/tvMBlno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#eea056"
+                android:textSize="16sp"
+                tools:text="GZYG201705221020512" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/tvMBlno"
+                android:layout_toRightOf="@+id/tvMBlno"
+                android:src="@drawable/ic_jb_r" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_huogui_11"
+                android:drawablePadding="7.5dp"
+                android:drawableStart="@drawable/ic_huogui_11"
+                android:text="柜号:"
+                android:textColor="@color/black999"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvContNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                tools:text="广汽集团" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_time_11"
+                android:drawablePadding="7.5dp"
+                android:drawableStart="@drawable/ic_time_11"
+                android:text="业务时间:"
+                android:textColor="@color/black999"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                tools:text="广汽集团" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp">
+
+            <View
+                android:id="@+id/vIsTruckPlanTime"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/imgIsTruckPlanTime"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="-6dp"
+                android:background="@color/line_grey" />
+
+            <View
+                android:id="@+id/vIsLoadOverDate"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/imgIsLoadOverDate"
+                android:layout_alignStart="@+id/imgIsLoadOverDate"
+                android:layout_below="@+id/imgIsLoadOverDate"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="-6dp"
+                android:background="@color/line_grey" />
+
+            <View
+                android:id="@+id/vIsFirstEtd"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/imgIsLoadOverDate"
+                android:layout_alignStart="@+id/imgIsLoadOverDate"
+                android:layout_below="@+id/imgIsFirstEtd"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="-6dp"
+                android:background="@color/line_grey" />
+
+            <View
+                android:id="@+id/vIsFirstEta"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/imgIsFirstEta"
+                android:layout_alignStart="@+id/imgIsFirstEta"
+                android:layout_below="@+id/imgIsFirstEta"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="-6dp"
+                android:background="@color/line_grey" />
+
+            <View
+                android:id="@+id/vIsDestTruckPlanTime"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/imgIsFirstEta"
+                android:layout_alignStart="@+id/imgIsFirstEta"
+                android:layout_below="@+id/imgIsDestTruckPlanTime"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="-6dp"
+                android:background="@color/line_grey" />
+
+
+            <ImageView
+                android:id="@+id/imgIsTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_huidian" />
+
+
+            <ImageView
+                android:id="@+id/imgIsLoadOverDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/vIsTruckPlanTime"
+                android:src="@drawable/ic_huidian" />
+
+
+            <ImageView
+                android:id="@+id/imgIsFirstEtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/vIsLoadOverDate"
+                android:src="@drawable/ic_huidian" />
+
+
+            <ImageView
+                android:id="@+id/imgIsFirstEta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/vIsFirstEtd"
+                android:src="@drawable/ic_huidian" />
+
+
+            <ImageView
+                android:id="@+id/imgIsDestTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/vIsFirstEta"
+                android:src="@drawable/ic_huidian" />
+
+
+            <ImageView
+                android:id="@+id/imgIsDeliveryOver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imgIsTruckPlanTime"
+                android:layout_alignStart="@+id/imgIsTruckPlanTime"
+                android:layout_below="@+id/vIsDestTruckPlanTime"
+                android:src="@drawable/ic_huidian" />
+
+            <TextView
+                android:id="@+id/tvIsTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsTruckPlanTime"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsTruckPlanTime"
+                android:layout_toRightOf="@+id/imgIsTruckPlanTime"
+                android:text="装货派车"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvIsLoadOverDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsLoadOverDate"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsLoadOverDate"
+                android:layout_toRightOf="@+id/imgIsLoadOverDate"
+                android:text="装货完成"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvIsFirstEtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsFirstEtd"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsFirstEtd"
+                android:layout_toRightOf="@+id/imgIsFirstEtd"
+                android:text="上船"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvIsFirstEta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsFirstEta"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsFirstEta"
+                android:layout_toRightOf="@+id/imgIsFirstEta"
+                android:text="船到"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvIsDestTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsDestTruckPlanTime"
+                android:layout_below="@+id/tvIsFirstEta"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsDestTruckPlanTime"
+                android:layout_toRightOf="@+id/imgIsDestTruckPlanTime"
+                android:text="送货派车"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvIsDeliveryOver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgIsDeliveryOver"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toEndOf="@+id/imgIsDeliveryOver"
+                android:layout_toRightOf="@+id/imgIsDeliveryOver"
+                android:text="送货完成"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsTruckPlanTime"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+            <TextView
+                android:id="@+id/tvLoadOverDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsLoadOverDate"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+            <TextView
+                android:id="@+id/tvFirstEtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsFirstEtd"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+            <TextView
+                android:id="@+id/tvFirstEta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsFirstEta"
+
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+            <TextView
+                android:id="@+id/tvDestTruckPlanTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsDestTruckPlanTime"
+
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+            <TextView
+                android:id="@+id/tvDeliveryOverDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvIsDeliveryOver"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/black_hint_text"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-04-03 08:25" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

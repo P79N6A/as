@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common" />
+
+        <LinearLayout
+            android:id="@+id/llMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:paddingTop="14dp"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yaoguang.widget.edittext.ClearEditText
+                    android:id="@+id/etMobile"
+                    style="@style/hintcolor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="请输入手机号码"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/actvCode"
+                    style="@style/hintcolor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_phone_yz"
+                    android:drawablePadding="10dp"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <!--<android.support.v7.widget.AppCompatButton-->
+                <!--android:id="@+id/btnGetCode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/get_code"-->
+                <!--android:textColor="@color/white_text"-->
+                <!--app:theme="@style/AppTheme.Button" />-->
+                <include layout="@layout/view_btngetcode" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.yaoguang.widget.edittext.PasswordEditText
+                    android:id="@+id/etPassWord"
+                    style="@style/hintcolor.etpass"
+                    android:hint="请设置6～12位密码" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <include layout="@layout/view_password_strength" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp">
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/cpbSubmit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:enabled="false"
+                android:textColor="@color/cpb_white"
+                app:cpb_cornerRadius="2.5dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+                app:cpb_textIdle="@string/next" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tvProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="协议" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

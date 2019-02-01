@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:showIn="@layout/fragment_order_detail_number">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvWorkNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:text="D11564872156641"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone" />
+
+        <TableRow
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                style="@style/order_detail_left_width"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="类型:" />
+
+                <TextView
+                    android:id="@+id/tvGoodsType"
+                    style="@style/order_detail_value"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="船公司: " />
+
+                <TextView
+                    android:id="@+id/tvShipCompany"
+                    style="@style/order_detail_value"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text=" " />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#d9d9d9" />
+
+        <TableRow>
+
+            <LinearLayout style="@style/order_detail_left_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="柜号一: " />
+
+                <TextView
+                    android:id="@+id/tvContNoFirst"
+                    style="@style/order_detail_value"
+                    android:layout_weight="1"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_detail_right_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="封号一: " />
+
+                <TextView
+                    android:id="@+id/tvSealNoFirst"
+                    style="@style/order_detail_value"
+                    android:text="" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout style="@style/order_detail_left_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="提柜点: " />
+
+                <TextView
+                    android:id="@+id/tvCarryPort1"
+                    style="@style/order_detail_value"
+                    android:layout_weight="1"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_detail_right_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="还柜点: " />
+
+                <TextView
+                    android:id="@+id/tvGetPort1"
+                    style="@style/order_detail_value"
+                    android:text="" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/trContNoSecond">
+
+            <LinearLayout style="@style/order_detail_left_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="柜号二: " />
+
+                <TextView
+                    android:id="@+id/tvContNoSecond"
+                    style="@style/order_detail_value"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_detail_right_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="封号二: " />
+
+                <TextView
+                    android:id="@+id/tvSealNoSecond"
+                    style="@style/order_detail_value"
+                    android:text="" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trContNoGetPostSecond"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout style="@style/order_detail_left_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="提柜点: " />
+
+                <TextView
+                    android:id="@+id/tvCarryPort2"
+                    style="@style/order_detail_value"
+                    android:layout_weight="1"
+                    android:text=" " />
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_detail_right_width">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="还柜点: " />
+
+                <TextView
+                    android:id="@+id/tvGetPort2"
+                    style="@style/order_detail_value"
+                    android:text="" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#d9d9d9" />
+
+        <TableRow
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLoadDateKey"
+                    style="@style/order_detail_key"
+                    android:text="装货: " />
+
+                <TextView
+                    android:id="@+id/tvLoadDate"
+                    style="@style/order_detail_value"
+                    android:text=" " />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#d9d9d9" />
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/llRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

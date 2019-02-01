@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/layoutBackground"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlTimeManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white_text">
+
+                    <TextView
+                        android:id="@+id/tvTimeManagementTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="17.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="17.5dp"
+                        android:text="登录时间方案管理"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvTimeManagementValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_toEndOf="@+id/tvTimeManagementTitle"
+                        android:layout_toRightOf="@+id/tvTimeManagementTitle"
+                        android:gravity="end"
+                        android:textColorHint="@color/black_hint_text"
+                        android:textSize="14sp"
+                        tools:value="值" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/right_triangle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlWiFiNetworkGroupManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white_text">
+
+                    <TextView
+                        android:id="@+id/tvWiFiNetworkGroupManagementTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="17.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="17.5dp"
+                        android:text="WiFi网络群组管理"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvWiFiNetworkGroupManagementValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_toEndOf="@+id/tvWiFiNetworkGroupManagementTitle"
+                        android:layout_toRightOf="@+id/tvWiFiNetworkGroupManagementTitle"
+                        android:gravity="end"
+                        android:textColorHint="@color/black_hint_text"
+                        android:textSize="14sp"
+                        tools:value="值" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/right_triangle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlGeoLocationManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white_text">
+
+                    <TextView
+                        android:id="@+id/tvGeoLocationManagementTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="17.5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="17.5dp"
+                        android:text="地理位置管理"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvGeoLocationManagementValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_toEndOf="@+id/tvGeoLocationManagementTitle"
+                        android:layout_toRightOf="@+id/tvGeoLocationManagementTitle"
+                        android:gravity="end"
+                        android:textColorHint="@color/black_hint_text"
+                        android:textSize="14sp"
+                        tools:value="值" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/right_triangle" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</layout>

@@ -1,0 +1,335 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlFreightTruck"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:drawableLeft="@drawable/ic_paiche_09"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_paiche_09"
+                android:text="派车信息"
+                android:textSize="@dimen/order_detail_title_size" />
+
+            <ImageView
+                android:id="@+id/imgDetailFreightTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_xiangshang" />
+
+        </RelativeLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erlFreightTruck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            app:ael_duration="350"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <View
+                android:id="@+id/vTitleGoodsNameE"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/line_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_zhaung_01" />
+
+            <TextView
+                android:id="@+id/tvTitleGoodsNameE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="优先级:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueGoodsNameE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleGoodsNameE"
+                android:layout_alignTop="@+id/tvTitleGoodsNameE"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleGoodsNameE"
+                android:layout_toRightOf="@+id/tvTitleGoodsNameE"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="普通安排" />
+
+            <TextView
+                android:id="@+id/tvTitleLoadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleGoodsNameE"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="装货时间:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueLoadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleLoadDate"
+                android:layout_alignTop="@+id/tvTitleLoadDate"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleLoadDate"
+                android:layout_toRightOf="@+id/tvTitleLoadDate"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-05-06 19:30" />
+
+            <TextView
+                android:id="@+id/tvTitlePreTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleLoadDate"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="拖车公司:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValuePreTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitlePreTruck"
+                android:layout_alignTop="@+id/tvTitlePreTruck"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitlePreTruck"
+                android:layout_toRightOf="@+id/tvTitlePreTruck"
+                android:text="公司"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvTitlePreShipCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitlePreTruck"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="订舱委托人:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValuePreShipCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitlePreShipCompany"
+                android:layout_alignTop="@+id/tvTitlePreShipCompany"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitlePreShipCompany"
+                android:layout_toRightOf="@+id/tvTitlePreShipCompany"
+                android:text="刘建明"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvCreatedFreightTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvValuePreShipCompany"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="派单时间"
+                android:textSize="@dimen/order_detail_size"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/vTitlePreShipCompanyFreightTruck"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tvTitlePreShipCompany"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/line_grey" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/vTitlePreShipCompanyFreightTruck"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_song_01" />
+
+            <TextView
+                android:id="@+id/tvTitleGoodsPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vTitlePreShipCompanyFreightTruck"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="优先级:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueGoodsPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleGoodsPriority"
+                android:layout_alignTop="@+id/tvTitleGoodsPriority"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleGoodsPriority"
+                android:layout_toRightOf="@+id/tvTitleGoodsPriority"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="普通安排" />
+
+            <TextView
+                android:id="@+id/tvTitleReleasePlanDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleGoodsPriority"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="计划送货时间:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueReleasePlanDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleReleasePlanDate"
+                android:layout_alignTop="@+id/tvTitleReleasePlanDate"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleReleasePlanDate"
+                android:layout_toRightOf="@+id/tvTitleReleasePlanDate"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="2017-05-06 19:30" />
+
+            <TextView
+                android:id="@+id/tvTitleDestTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleReleasePlanDate"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="拖车公司:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueDestTruck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleDestTruck"
+                android:layout_alignTop="@+id/tvTitleDestTruck"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleDestTruck"
+                android:layout_toRightOf="@+id/tvTitleDestTruck"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="公司" />
+
+            <TextView
+                android:id="@+id/tvTitleDesShipCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleDestTruck"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="订舱收货人:"
+                android:textColor="#999999"
+                android:textSize="@dimen/order_detail_size" />
+
+            <TextView
+                android:id="@+id/tvValueDesShipCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvTitleDesShipCompany"
+                android:layout_alignTop="@+id/tvTitleDesShipCompany"
+                android:layout_marginLeft="@dimen/table_value_padding_left"
+                android:layout_marginStart="@dimen/table_value_padding_left"
+                android:layout_toEndOf="@+id/tvTitleDesShipCompany"
+                android:layout_toRightOf="@+id/tvTitleDesShipCompany"
+                android:textSize="@dimen/order_detail_size"
+                tools:text="收获人" />
+
+            <TextView
+                android:id="@+id/tvCreated2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvValueDesShipCompany"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="派单时间2"
+                android:textSize="@dimen/order_detail_size"
+                android:visibility="gone" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/line_grey" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

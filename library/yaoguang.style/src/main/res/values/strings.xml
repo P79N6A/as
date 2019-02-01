@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="sign_up">立即注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="click_refresh">点击重新刷新</string>
+
+
+    <string name="loading_goods">装货</string>
+    <string name="loading_goods2">装箱</string>
+    <string name="unloading_goods">卸货</string>
+    <string name="unloading_goods2">拆箱</string>
+    <string name="select_loading_or_unloading">请选择装货或卸货</string>
+    <string name="loading_or_unloading">装/卸</string>
+
+</resources>

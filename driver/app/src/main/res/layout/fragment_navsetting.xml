@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--货车导航-->
+    <LinearLayout
+        android:id="@+id/llHuoChe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="参数设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/side_interval"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbXianXing"
+                    style="@style/navsetting_text"
+                    android:text="车牌号限行" />
+
+                <EditText
+                    android:id="@+id/etChePai"
+                    style="@style/navsetting_text"
+                    android:hint="请输入车牌号" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <CheckBox
+                    android:id="@+id/cbHuoChe"
+                    style="@style/navsetting_text"
+                    android:text="启用货车导航" />
+
+                <EditText
+                    android:id="@+id/etHuoCheHeight"
+                    style="@style/navsetting_text"
+                    android:hint="请输入货车高度(米)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbZhaiZhong"
+                    style="@style/navsetting_text"
+                    android:text="载重规划线路" />
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    style="@style/navsetting_text"
+                    android:hint="请输入货车最大载重(吨)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="路线偏好"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView style="@style/FragmentNavSettingCardView">
+
+                <TextView
+                    android:id="@+id/congestion"
+                    style="@style/FragmentNavSettingSelectBox"
+                    android:text="躲避拥堵" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView style="@style/FragmentNavSettingCardView">
+
+                <TextView
+                    android:id="@+id/cost"
+                    style="@style/FragmentNavSettingSelectBox"
+                    android:text="避免收费" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView style="@style/FragmentNavSettingCardView">
+
+                <TextView
+                    android:id="@+id/avoidHighSpeed"
+                    style="@style/FragmentNavSettingSelectBox"
+                    android:text="不走高速" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView style="@style/FragmentNavSettingCardView">
+
+                <TextView
+                    android:id="@+id/highSpeed"
+                    style="@style/FragmentNavSettingSelectBox"
+                    android:text="高速优先" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSubmit"
+        style="@style/Button"
+        android:layout_margin="20dp"
+        android:text="完成" />
+
+</LinearLayout>

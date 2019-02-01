@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_description_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/tvTitleSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="总收入(元)"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tvSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitleSum"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#f08419"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSum"
+        tools:text="26,600.00" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="18dp"
+        android:background="#cccccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSum" />
+
+    <TextView
+        android:id="@+id/tvSumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#333333"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine"
+        app:layout_constraintEnd_toStartOf="@+id/vLine"
+        app:layout_constraintTop_toTopOf="@+id/vLine"
+        tools:text="29单" />
+
+    <TextView
+        android:id="@+id/tvTitleSumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="共完成"
+        android:textColor="#999999"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSumCount"
+        app:layout_constraintEnd_toStartOf="@+id/tvSumCount"
+        app:layout_constraintTop_toTopOf="@+id/tvSumCount"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imgExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="6dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_daochu_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/vLine"
+        app:layout_constraintStart_toEndOf="@+id/vLine"
+        app:layout_constraintTop_toTopOf="@+id/vLine" />
+
+    <TextView
+        android:id="@+id/tvTitleExport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导出对账单"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgExport"
+        app:layout_constraintStart_toEndOf="@+id/imgExport"
+        app:layout_constraintTop_toTopOf="@+id/imgExport"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/unlimited"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleSumCount"
+        tools:ignore="HardcodedText"
+        tools:text="2017/08/12~2017/09/25" />
+
+    <ImageView
+        android:id="@+id/imgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDate"
+        app:srcCompat="@drawable/ic_date_grey"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/unlimited"
+        app:layout_constraintEnd_toStartOf="@+id/imgCompanyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        tools:ignore="HardcodedText"
+        tools:text="公司名称很长很公司名称很长很公司名称公司名称很长很公司名称公司名称" />
+
+    <ImageView
+        android:id="@+id/imgCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCompanyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCompanyName"
+        app:srcCompat="@drawable/ic_right_triangle" />
+
+    <View
+        android:id="@+id/vLineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyName" />
+
+</android.support.constraint.ConstraintLayout>

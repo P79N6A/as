@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <View
+        android:id="@+id/vLineTop"
+        android:layout_width="0.5dp"
+        android:layout_height="34dp"
+        android:background="@color/line_grey"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imgSpotGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_spot_grey"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/vLineTop" />
+
+    <View
+        android:id="@+id/vLineBottom"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:background="@color/line_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvData"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/imgSpotGrey" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSpotGrey"
+        app:layout_constraintStart_toEndOf="@+id/vLineBottom"
+        app:layout_constraintTop_toTopOf="@+id/imgSpotGrey"
+        tools:text="已出车" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+        app:layout_constraintRight_toRightOf="@+id/imgAction"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="广东省广东省广东省广东省广东省广东省广东省广东省广东省广东省广东省广东省" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textColor="#999999"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        tools:text="2018-04-19 11:14:23" />
+
+    <ImageView
+        android:id="@+id/imgAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_edit_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/ic_wlr_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/imgAction"
+        app:layout_constraintTop_toTopOf="@+id/imgAction"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+

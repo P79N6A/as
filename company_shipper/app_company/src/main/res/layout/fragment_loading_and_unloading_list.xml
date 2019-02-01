@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 拖车订单跟踪有个.9图片 -->
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efeeee"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <!-- region 筛选布局 -->
+
+            <LinearLayout
+                android:id="@+id/llConditionTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbarCommon"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etQuery"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/background_shape_4"
+                        android:drawableLeft="@drawable/ic_search_grey"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_search_grey"
+                        android:hint="搜索"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="15dp"
+                        android:paddingStart="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black333"
+                        android:textSize="13sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- endregion -->
+
+            <View
+                android:id="@+id/vTopLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/llConditionTop"
+                android:background="@color/line_grey2" />
+
+            <FrameLayout
+                android:id="@+id/flRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/vTopLine1">
+
+                <include
+                    android:id="@+id/layoutRecyclerview"
+                    layout="@layout/layout_recyclerview" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userOwner"
+            type="com.yaoguang.greendao.entity.UserOwner" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tvRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="地区" />
+
+                    <TextView
+                        android:id="@+id/tvRegionValue"
+                        style="@style/RowTVValue"
+                        android:layout_toEndOf="@+id/tvRegion"
+                        android:layout_toRightOf="@+id/tvRegion"
+                        android:hint="省市区"
+                        android:maxLines="2"
+                        android:text="@{userOwner.province + userOwner.city + userOwner.district}"
+                        android:textColorHint="#bbbbbb"
+                        tools:text="135364281353642870013536428700135364287001353642870013536428700135364287001353642870013536428700700" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:text="详细地址" />
+
+                    <EditText
+                        android:id="@+id/tvAddressValue"
+                        style="@style/RowETValue"
+                        android:layout_toEndOf="@+id/tvAddress"
+                        android:layout_toRightOf="@+id/tvAddress"
+                        android:hint="道路、门牌号"
+                        android:maxLines="2"
+                        android:text="@{userOwner.companyAddress}"
+                        android:textColorHint="#bbbbbb"
+                        tools:text="135364281353642870013536428700135364287001353642870013536428700135364287001353642870013536428700700" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_line" />
+
+            </LinearLayout>
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/cpbSubmit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:enabled="false"
+                android:textColor="@color/cpb_white"
+                app:cpb_cornerRadius="2.5dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+                app:cpb_textIdle="确定" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

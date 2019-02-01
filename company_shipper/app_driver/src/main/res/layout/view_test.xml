@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_description_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.amap.api.maps.TextureMapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+</LinearLayout>

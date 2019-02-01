@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_searchbox" />
+
+        <!-- 导航规划地图 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include layout="@layout/view_map" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivRefresh"
+                    style="@style/FragmentMapKongJian"
+                    android:src="@drawable/ic_sx" />
+
+                <ImageView
+                    android:id="@+id/ivSetNav"
+                    style="@style/FragmentMapKongJian"
+                    android:src="@drawable/ic_ph" />
+
+                <ImageView
+                    android:id="@+id/ivLocation"
+                    style="@style/FragmentMapKongJian"
+                    android:src="@drawable/ic_dw" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- 规划bottom -->
+    <include layout="@layout/view_fragment_mapsearch_bottom" />
+
+    <!-- 无规划地图 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp">
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/mapNoPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.TextureMapView>
+    </LinearLayout>
+
+    <include
+        layout="@layout/fragment_flsearch"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

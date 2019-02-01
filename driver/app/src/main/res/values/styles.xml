@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme_Splash" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_sj_jzy</item>
+    </style>
+
+    <style name="MyDriverStyle" parent="Base.Theme.DesignDemo">
+        <!--<item name="editTextBackground">@drawable/my_edit_text</item>-->
+        <!--<item name="colorPrimaryDark">@color/orange500</item>-->
+    </style>
+
+    <style name="hintcolor">
+        <item name="android:textColorHint">@color/grey200</item>
+    </style>
+
+    <style name="CustomCheckRadio" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/custom_check_radio</item>
+    </style>
+
+    <style name="hintcolor.etpass">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawableLeft">@drawable/ic_password_001</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="view_eye">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/ic_show</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/tvDraPadding</item>
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="WhiteText" parent="Text">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="order_node_map_tab" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">500dp</item>
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabSelectedTextColor">@color/white_text</item>
+        <item name="tabBackground">@drawable/navi_tab_background</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+    </style>
+
+    <style name="MyCustomTabLayout.Map">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="tabIndicatorColor">@null</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+    </style>
+
+    <style name="FragmentMapKongJian">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <style name="FragmentNavSettingCardView">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">74dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="FragmentNavSettingSelectBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/window_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="navHeaderMainRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:background">@drawable/nav_header_radiobg</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="view_driver_status_plan_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="view_driver_status_plan_left_tv">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="view_driver_status_plan_right_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableRight">@drawable/ic_xsj_05</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="order_detail_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/black333</item>
+    </style>
+
+    <style name="order_detail_key">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">@color/order_detail_color</item>
+    </style>
+
+    <style name="navsetting_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="order_process">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="home_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="ItemOrderCommonText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/order_bottom_text</item>
+        <item name="android:drawablePadding">@dimen/interval</item>
+    </style>
+
+    <style name="order_detail_left_width">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="order_detail_right_width">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MyDrivingSkillTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:textSize">@dimen/sp15</item>
+    </style>
+
+    <style name="MyDrivingSkillCircle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MyDrivingSkillInfo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/orange_corners</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="AuthenticationKey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="AuthenticationValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AuthenticationValueUnit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyFragmentTabLLTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AuthenticationCredentialImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">159dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+</resources>

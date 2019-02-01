@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/view_xianhuaofenhao" />
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner"
+        android:orientation="horizontal"
+        android:background="@color/banner">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="反馈一"
+            android:drawableLeft="@drawable/ic_miaoshu"
+            style="@style/xiaohuaofenhao_banner" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNodeName"
+        android:layout_alignStart="@+id/tvNodeName"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:layout_below="@+id/tvNodeName"
+        android:layout_marginTop="15dp"
+        android:gravity="left|top"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:text="具体地址具体"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp14" />
+
+    <com.yaoguang.lib.appcommon.widget.CustomGridView
+        android:id="@+id/gvGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:layout_marginTop="30dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp">
+
+    </com.yaoguang.lib.appcommon.widget.CustomGridView>
+
+    <ImageView
+        android:id="@+id/ivAudio"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_yybf_01" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_dingwei"
+        android:paddingLeft="@dimen/side_interval"
+        android:paddingRight="@dimen/side_interval"
+        android:drawablePadding="@dimen/interval"
+        android:text="广州省广州市黄浦区笔村大路"
+        android:textColor="@color/grey666666" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:drawablePadding="@dimen/interval"
+        android:layout_marginTop="5dp"
+        android:text="2017-04-12 11:08"
+        android:textColor="@color/grey900" />
+</LinearLayout>

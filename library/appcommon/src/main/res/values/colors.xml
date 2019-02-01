@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black666">#666666</color>
+    <color name="grayb399">#b3999999</color>
+
+    <color name="morning_color">#faca1a</color>
+    <color name="night_color">#fe9c31</color>
+
+</resources>

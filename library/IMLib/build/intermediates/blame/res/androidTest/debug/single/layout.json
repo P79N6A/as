@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "H:\\mobile\\code\\trunk\\as\\library\\IMLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "E:\\JAVA_TEAM\\mobile\\tools\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\26b8f326cd89e26bf61376a5bb128d3d\\res\\layout\\notification_template_icon_group.xml"
+    }
+]

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_behavior="@string/appbar_spring_behavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:title=" ">
+
+                    <ImageView
+                        android:id="@+id/imgBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_mrbanner"
+                        app:layout_collapseMode="parallax" />
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:tag="toolbar"
+                        app:contentInsetLeft="0dp"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:background="?attr/colorPrimary"
+                                android:id="@+id/toolbarBackground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0"
+                                android:tag="toolbarBackground">
+
+                                <com.yaoguang.lib.common.view.imageview.CircleImageView
+                                    android:id="@+id/title_uc_avater"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:layout_toLeftOf="@+id/toolbar_title"
+                                    android:layout_toStartOf="@+id/toolbar_title"
+                                    android:src="@drawable/ic_mrqytx" />
+
+                                <TextView
+                                    android:id="@+id/toolbar_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:maxEms="6"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white_text"
+                                    android:textSize="20sp" />
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/imgReturn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="?attr/actionBarSize"
+                                android:padding="@dimen/side_interval"
+                                android:src="@drawable/ic_return" />
+
+                        </FrameLayout>
+
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <com.yaoguang.lib.common.view.imageview.CircleImageView
+                android:id="@+id/uc_avater"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_mrqytx"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="2dp"
+                app:layout_anchor="@+id/nestedScrollView"
+                app:layout_anchorGravity="top"
+                app:layout_behavior="com.yaoguang.lib.common.view.behavior.CircleImageInUsercBehavior" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include
+                    android:id="@+id/layoutContent"
+                    layout="@layout/layout_company_detail_content" />
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/cpbSubmit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/cpb_white"
+            android:visibility="gone"
+            app:cpb_cornerRadius="2.5dp"
+            app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+            app:cpb_textIdle="我要关联" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/cpbSubmit2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/cpb_white"
+            android:visibility="gone"
+            app:cpb_cornerRadius="2.5dp"
+            app:cpb_selectorIdle="@drawable/background_select_red_animation"
+            app:cpb_textIdle="取消关联" />
+
+    </RelativeLayout>
+</layout>

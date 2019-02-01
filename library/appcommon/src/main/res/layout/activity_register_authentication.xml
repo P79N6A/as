@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yaoguang.lib.common.view.CustomInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/prlMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/prlTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="50%">
+
+            <View
+                android:id="@+id/vTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_authentication_gradient_red" />
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_marginTopPercent="26%"
+                tools:src="@drawable/ic_sh_sb01" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_bl_01"
+                android:contentDescription="@null"
+                app:layout_heightPercent="31%" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prlTop"
+            android:layout_centerHorizontal="true"
+            android:text="您将进行企业资料认证"
+            app:layout_marginTopPercent="2%" />
+
+        <TextView
+            android:id="@+id/tvContentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:text="原因如下:"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvAll"
+            android:layout_below="@+id/tvContentTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            app:layout_marginTopPercent="2%"
+            tools:text="1、哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈\n2、呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵。\n3、额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额额。" />
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnOK"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:text="查看详情"
+            android:textColor="#ff7852"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnOK"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="现在认证"
+            android:textColor="@color/white_text"
+            tools:background="@drawable/ic_cxtj_red" />
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ic_yhzs_gray"
+            android:gravity="center"
+            android:text="以后再说"
+            android:textColor="@color/grey900" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</com.yaoguang.lib.common.view.CustomInsetsFrameLayout>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:button="@null"
+        android:drawableStart="@drawable/check_box_hook"
+        android:textColor="@color/black333"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@drawable/check_box_hook" />
+
+    <ImageView
+        android:id="@+id/imgCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:button="@null"
+        android:textColor="@color/black333"
+        app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,HardcodedText"
+        app:srcCompat="@drawable/ic_weix_grey"
+        android:layout_marginLeft="16dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clOne"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/tvCabinetNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柜号:"
+            android:textColor="@color/black999"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCabinetNumberValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/tvCabinetNumberTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="AAAA9999999" />
+
+        <TextView
+            android:id="@+id/tvTitleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="封号:"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tvTitleValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTitleTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="DASDssssssssssssssssssss11" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/clOne"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/tvShipToTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="船到:"
+            android:textColor="@color/black999"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvShipToValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintStart_toEndOf="@+id/tvShipToTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="07-18 09:09" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/clTwo"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/tvOrderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办单:"
+            android:textColor="@color/black999"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrderValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineThree"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="07-18 09:09" />
+
+        <TextView
+            android:id="@+id/tvIntimidateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="打单:"
+            app:layout_constraintStart_toStartOf="@+id/guidelineThree"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tvIntimidateValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvIntimidateTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="07-18 09:09" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/vLineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_grey2"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layoutBackground"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rlAdd"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivPhotoGraph"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_gl_new" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/ivPhotoGraph"
+                android:layout_toRightOf="@+id/ivPhotoGraph"
+                android:textColor="@color/black_text"
+                android:text="新关联" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2" />
+
+        <View
+            android:id="@+id/vLine1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2" />
+
+        <include
+            android:id="@+id/layoutRecyclerview"
+            layout="@layout/layout_recyclerview" />
+
+    </LinearLayout>
+
+</layout>

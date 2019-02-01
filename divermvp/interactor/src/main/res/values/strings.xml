@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">yaoguanginteractor</string>
+    <string name="net_error_please">\"网络出错了，请重试\"</string>
+</resources>

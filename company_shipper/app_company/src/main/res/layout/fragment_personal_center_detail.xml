@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlMobile"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_phone_01" />
+
+            <TextView
+                android:id="@+id/tvMobileTitle"
+                style="@style/RowMyTVTitle"
+                android:text="手机" />
+
+            <TextView
+                android:id="@+id/tvValueMobile"
+                style="@style/RowTVValue32"
+                android:layout_toEndOf="@+id/tvMobileTitle"
+                android:layout_toRightOf="@+id/tvMobileTitle"
+                android:hint="未填写"
+                tools:text="13536428700" />
+
+            <ImageView style="@style/RowClickable" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlPassWord"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_password" />
+
+            <TextView
+                android:id="@+id/tvPassWordTitle"
+                style="@style/RowMyTVTitle"
+                android:text="密码" />
+
+            <TextView
+                android:id="@+id/etValuePassWord"
+                style="@style/RowTVValue32"
+                android:layout_toEndOf="@+id/tvPassWordTitle"
+                android:layout_toRightOf="@+id/tvPassWordTitle"
+                android:text="修改" />
+
+            <ImageView style="@style/RowClickable" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlPhone"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_guhua" />
+
+            <TextView
+                android:id="@+id/tvPhoneTitle"
+                style="@style/RowMyTVTitle"
+                android:text="电话" />
+
+            <TextView
+                android:id="@+id/tvValuePhone"
+                style="@style/RowTVValue32"
+                android:layout_toEndOf="@+id/tvPhoneTitle"
+                android:layout_toRightOf="@+id/tvPhoneTitle"
+                android:hint="未填写"
+                tools:text="020-45218740" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlEmail"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_qyxx" />
+
+            <TextView
+                android:id="@+id/tvEmailTitle"
+                style="@style/RowMyTVTitle"
+                android:text="邮箱" />
+
+            <TextView
+                android:id="@+id/tvValueEmail"
+                style="@style/RowTVValue32"
+                android:layout_toEndOf="@+id/tvEmailTitle"
+                android:layout_toRightOf="@+id/tvEmailTitle"
+                android:hint="未填写"
+                tools:text="254191389@qq.com" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlQQ"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_qq" />
+
+            <TextView
+                android:id="@+id/tvQQTitle"
+                style="@style/RowMyTVTitle"
+                android:text="QQ" />
+
+            <TextView
+                android:id="@+id/tvValueQQ"
+                style="@style/RowTVValue32"
+                android:layout_toEndOf="@+id/tvQQTitle"
+                android:layout_toRightOf="@+id/tvQQTitle"
+                android:hint="未填写" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <LinearLayout
+            android:id="@+id/llAutograph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/RowRL"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+                    style="@style/RowMyImgTitle"
+                    android:src="@drawable/ic_qianming" />
+
+                <TextView
+                    android:id="@+id/tvAutographTitle"
+                    style="@style/RowMyTVTitle"
+                    android:text="签名" />
+
+                <ImageView style="@style/RowClickable" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvValueAutograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:hint="在这里介绍一下您自己吧~"
+                android:textColor="@color/black_hint_text"
+                android:textColorHint="@color/black_hint_text" />
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/line_grey2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlMerchantManagement"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_jianjie" />
+
+            <TextView
+                android:id="@+id/tvMerchantManagementTitle"
+                style="@style/RowMyTVTitle"
+                android:text="企业管理" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlLoginConfiguration"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_dlrz_grey" />
+
+            <TextView
+                android:id="@+id/tvLoginConfigurationTitle"
+                style="@style/RowMyTVTitle"
+                android:text="登录条件配置" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlUserManagement"
+            style="@style/RowRL">
+
+            <ImageView
+                style="@style/RowMyImgTitle"
+                android:src="@drawable/ic_yhgl_grey" />
+
+            <TextView
+                android:id="@+id/tvUserManagementTitle"
+                style="@style/RowMyTVTitle"
+                android:text="用户管理" />
+
+            <ImageView style="@style/RowClickable" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_line" />
+
+
+    </LinearLayout>
+
+</ScrollView>

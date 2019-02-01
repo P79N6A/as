@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efeff4" />
+
+    <View
+        android:id="@+id/vTop2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        app:layout_constraintTop_toBottomOf="@+id/vTop" />
+
+    <!-- 左侧图标 -->
+    <ImageView
+        android:id="@+id/imgActionTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_shengxu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <!-- 右侧图标 -->
+    <ImageView
+        android:id="@+id/imgNavigation"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_dh_jsbig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <!-- 是否编辑图标 -->
+    <ImageView
+        android:id="@+id/imgIsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12.5dp"
+        android:src="@drawable/ic_kbj_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/imgState"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription" />
+
+    <!-- 右侧的状态图标 -->
+    <ImageView
+        android:id="@+id/imgState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imgNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_bq_huan" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:textColor="#333333"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgNavigation"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:text="的萨芬的萨芬大的萨芬大的萨芬大的萨芬大的萨芬大大" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:ignore="HardcodedText"
+        tools:text="地址地址地址地址地址地地址地址地址地地址地址地址地地址地址地址地地址地址地址地地址地" />
+
+    <TextView
+        android:id="@+id/tvContacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        tools:text="联系人：吕小姐（666666 999999）" />
+
+    <TextView
+        android:id="@+id/tvContactsMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/tvContacts"
+        tools:text="13536428700" />
+
+    <TextView
+        android:id="@+id/tvContactsPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvContactsMobile"
+        app:layout_constraintTop_toBottomOf="@+id/tvContacts"
+        tools:text="13536428700"
+        android:layout_marginStart="10dp" />
+
+    <cn.carbs.android.expandabletextview.library.ExpandableTextView
+        android:id="@+id/tvLoadingInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:textColor="#999999"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactsMobile"
+        app:showTrimExpandedText="true"
+        app:trimCollapsedText="显示更多"
+        app:trimExpandedText="收起"
+        app:trimLines="2"
+        tools:ignore="HardcodedText"
+        tools:text="装货说明:说明内容说明说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容说明内容" />
+
+    <View
+        android:id="@+id/vTopBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_in_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbarCommon"
+        layout="@layout/toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="海运费:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvOceanfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="¥800.00"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="装箱费:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvContFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size"
+            tools:text="¥460.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="办单费:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvOrderFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size"
+            tools:text="¥90.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="燃油附加费:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvFuelFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size"
+            tools:text="¥280.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="码头费包干费:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvPortFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size"
+            tools:text="¥170.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:text="备注:"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size" />
+
+        <TextView
+            android:id="@+id/tvRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="@dimen/order_detail_size"
+            tools:text="这是最低价,报价不可低于此价格报价不可低于此价格报价不可低于此价格报价不可低于此价格报价不可低于此价格" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/white_text" />
+
+
+</LinearLayout>

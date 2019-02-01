@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_home" />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tr_enable_loadmore="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_home_top" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clTrailer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerTrailerQuotationInquiry"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ffa041"
+                    app:cardElevation="1px"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH33Trailer"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineV33Trailer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerTrailerQuotationInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_htbjcx_hd" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerTrailerQuotationInquiry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="货代报价查询"
+                            android:textColor="@color/white_text"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerShipSchedule"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ffa041"
+                    app:cardElevation="1px"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH65Trailer"
+                    app:layout_constraintEnd_toEndOf="@+id/guidelineV33Trailer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/guidelineH33Trailer">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerShipSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_cqcx_tc" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerShipSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="船期查询"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerTrailerOrderTracking"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#a1d75f"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH33Trailer"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineV67Trailer"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineV33Trailer"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerTrailerOrderTracking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_htddgz_hd" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerTrailerOrderTracking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="货代订单跟踪"
+                            android:textColor="@color/white_text"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerShipPositioning"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#a1d75f"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH65Trailer"
+                    app:layout_constraintEnd_toEndOf="@+id/guidelineV67Trailer"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineV33Trailer"
+                    app:layout_constraintTop_toBottomOf="@+id/guidelineH33Trailer">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerShipPositioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_cbdw_tc" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerShipPositioning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="船位查询"
+                            android:textColor="@color/white_text" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerMy"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#6cbbf6"
+                    app:layout_constraintBottom_toTopOf="@+id/guidelineH65Trailer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineV67Trailer"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_heightPercent="17.36%"
+                    app:layout_widthPercent="33.333333%">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerMy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_my_tc" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerMy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="我的"
+                            android:textColor="@color/white_text"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerPreOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ff7b7b"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/guidelineV50Trailer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/guidelineH65Trailer">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hdddgz_hd" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerPreOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="10dp"
+                            android:text="货代预订单管理"
+                            android:textColor="@color/white_text"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvTrailerTrailerOperator"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardBackgroundColor="#ba68c8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineV50Trailer"
+                    app:layout_constraintTop_toBottomOf="@+id/guidelineH65Trailer">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgTrailerTrailerOperator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hdrw_hd" />
+
+                        <TextView
+                            android:id="@+id/tvTrailerTrailerOperator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="10dp"
+                            android:text="货代办单员任务"
+                            android:textColor="@color/white_text"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineV33Trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.3371428571428571" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineV50Trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5071428571428571" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineV67Trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6742857142857143" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineH33Trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.3388157894736842" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guidelineH65Trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.65814696485623" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableLeft="@drawable/ic_js_yellow"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_js_yellow"
+                    android:text="柜号与封号"
+                    android:textColor="#666666"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvTitleContNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="柜号"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imgContNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/tvTitleContNo"
+                    android:layout_toRightOf="@+id/tvTitleContNo"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_abnormal_red"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <EditText
+                    android:id="@+id/etContNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@+id/imgContNo"
+                    android:layout_toRightOf="@+id/imgContNo"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="center_vertical|end"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="11"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="GY123Y123123123" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvTitleSealNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="封号"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/etSealNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@+id/tvTitleSealNo"
+                    android:layout_toRightOf="@+id/tvTitleSealNo"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="center_vertical|end"
+                    android:inputType="textVisiblePassword"
+                    android:maxLength="30"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="GY123123123" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/banner"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableLeft="@drawable/ic_gc_blue"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_gc_blue"
+                    android:text="详情描述"
+                    android:textColor="#666666"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <com.yaoguang.lib.appcommon.widget.textview.MyEditText
+                    android:id="@+id/etRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="请描述一下当前情况..."
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:minLines="1"
+                    android:paddingLeft="@dimen/side_interval"
+                    android:paddingRight="@dimen/side_interval"
+                    android:paddingTop="10dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black666"
+                    android:textColorHint="@color/black999"
+                    android:textSize="@dimen/sp15"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/view_number" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:id="@+id/llAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tvAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="5dp"
+                    android:text="图片/视频(图片最多上传三张/视频最多上传30秒/语音最多上传1个)"
+                    android:textColor="@color/black666"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.yaoguang.widget.WarpLinearLayout
+                    android:id="@+id/llPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="@dimen/side_interval"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="@dimen/side_interval"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    app:grivate="left"
+                    app:horizontal_Space="5dp"
+                    app:vertical_Space="5dp">
+
+                    <FrameLayout
+                        android:id="@+id/flCamera1"
+                        style="@style/view_media_uploadbox"
+                        android:layout_marginLeft="@dimen/side_interval"
+                        android:layout_marginStart="@dimen/side_interval">
+
+                        <ImageView
+                            android:id="@+id/ivPhotographOne"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_zhaopian_07"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/tvAlertUploadOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:padding="5dp" />
+
+                        <!--android:src="@drawable/ic_xinghao"-->
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flCamera2"
+                        style="@style/view_media_uploadbox"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivPhotographTwo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_zhaopian_07"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/tvAlertUploadTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"></ImageView>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flCamera3"
+                        style="@style/view_media_uploadbox"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivPhotographThree"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_zhaopian_07"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/tvAlertUploadThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"></ImageView>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flVideo1"
+                        style="@style/view_media_uploadbox">
+
+                        <ImageView
+                            android:id="@+id/ivVideo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_shiping_07"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/ivVideoPlayFlag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bofang_02"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivVideoFlag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"></ImageView>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flAudio1"
+                        style="@style/view_media_uploadbox">
+
+                        <ImageView
+                            android:id="@+id/ibAudio"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/ic_yuyin_07"
+                            android:scaleType="matrix" />
+
+                        <ImageView
+                            android:id="@+id/ivAudioPlayPlag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_yy_03"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/ivAudioFlag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"></ImageView>
+                    </FrameLayout>
+                </com.yaoguang.widget.WarpLinearLayout>
+            </LinearLayout>
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/cpbSubmit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/cpb_white"
+                app:cpb_cornerRadius="2.5dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_selectorIdle="@drawable/background_select_primary_animation"
+                app:cpb_textIdle="确定" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="tips_click">标记可以点击的</string>
+
+
+    <!-- 信息提示 -->
+    <string name="msg_alter_title">温馨提示</string>
+    <string name="msg_positive_title">确定</string>
+    <string name="msg_negative_title">取消</string>
+    <string name="msg_loading">正在加载数据,请稍后&#8230;</string>
+    <string name="msg_app_enter_frist">第一次使用,初始化相关数据,请稍后&#8230;</string>
+
+    <string name="camera">拍照</string>
+    <string name="album">相册</string>
+    <string name="look">查看</string>
+</resources>

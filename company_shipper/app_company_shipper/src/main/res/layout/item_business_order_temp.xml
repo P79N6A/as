@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:ems="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="起运地" />
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="28dp"
+            android:ems="5"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="目的地目的地目的地目的地目的地目的地目的地" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvDeparture,tvDestination" />
+
+        <View
+            android:id="@+id/vLuXian"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/ic_luxian_01"
+            app:layout_constraintEnd_toStartOf="@+id/tvDestination"
+            app:layout_constraintStart_toEndOf="@+id/tvDeparture"
+            app:layout_constraintTop_toBottomOf="@+id/barrier7" />
+
+        <TextView
+            android:id="@+id/tvInfoClientManager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/vLuXian"
+            app:layout_constraintEnd_toEndOf="@+id/vLuXian"
+            app:layout_constraintStart_toStartOf="@+id/vLuXian"
+            tools:text="托运托" />
+
+        <TextView
+            android:id="@+id/tvGoodsName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vLuXian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/vLuXian"
+            app:layout_constraintStart_toStartOf="@+id/vLuXian"
+            app:layout_constraintTop_toBottomOf="@+id/vLuXian"
+            tools:text="货物名称" />
+
+        <TextView
+            android:id="@+id/tvPortShipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:ems="5"
+            app:layout_constraintEnd_toStartOf="@+id/vLuXian"
+            app:layout_constraintTop_toBottomOf="@+id/vLuXian"
+            tools:text="起运起" />
+
+        <TextView
+            android:id="@+id/tvPortDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:ems="5"
+            android:gravity="end"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/vLuXian"
+            app:layout_constraintTop_toBottomOf="@+id/vLuXian"
+            tools:text="起运起" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvGoodsName,tvPortShipment,tvPortDestination" />
+
+        <View
+            android:id="@+id/vLuXian2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@+id/barrier8"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/line_grey" />
+
+        <TableLayout
+            android:id="@+id/tlWait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/vLuXian2"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:stretchColumns="*">
+
+            <TableRow android:paddingBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cztk_10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="运输条款:"
+                        android:textColor="#999999"
+                        android:layout_marginStart="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvTransportationClause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="广汽集团" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cztk_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="操作条款:"
+                        android:textColor="#999999"
+                        android:layout_marginStart="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvOperationClause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="陶瓷" />
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tyr_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="货主:"
+                        android:textColor="#999999"
+                        android:layout_marginStart="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvConsigneeIdonsigneeId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="广汽集团" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baoxian14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="是否投保:"
+                        android:textColor="#999999"
+                        android:layout_marginStart="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvIsInsurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="陶瓷" />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <View
+            android:id="@+id/vLuXian3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            app:layout_constraintTop_toBottomOf="@+id/tlWait"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line_grey" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlLoading"
+            app:layout_constraintTop_toBottomOf="@+id/vLuXian3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlUnLoading"
+            android:layout_below="@+id/vLuXian3"
+            app:layout_constraintTop_toBottomOf="@+id/rlLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvComit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/rlUnLoading"
+            android:background="#8bd0d7"
+            android:gravity="center"
+            android:text="应用到新的预订单"
+            android:textColor="@color/white" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

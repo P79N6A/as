@@ -1,0 +1,370 @@
+<layout>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/window_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white_text">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_feiyong_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="其他"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlLoadingDate"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvLoadingDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="装货时间"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgXDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvLoadingDateTitle"
+            android:layout_toRightOf="@+id/tvLoadingDateTitle"
+            android:src="@drawable/xinghao" />
+
+        <TextView
+            android:id="@+id/tvLoadingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvLoadingTime"
+            android:layout_toStartOf="@+id/tvLoadingTime"
+            android:gravity="center"
+            android:hint="请选择年、月、日"
+            android:paddingEnd="32dp"
+            android:paddingRight="32dp"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgTimeF"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvLoadingTime"
+            android:layout_toStartOf="@+id/tvLoadingTime"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/ic_xsj_05" />
+
+        <TextView
+            android:id="@+id/tvLoadingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="时、分"
+            android:paddingEnd="32dp"
+            android:paddingRight="32dp"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_xsj_05" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vIsFeeCollect"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlIsFeeCollect"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvIsFeeCollectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="是否代收款"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbValueIsFeeCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="end"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/black_hint_text" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlReservationFee"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/tvReservationFeeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:text="预定费用"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgXReservationFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/tvReservationFeeTitle"
+            android:layout_toRightOf="@+id/tvReservationFeeTitle"
+            android:src="@drawable/xinghao" />
+
+        <EditText
+            android:id="@+id/etValueReservationFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tvReservationFeeTitle"
+            android:layout_toRightOf="@+id/tvReservationFeeTitle"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入预定费用"
+            android:inputType="textMultiLine|number"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRemarkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="费用说明"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tvRemarkTitle"
+            android:layout_toRightOf="@+id/tvRemarkTitle"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入费用说明"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlRemark1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white_text"
+        android:padding="16dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/tvRemarkTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="备注1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueRemark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tvRemarkTitle1"
+            android:layout_toRightOf="@+id/tvRemarkTitle1"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入备注1"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:id="@+id/rlRemark2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRemarkTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="备注2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etValueRemark2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/tvRemarkTitle2"
+            android:layout_toRightOf="@+id/tvRemarkTitle2"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="请输入备注2"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:textColorHint="@color/black_hint_text"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</merge>
+</layout>

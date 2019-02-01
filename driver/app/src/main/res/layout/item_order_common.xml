@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="ID88888888888"
+                    android:textSize="@dimen/sp13" />
+
+                <LinearLayout
+                    android:id="@+id/llOrderMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_pai" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_orderline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:layout_width="50dp"
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/amap_bus" />
+
+                    <ImageView
+                        android:id="@+id/messageFlag"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/shape_circle" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCompanyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp15"
+                        android:text="广州 天连物流公司"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCreated"
+                        android:layout_marginTop="10dp"
+                        style="@style/ItemOrderCommonText"
+                        android:text="今天 18:29" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/dividing_line"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:id="@+id/ivPhone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_telephone" />
+            </LinearLayout>
+
+            <ImageView
+                style="@style/dividing_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_matou" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDeliveryRoute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ItemOrderCommonText"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvDeliveryPlaces"
+                        android:layout_marginTop="10dp"
+                        style="@style/ItemOrderCommonText"
+                        android:text="卸货：后天 12:00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                style="@style/dividing_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvVehiclePrice"
+                            style="@style/ItemOrderCommonText"
+                            android:drawableLeft="@drawable/ic_feiyong"
+                            android:text="¥2200.00" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvContQty"
+                            android:text="1*20GP"
+                            android:drawableLeft="@drawable/ic_huogui"
+                            style="@style/ItemOrderCommonText" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvDriverOrderType"
+                            android:drawableLeft="@drawable/ic_zczh"
+                            style="@style/ItemOrderCommonText"
+                            android:text="重出吉回" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="@dimen/order_bottom_text"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvShipCompany"
+                            android:drawableLeft="@drawable/ic_ship"
+                            style="@style/ItemOrderCommonText"
+                            android:text="中远船公司"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+

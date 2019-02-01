@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action0"
+        android:orderInCategory="1"
+        android:title="20GP"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action1"
+        android:orderInCategory="1"
+        android:title="40GP"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+    <item
+        android:id="@+id/action2"
+        android:orderInCategory="1"
+        android:title="40HQ"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+</menu>

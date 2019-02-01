@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_unlimited"
+        android:title="@string/unlimited" />
+
+    <item
+        android:id="@+id/action_loading"
+        android:title="@string/loading_goods" />
+
+    <item
+        android:id="@+id/action_unloading"
+        android:title="@string/unloading_goods" />
+
+
+</menu>

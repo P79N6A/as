@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:button="@null"
+            android:drawableStart="@drawable/check_box_hook"
+            android:drawableLeft="@drawable/check_box_hook"
+            android:tag=""
+            android:textColor="@color/black333"
+            android:textSize="17sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <!-- 为什么使用ImageView显示，是因为某些机器上CheckBox实际上选中但是样子没变化 -->
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:button="@null"
+            android:drawableStart="@drawable/check_box_hook"
+            android:drawableLeft="@drawable/check_box_hook"
+            app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_weix_grey"
+            tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvOrderNoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="运单号:"
+            android:textColor="@color/black999"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintLeft_toRightOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvOrderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderNoTitle"
+            app:layout_constraintLeft_toRightOf="@+id/tvOrderNoTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderNoTitle"
+            tools:text="9856ASDSADASD"
+            tools:ignore="RtlHardcoded" />
+
+        <FrameLayout
+            android:id="@+id/flType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/background_shape_2_5_primary"
+            android:padding="2.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderNo"
+            app:layout_constraintStart_toEndOf="@+id/tvOrderNo"
+            app:layout_constraintLeft_toRightOf="@+id/tvOrderNo"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderNo"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_text"
+                tools:text="20GP" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvShipName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="15dp"
+            android:maxEms="8"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/vLineShipName"
+            app:layout_constraintRight_toLeftOf="@+id/vLineShipName"
+            app:layout_constraintStart_toStartOf="@+id/tvOrderNoTitle"
+            app:layout_constraintLeft_toLeftOf="@+id/tvOrderNoTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderNoTitle"
+            tools:text="日照航日照航运日照航运运/"
+            android:layout_marginRight="8dp" />
+
+        <View
+            android:id="@+id/vLineShipName"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintBottom_toBottomOf="@+id/tvShipName"
+            app:layout_constraintStart_toEndOf="@+id/tvShipName"
+            app:layout_constraintLeft_toRightOf="@+id/tvShipName"
+            app:layout_constraintTop_toTopOf="@+id/tvShipName" />
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black333"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintBottom_toBottomOf="@+id/vLineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/flMore"
+            app:layout_constraintRight_toLeftOf="@+id/flMore"
+            app:layout_constraintStart_toEndOf="@+id/vLineShipName"
+            app:layout_constraintLeft_toRightOf="@+id/vLineShipName"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderNoTitle"
+            tools:text="中远物中中远"
+            tools:ignore="RtlHardcoded" />
+
+        <FrameLayout
+            android:id="@+id/flMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/background_shape_2_5_null_primary"
+            android:paddingBottom="3.5dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="3.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvShipName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvShipName">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/sp15" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            tools:src="@drawable/ic_x_11" />
+
+        <View
+            android:id="@+id/vLineBottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlOrderNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efeff4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="-0.5dp"
+        android:background="@color/line_grey2" />
+
+</LinearLayout>

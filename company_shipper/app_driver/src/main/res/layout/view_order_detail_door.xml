@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <TextView
+        android:id="@+id/tvPointTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="卸货门点1"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCompanyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPointTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="单位:"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPointTitle"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/tvCompanyTitle"
+        android:layout_toRightOf="@+id/tvCompanyTitle"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        tools:text="单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位单位" />
+
+    <TextView
+        android:id="@+id/tvAddressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCompany"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="地址:"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCompany"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvAddressTitle"
+        android:layout_toLeftOf="@+id/imgAddress"
+        android:layout_toRightOf="@+id/tvAddressTitle"
+        android:layout_toStartOf="@+id/imgAddress"
+        android:textColor="#333333"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
+        tools:text="地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址" />
+
+    <ImageView
+        android:id="@+id/imgAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvCompany"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_dh_js"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvContactsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="联系人:"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/tvContactsTitle"
+        android:layout_toRightOf="@+id/tvContactsTitle"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        tools:text="单位单位单位单单位单位单位单单单位单位单位单单单" />
+
+    <TextView
+        android:id="@+id/tvContactsMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContacts"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="联系方式:"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvContactsPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContacts"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/tvContactsMobile"
+        android:layout_toRightOf="@+id/tvContactsMobile"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        tools:text="13536428700" />
+
+    <TextView
+        android:id="@+id/tvContactsPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContacts"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/tvContactsPhone"
+        android:layout_toRightOf="@+id/tvContactsPhone"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        tools:text="13536428700" />
+
+    <TextView
+        android:id="@+id/tvRemarkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContactsMobile"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="卸货说明:"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/tvRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContactsMobile"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:autoLink="email|phone|web"
+        android:layout_toEndOf="@+id/tvRemarkTitle"
+        android:layout_toRightOf="@+id/tvRemarkTitle"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        app:trimCollapsedText="显示更多"
+        app:trimExpandedText="收起"
+        app:trimLines="2"
+        tools:text="单位单位单位单单位单位单位单单单位单位单位单单单" />
+
+
+</RelativeLayout>

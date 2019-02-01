@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="hintcolor">
+        <item name="android:textColorHint">@color/grey200</item>
+    </style>
+
+
+    <style name="hintcolor.etpass">
+        <item name="android:digits">@string/rule_password</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:drawableLeft">@drawable/ic_password_001</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MyCustomTabLayout.Order">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabIndicatorColor">@color/orange500</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabSelectedTextColor">@color/orange500</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextColor">@color/grey666666</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearanceOrder</item>
+    </style>
+
+    <style name="MyCustomTabLayout.OrderDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="tabIndicatorColor">#1e90e2</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabSelectedTextColor">#1e90e2</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextColor">@color/grey666666</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearanceOrder</item>
+    </style>
+
+    <style name="view_eye">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/ic_display</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/ic_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="Text.BigGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/banner</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@color/banner</item>
+        <item name="android:paddingLeft">@dimen/side_interval</item>
+        <item name="android:textColor">@color/grey666666</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="RegisterLL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/register_height</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="Text.BigGrey.Register_AlertName">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black333</item>
+    </style>
+
+    <style name="RegisterInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/greyBBB</item>
+        <item name="android:gravity">right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="CarNo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableRight">@drawable/ic_right_triangle</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:textColor">@color/black_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">"粤"</item>
+    </style>
+
+    <style name="Button.Register">
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+
+    <dimen name="register_height">44dp</dimen>
+    <dimen name="home_order_jiange">6dp</dimen>
+
+
+    <!-- 企业详情布局BEGIN -->
+    <style name="company_detail_key">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/image_padding_interval</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="company_detail_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="order_detail_tablelayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:stretchColumns">*</item>
+    </style>
+
+    <style name="order_detail_tablelayout_ll">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_span">2</item>
+    </style>
+    <!-- 企业详情布局END -->
+
+    <!-- 一行布局BEGIN -->
+    <style name="RowRL">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/white_text</item>
+    </style>
+
+    <style name="RowTVTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RowAsterisk">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:src">@drawable/xinghao</item>
+    </style>
+
+    <style name="RowClickable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:src">@drawable/right_triangle</item>
+    </style>
+
+
+    <style name="RowETValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColorHint">@color/black_hint_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RowTVValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColorHint">@color/black_hint_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RowTVValue32">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColorHint">@color/black_hint_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 一行布局END -->
+
+    <!-- 个人布局 -->
+
+    <style name="RowMyImgTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RowMyTVTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">44dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/sp18</item>
+    </style>
+
+    <style name="WhiteText" parent="Text">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp18</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RegisterInput.NumberEnglist">
+        <item name="android:digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </item>
+        <item name="android:inputType">textVisiblePassword</item>
+    </style>
+
+    <style name="xianhaofenhaoTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/black666</item>
+    </style>
+
+    <style name="xianhaofenhaoEt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/grey900</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+        </item>
+    </style>
+    <!-- 个人布局 -->
+
+    <style name="orderCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/home_order_jiange</item>
+        <item name="android:layout_marginRight">@dimen/home_order_jiange</item>
+        <item name="android:layout_marginTop">@dimen/home_order_jiange</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="RegisterLLDel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="view_bottom_phone_tvphone">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textColor">@color/blue500</item>
+    </style>
+
+    <style name="xianhuaofenhao_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="xianhuaofenhao_ll2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="xiaohuaofenhao_cbselect">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp15</item>
+        <item name="android:textColor">@color/black666</item>
+    </style>
+
+    <style name="xiaohuaofenhao_banner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">@color/black666</item>
+        <item name="android:textSize">@dimen/sp17</item>
+    </style>
+
+    <style name="company_detail_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/row</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegisterLL.ImageUpload">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">@dimen/side_interval</item>
+        <item name="android:layout_marginRight">@dimen/side_interval</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_height">96dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegisterUploadText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/sp13</item>
+    </style>
+
+    <style name="RegisterUploadImageBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="view_media_uploadbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="InputCommonDialogCancel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black333</item>
+        <item name="android:background">@drawable/background_selector_white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="InputCommonDialogSubmit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/background_selector_primary_k</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

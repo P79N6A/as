@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llRow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_dingdang" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/Text"
+                android:layout_marginLeft="12dp"
+                android:text=""
+                android:textColor="@color/black333"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvValue"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/interval"
+            android:textColor="@color/black999"
+            android:textColorHint="@color/black999"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_triangle" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/view_line2" />
+
+    <LinearLayout
+        android:id="@+id/dividers"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/window_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+    </LinearLayout>
+</LinearLayout>

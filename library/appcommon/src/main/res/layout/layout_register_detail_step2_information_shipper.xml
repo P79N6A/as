@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llInformationShipper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlShipperName"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvShipperNameTitle"
+            style="@style/RowTVTitle"
+            android:text="姓名"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etShipperNameValue"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvShipperNameTitle"
+            android:layout_toRightOf="@+id/tvShipperNameTitle"
+            android:hint="姓名"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line" />
+
+    <RelativeLayout
+        android:id="@+id/rlCode"
+        style="@style/RowRL">
+
+        <TextView
+            android:id="@+id/tvCodeTitle"
+            style="@style/RowTVTitle"
+            android:text="身份证"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etCodeValue"
+            style="@style/RowETValue"
+            android:layout_toEndOf="@+id/tvCodeTitle"
+            android:layout_toRightOf="@+id/tvCodeTitle"
+            android:hint="身份证号码"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

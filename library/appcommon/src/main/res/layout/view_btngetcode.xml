@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnGetCode"
+    style="@style/hintcolor"
+    android:layout_width="82dp"
+    android:layout_height="26dp"
+    android:background="@drawable/background_selector_verification"
+    android:gravity="center"
+    android:onClick="clickBtnGetCode"
+    android:text="@string/get_code"
+    android:textColor="@color/textcolor_selector_verification" />

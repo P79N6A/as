@@ -1,0 +1,263 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlFreightInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/tvFreightInsuranceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:drawableLeft="@drawable/ic_baoxian_10"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baoxian_10"
+                android:text="保险信息"
+                android:textSize="@dimen/order_detail_title_size" />
+
+            <ImageView
+                android:id="@+id/imgFreightInsurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_xiangshang" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/line_grey" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/erlFreightInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ael_duration="350"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvFreightInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="无保险信息" />
+
+                <TableLayout
+                    android:id="@+id/tbFreightInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:stretchColumns="*"
+                    android:visibility="invisible">
+
+                    <TableRow android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="保险类型:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsurType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="货值（万）:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsurValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="费率（万分）:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsurRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+                    <TableRow android:paddingBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="保险费:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueInsurMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="保险单号:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueHBLNO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="保险公司:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueAgency"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="投保时间:"
+                                android:textColor="#999999"
+                                android:textSize="@dimen/order_detail_size" />
+
+                            <TextView
+                                android:id="@+id/tvValueInstoreStatusDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/table_value_padding_left"
+                                android:layout_marginStart="@dimen/table_value_padding_left"
+                                android:textSize="@dimen/order_detail_size" />
+
+                        </LinearLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </FrameLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

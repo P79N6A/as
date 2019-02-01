@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TimeManagementModeFragment使用 -->
+    <item name="timeBegin" type="id" />
+    <item name="timeEnd" type="id" />
+
+</resources>

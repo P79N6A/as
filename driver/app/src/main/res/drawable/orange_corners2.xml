@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--填充色-->
+    <solid android:color="#f08419" />
+    <size android:width="200dp"  android:height="40dp"/>
+    <!--圆角-->
+    <corners android:radius="30dp"
+        />
+</shape>

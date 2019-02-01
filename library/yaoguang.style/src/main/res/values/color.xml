@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--500 #03A9F4 bar-->
+    <!--50#E1F5FE-->
+    <!--100#B3E5FC-->
+    <!--200#81D4FA-->
+    <!--300#4FC3F7-->
+    <!--400#29B6F6-->
+    <!--500#03A9F4-->
+    <!--600#039BE5-->
+    <!--700#0288D1 状态栏-->
+    <!--800#0277BD-->
+    <!--900#01579B-->
+
+
+    <color name="main_background">#f6f6f6f6</color>
+    <color name="window_background">#EFEEEE</color>
+    <color name="text_cccccc">#CCCCCC</color>
+    <color name="black_666666">#666666</color>
+    <color name="view_delete_tvdelete">#40FF3838</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_jet_black">#333333</color>
+    <color name="level_full">#f08419</color>
+    <color name="level_null">#fce9d6</color>
+
+    <!--<color name="home_enable_no_text_ForwarderQuotationInquiry">#F7d9ba</color>-->
+    <color name="home_enable_no_text">#80FFFFFF</color>
+    <color name="home_enable_no_trailerordertracking">#60838bff</color>
+    <color name="home_enable_no_TrailerQuoteInquiry">#603490f3</color>
+    <color name="home_enable_no_TrailerOrder">#606cbbf6</color>
+    <color name="home_enable_no_ForwarderQuotationInquiry">#f5cfa9</color>
+    <color name="home_enable_no_ForwarderOrderTracking">#60a1d75f</color>
+    <color name="home_enable_no_ForwardingOrder">#60ff7b7b</color>
+    <color name="home_enable_no_ShipSchedule">#60be8bd8</color>
+
+
+    <color name="home_enable_text">#FFFFFF</color>
+    <color name="home_enable_trailerordertracking">#838bff</color>
+    <color name="home_enable_TrailerQuoteInquiry">#3490f3</color>
+    <color name="home_enable_TrailerOrder">#6cbbf6</color>
+    <color name="home_enable_ForwarderQuotationInquiry">#ffa041</color>
+    <color name="home_enable_ForwarderOrderTracking">#a1d75f</color>
+    <color name="home_enable_ForwardingOrder">#ff7b7b</color>
+    <color name="home_enable_ShipSchedule">#be8bd8</color>
+
+
+    <color name="primary">#F08419</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="primary_background">#F2F2F2</color>
+    <color name="accent">@color/pinka200</color>
+    <color name="primary_text">#87000000</color>
+    <color name="order_detail_key_text">#999999</color>
+    <color name="black_trans80">#14000000</color>
+    <!-- 收藏、视频、音乐的黄色颜色 -->
+    <color name="yellow_a200">#EEFF41</color>
+    <!-- 大部分背景的白色 -->
+    <color name="line_grey">#D9D9D9</color>
+
+    <!-- 深蓝色 1565C0 用于蓝色的背影 -->
+    <color name="primary800">#1565C0</color>
+    <!-- 浅蓝色 E3F2FD 用于白色的背影 -->
+    <color name="primary50">#E3F2FD</color>
+
+    <color name="blue_ylm2">#3498db</color>
+    <color name="gray_background">#ECF0F1</color>
+    <color name="gray">#95A5A6</color>
+
+    <!-- 舒服的稍微黑色 -->
+    <color name="dark_grey">#22262A</color>
+
+    <!-- 副色调 -->
+    <color name="accent_pink">#FF4081</color>
+    <!-- 一般的图标灰色 -->
+    <color name="grey600">#757575</color>
+    <color name="grey300">#eeeeee</color>
+
+    <!-- 针对黑色的字体颜色,改变文本的不透明度来传达某些信息的重要性相对于其他文本。 -->
+    <!-- 字体 -->
+    <color name="black_text">#87000000</color>
+    <!-- 副文本 -->
+    <color name="black_secondary_text">#54000000</color>
+    <!-- 不可用/提示的文本 -->
+    <color name="black_hint_text">#38000000</color>
+
+    <!-- 针对白色的字体颜色,改变文本的不透明度来传达某些信息的重要性相对于其他文本。 -->
+    <!-- 字体 -->
+    <color name="white_text">#FFFFFF</color>
+
+    <!-- 线 -->
+    <color name="black_dividers_text">#12000000</color>
+
+    <!-- 引导界面的指标 -->
+    <color name="indicator_unselected">#4D000000</color>
+
+    <!-- 引导界面的颜色 -->
+    <color name="cyan500">#00BCD4</color>
+    <color name="amber200">#FFE082</color>
+    <color name="light_blue500">#03A9F4</color>
+    <color name="light_green500">#8BC34A</color>
+    <color name="teal_300">#26A69A</color>
+
+
+    <!-- 更换主题颜色搭配 -->
+    <color name="blue500">#2196f3</color>
+    <color name="pinka200">#FF4081</color>
+
+    <color name="red500">#F44336</color>
+    <color name="bluea200">#448AFF</color>
+
+    <color name="pink500">#E91E63</color>
+    <color name="teal500">#009688</color>
+
+    <color name="purple500">#9C27B0</color>
+    <color name="orange900">#E65100</color>
+
+    <color name="deep_purple500">#673AB7</color>
+
+    <!--<color name="orange500">#FF9800</color>-->
+
+
+    <color name="red_primary">#F44336</color>
+    <color name="red_primary_dark">#D32F2F</color>
+    <color name="red_accent">#009688</color>
+
+    <color name="pink_primary">#E91E63</color>
+    <color name="pink_primary_dark">#C2185B</color>
+    <color name="pink_accent">#009688</color>
+
+    <color name="brown_primary">#795548</color>
+    <color name="brown_primary_dark">#5D4037</color>
+    <color name="brown_accent">#FF4081</color>
+
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_primary_dark">#1976D2</color>
+    <color name="blue_accent">#FF4081</color>
+
+    <color name="blue_grey_primary">#607D8B</color>
+    <color name="blue_grey_primary_dark">#455A64</color>
+    <color name="blue_grey_accent">#FF4081</color>
+
+    <color name="yellow_primary">#FFEB3B</color>
+    <color name="yellow_primary_dark">#FBC02D</color>
+    <color name="yellow_accent">#009688</color>
+
+    <color name="deep_purple_primary">#673AB7</color>
+    <color name="deep_purple_primary_dark">#512DA8</color>
+    <color name="deep_purple_accent">#FF4081</color>
+
+
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#388E3C</color>
+    <color name="green_accent">#009688</color>
+
+    <color name="deep_orange_primary">#FF5722</color>
+    <color name="deep_orange_primary_dark">#E64A19</color>
+    <color name="deep_orange_accent">#009688</color>
+
+    <color name="grey_primary">#9E9E9E</color>
+    <color name="grey_primary_dark">#616161</color>
+    <color name="grey_accent">#FF4081</color>
+
+    <color name="cyan_primary">#00BCD4</color>
+    <color name="cyan_primary_dark">#0097A7</color>
+    <color name="cyan_accent">#FF4081</color>
+
+    <color name="amber_primary">#FFC107</color>
+    <color name="amber_primary_dark">#FFA000</color>
+    <color name="amber_accent">#009688</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+    <color name="order_tab">#fdead6</color>
+
+    <!-- 善于发现 -->
+
+    <!-- 触摸效果 -->
+    <color name="touch_effect">#9ccc</color>
+
+    <color name="topeka_primary">#00bad2</color>
+    <color name="topeka_primary_dark">#00a3b8</color>
+    <color name="topeka_blank">#424242</color>
+    <color name="topeka_accent">#3F51B5</color>
+
+    <color name="text_light">@android:color/white</color>
+    <color name="text_dark">#616161</color>
+
+    <!-- theme colors -->
+    <color name="theme_blue_background">#84ffff</color>
+    <color name="theme_blue_primary">#03a9f4</color>
+    <color name="theme_blue_accent">#ff193a</color>
+    <color name="theme_blue_text">@color/text_light</color>
+    <color name="theme_blue_primary_dark">#038dcc</color>
+
+    <color name="theme_green_background">#b9f6ca</color>
+    <color name="theme_green_primary">#1de9b6</color>
+    <color name="theme_green_accent">#e919ff</color>
+    <color name="theme_green_text">@color/text_dark</color>
+    <color name="theme_green_primary_dark">#19cc9f</color>
+
+    <color name="theme_purple_background">#b388ff</color>
+    <color name="theme_purple_primary">#7e57c2</color>
+    <color name="theme_purple_accent">#ff9419</color>
+    <color name="theme_purple_text">@color/text_light</color>
+    <color name="theme_purple_primary_dark">#6c4aa6</color>
+
+    <color name="theme_red_background">#ff8a80</color>
+    <color name="theme_red_primary">#ff5252</color>
+    <color name="theme_red_accent">#fffc19</color>
+    <color name="theme_red_text">@color/text_light</color>
+    <color name="theme_red_primary_dark">#e64a4a</color>
+
+    <color name="theme_yellow_background">#ffff8d</color>
+    <color name="theme_yellow_primary">#ffeb3b</color>
+    <color name="theme_yellow_accent">#19dcff</color>
+    <color name="theme_yellow_text">@color/text_dark</color>
+    <color name="theme_yellow_primary_dark">#e6d335</color>
+
+
+</resources>

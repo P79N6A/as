@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_text"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_huogui_10" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgLoading"
+            android:layout_toRightOf="@+id/imgLoading"
+            android:textColor="@color/black333"
+            android:textSize="17sp"
+            tools:text="title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/right_triangle" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/line_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柜号 ︱"
+                android:textColor="@color/black999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvValueCabinetType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/table_value_padding_left"
+                android:paddingLeft="@dimen/table_value_padding_left"
+                android:paddingRight="@dimen/table_value_padding_left"
+                android:paddingStart="@dimen/table_value_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/black333"
+                android:textSize="16sp"
+                tools:text="1233322dddddddddddddd2222" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="封号 ︱"
+                android:textColor="@color/black999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvValueNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/table_value_padding_left"
+                android:paddingLeft="@dimen/table_value_padding_left"
+                android:paddingRight="@dimen/table_value_padding_left"
+                android:paddingStart="@dimen/table_value_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/black333"
+                android:textSize="16sp"
+                tools:text="1233322dddddddddddddd2222" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提柜码头 ︱"
+                android:textColor="@color/black999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvValueCupboardWharf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/table_value_padding_left"
+                android:paddingLeft="@dimen/table_value_padding_left"
+                android:paddingRight="@dimen/table_value_padding_left"
+                android:paddingStart="@dimen/table_value_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/black333"
+                android:textSize="16sp"
+                tools:text="1233322dddddddddddddd2222" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还柜码头 ︱"
+                android:textColor="@color/black999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvValueCounterWharf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingEnd="@dimen/table_value_padding_left"
+                android:paddingLeft="@dimen/table_value_padding_left"
+                android:paddingRight="@dimen/table_value_padding_left"
+                android:paddingStart="@dimen/table_value_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/black333"
+                android:textSize="16sp"
+                tools:text="1233322dddddddddddddd2222" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_grey" />
+
+</LinearLayout>
+

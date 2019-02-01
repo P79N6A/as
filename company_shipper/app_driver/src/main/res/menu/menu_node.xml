@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_order_detail"
+        android:title="派车单详情"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/action_feedback"
+        android:title="反馈记录"
+        tools:ignore="HardcodedText" />
+
+</menu>

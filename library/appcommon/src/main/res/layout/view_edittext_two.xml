@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilOne"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="区号"
+            android:inputType="text"
+            android:maxLength="4"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tilOne"
+        android:layout_toRightOf="@+id/tilOne"
+        android:text="一"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilTwo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/tvBar"
+        android:layout_toRightOf="@+id/tvBar">
+
+        <AutoCompleteTextView
+            android:id="@+id/edittextTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="座机号"
+            android:inputType="text"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivClear"
+        style="@style/view_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_toEndOf="@+id/tilTwo"
+        android:layout_toRightOf="@+id/tilTwo"
+        android:padding="5dp"
+        android:src="@drawable/ic_shanchu" />
+
+</RelativeLayout>

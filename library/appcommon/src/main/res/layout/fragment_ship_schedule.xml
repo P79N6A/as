@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/layoutRecyclerview"
+                    layout="@layout/layout_recyclerview" />
+
+                <LinearLayout
+                    android:id="@+id/llTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#40000000"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_text"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlUser"
+                                    android:layout_width="0dp"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white_text">
+
+                                    <TextView
+                                        android:id="@+id/tvUser"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="货代公司"
+                                        android:textSize="16sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/tvValueUser"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_toEndOf="@+id/tvUser"
+                                        android:layout_toRightOf="@+id/tvUser"
+                                        android:gravity="end"
+                                        android:hint="货代公司"
+                                        android:textColorHint="@color/black_hint_text"
+                                        android:textSize="14sp" />
+
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/line_grey" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="16dp"
+                                    android:visibility="invisible" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlPlaceLoading"
+                                    android:layout_width="0dp"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white_text">
+
+                                    <TextView
+                                        android:id="@+id/tvPlaceLoading"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="起运港"
+                                        android:textSize="16sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/tvValuePlaceLoading"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_toEndOf="@+id/tvPlaceLoading"
+                                        android:layout_toRightOf="@+id/tvPlaceLoading"
+                                        android:gravity="end"
+                                        android:hint="@string/unlimited"
+                                        android:textColorHint="@color/black_hint_text"
+                                        android:textSize="14sp" />
+
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/line_grey" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgPlaceLoading"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="16dp"
+                                    android:src="@drawable/ic_shanchu" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlPlaceDelivery"
+                                    android:layout_width="0dp"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white_text">
+
+                                    <TextView
+                                        android:id="@+id/tvPlaceDelivery"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="目的港"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvValuePlaceDelivery"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_toEndOf="@+id/tvPlaceDelivery"
+                                        android:layout_toRightOf="@+id/tvPlaceDelivery"
+                                        android:gravity="end"
+                                        android:hint="@string/unlimited"
+                                        android:textColorHint="@color/black_hint_text"
+                                        android:textSize="14sp" />
+
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/line_grey" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgPlaceDelivery"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="16dp"
+                                    android:src="@drawable/ic_shanchu" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlContId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white_text">
+
+                                    <TextView
+                                        android:id="@+id/tvContId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="柜型"
+                                        android:textSize="16sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/tvValueContId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_toEndOf="@+id/tvContId"
+                                        android:layout_toRightOf="@+id/tvContId"
+                                        android:gravity="end"
+                                        android:hint="@string/unlimited"
+                                        android:textColorHint="@color/black_hint_text"
+                                        android:textSize="14sp" />
+
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/line_grey" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgContId"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="16dp"
+                                    android:src="@drawable/ic_shanchu" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlShipCompany"
+                                    android:layout_width="0dp"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white_text">
+
+                                    <TextView
+                                        android:id="@+id/tvShipCompany"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:text="船公司"
+                                        android:textSize="16sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/tvValueShipCompany"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginEnd="16dp"
+                                        android:layout_marginLeft="4dp"
+                                        android:layout_marginRight="16dp"
+                                        android:layout_marginStart="4dp"
+                                        android:layout_toEndOf="@+id/tvShipCompany"
+                                        android:layout_toRightOf="@+id/tvShipCompany"
+                                        android:gravity="end"
+                                        android:hint="@string/unlimited"
+                                        android:textColorHint="@color/black_hint_text"
+                                        android:textSize="14sp" />
+
+                                    <View
+                                        android:layout_width="0.5dp"
+                                        android:layout_height="18dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@color/line_grey" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgShipCompany"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:padding="16dp"
+                                    android:src="@drawable/ic_shanchu" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:id="@+id/rlDateType"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:background="@color/white_text"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvDateType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:hint="时间类型"
+                                    android:paddingLeft="16dp"
+                                    android:textColorHint="@color/black_hint_text"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/imgDateType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="8dp"
+                                    android:paddingRight="8dp"
+                                    android:src="@drawable/ic_xsj_05" />
+
+                                <View
+                                    android:layout_width="0.5dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/line_grey" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end|center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvStartDateType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center|end"
+                                        android:hint="起始日期"
+                                        android:minWidth="70dp"
+                                        android:textColorHint="@color/black_hint_text" />
+
+                                    <ImageView
+                                        android:id="@+id/imgStartDateType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        android:src="@drawable/ic_xsj_05" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="8dp"
+                                        android:layout_marginRight="8dp"
+                                        android:text="至" />
+
+                                    <TextView
+                                        android:id="@+id/tvEndDateType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center|end"
+                                        android:hint="结束日期"
+                                        android:minWidth="70dp"
+                                        android:textColorHint="@color/black_hint_text" />
+
+                                    <ImageView
+                                        android:id="@+id/imgEndDateType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="16dp"
+                                        android:src="@drawable/ic_xsj_05" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginRight="12dp"
+                                android:layout_marginStart="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="12dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="*"
+                                    android:textColor="@color/primary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 查询结果只供参考，具体情况按实际需要处理"
+                                    android:textColor="@color/black_hint_text"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginTop="12dp"
+                                android:background="@color/line_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-1dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnEmpty"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:text="重置"
+                                    android:textColor="@color/black_text" />
+
+                                <Button
+                                    android:id="@+id/btnComit"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/primary"
+                                    android:text="查询"
+                                    android:textColor="@color/white_text" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="H:\mobile\code\trunk\as\library\UMLibrary\assets"><file name="geo_global_ca.cer" path="H:\mobile\code\trunk\as\library\UMLibrary\assets\geo_global_ca.cer"/></source><source path="H:\mobile\code\trunk\as\library\UMLibrary\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="H:\mobile\code\trunk\as\library\UMLibrary\build-types\debug\assets"/></dataSet></merger>

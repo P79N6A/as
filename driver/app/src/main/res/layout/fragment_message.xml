@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarCommon"
+                layout="@layout/toolbar_common" />
+
+
+            <RelativeLayout
+                android:id="@+id/content_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                // 在代码添加 ，因为首页不需要使用 swipe
+                <!--<include layout="@layout/view_swipe_recyclerview"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tvNoMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="16dp"
+                    android:text="@string/no_message"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/viewDelete"
+            layout="@layout/view_delete" />
+    </FrameLayout>
+</layout>

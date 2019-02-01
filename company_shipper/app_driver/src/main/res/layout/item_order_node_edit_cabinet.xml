@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vTop3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9" />
+
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#efeff4"
+        app:layout_constraintTop_toBottomOf="@+id/vTop3" />
+
+    <View
+        android:id="@+id/vTop2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        app:layout_constraintTop_toBottomOf="@+id/vTop" />
+
+    <ImageView
+        android:id="@+id/imgActionTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingStart="16dp"
+        android:src="@drawable/ic_shengxu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#333333"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgState"
+        app:layout_constraintStart_toEndOf="@+id/imgActionTop"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:text="1233211231231123312332112312311" />
+
+    <!-- 是否编辑图标 -->
+    <ImageView
+        android:id="@+id/imgIsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12.5dp"
+        android:src="@drawable/ic_kbj_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/imgState"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+
+    <!-- 右侧的状态图标 -->
+    <ImageView
+        android:id="@+id/imgState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imgNavigation"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_bq_huan" />
+
+    <!-- 右侧图标 -->
+    <ImageView
+        android:id="@+id/imgNavigation"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vTop2"
+        android:paddingBottom="16dp"
+        android:paddingEnd="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_dh_jsbig"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTop2"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <View
+        android:id="@+id/vTopBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

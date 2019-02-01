@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.releaseVersionCode
+        versionName rootProject.ext.releaseVersionName
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 启用dataBinding
+    dataBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //自建包
+//    compile project(':library:yaoguang.common')
+    compile project(':library:lib')
+    compile project(':library:taobao')
+    compile project(':divermvp:interfaces')
+    compile project(':divermvp:interactor')
+    compile project(':library:yaoguang.greendao')
+    compile project(':library:yaoguang.style')
+    compile project(':library:datasource')
+    compile project(':library:gaodemap')
+    compile project(':library:circleindicator')
+    compile project(':library:IMKit')
+    //    // 拍照录像录音三合一
+//    compile 'com.github.zhongjhATC:AlbumCameraRecorder:v1.0.2'
+//    compile project(':AlbumCameraRecorder-albumcamerarecorderlib')
+    compile project(':AlbumCameraRecorder-progresslibrary')
+    compile project(':AlbumCameraRecorder-albumcamerarecorderlib')
+
+    //无限循环的banner
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    //变形的按钮
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    //状态栏
+    compile 'com.githang:status-bar-compat:0.5'
+
+    // 录音mp3
+    compile 'com.github.CarGuo:RecordWave:v1.1.8'
+
+    compile 'com.alibaba.android:vlayout:1.1.0'
+    // fragment框架
+    compile 'me.yokeyword:fragmentation-core:1.1.7'
+
+
+
+
+    //简化实例化控件的库
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+
+}

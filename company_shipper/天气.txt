@@ -1,0 +1,16 @@
+<receiver android:name="com.yaoguang.appcommon.broadcastreceiver.TimerBroadcastReceiver" />
+        <service android:name="com.yaoguang.appcommon.service.UpdateCityWeatherService" />
+
+
+
+1.
+yaoguang.common.TimerBroadcastReceiver
+
+2.
+yaoguang.common.UpdateCityWeatherService
+
+3.
+HomeFragment
+
+4.
+MainActivity

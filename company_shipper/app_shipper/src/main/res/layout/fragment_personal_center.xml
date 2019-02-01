@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_grbg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="66dp">
+
+                        <ImageView
+                            android:id="@+id/ivAvatar"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_grtouxiang" />
+
+                        <ImageView
+                            android:id="@+id/ivEditPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/ivAvatar"
+                            android:layout_alignEnd="@+id/ivAvatar"
+                            android:layout_alignRight="@+id/ivAvatar"
+                            android:src="@drawable/ic_cameraphoto"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/WhiteText"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        tools:text="名称" />
+
+                    <TextView
+                        android:id="@+id/tvTel"
+                        style="@style/WhiteText"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="10dp"
+                        tools:text="名称" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/view_line_5dp" />
+
+            <include layout="@layout/fragment_personal_center_detail" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imgReturn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/return_triangle" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的"
+            android:textColor="@color/white_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_set_white" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layoutBackground">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgOrderJS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_js_yellow"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOrderComplete"
+            app:layout_constraintStart_toStartOf="@+id/toolbarCommon"
+            app:layout_constraintTop_toTopOf="@+id/tvOrderComplete"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvOrderComplete"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:gravity="center_vertical"
+            android:text="订单完成时间"
+            android:textColor="#666666"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgOrderJS"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarCommon"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrderComplete" />
+
+        <View
+            android:id="@+id/vWhiteBanner"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+        <CheckBox
+            android:id="@+id/tvWeek"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近1周"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0327"
+            app:layout_constraintStart_toStartOf="@+id/gl0044"
+            app:layout_constraintTop_toBottomOf="@+id/vLine"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/tvMonth"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="近1月"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0641"
+            app:layout_constraintStart_toStartOf="@+id/gl0358"
+            app:layout_constraintTop_toBottomOf="@+id/vLine"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/tvThreeMonth"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近3月"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0955"
+            app:layout_constraintStart_toStartOf="@+id/gl0672"
+            app:layout_constraintTop_toBottomOf="@+id/vLine"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/tvSixMonth"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近6月"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0327"
+            app:layout_constraintStart_toStartOf="@+id/gl0044"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeek"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/tvYear"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近1年"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0641"
+            app:layout_constraintStart_toStartOf="@+id/gl0358"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeek"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/tvCustom"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_selector_check_data_type"
+            android:button="@null"
+            android:gravity="center"
+            android:text="自定义"
+            android:textColor="@color/textcolor_selector_check_data_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/gl0955"
+            app:layout_constraintStart_toStartOf="@+id/gl0672"
+            app:layout_constraintTop_toBottomOf="@+id/tvWeek"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/vLine2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintTop_toBottomOf="@+id/vWhiteBanner" />
+
+        <View
+            android:id="@+id/vLine3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintTop_toBottomOf="@+id/vLine2" />
+
+        <RelativeLayout
+            android:id="@+id/rlDataBegin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/vLine3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="开始时间"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imgDateBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_right_triangle"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvDateBegin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/imgDateBegin"
+                android:layout_toStartOf="@+id/imgDateBegin"
+                android:gravity="end"
+                android:text="@string/unlimited"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="14sp"
+                tools:ignore="RelativeOverlap"
+                tools:text="2017-11-14" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line_grey2"
+            app:layout_constraintTop_toBottomOf="@+id/rlDataBegin" />
+
+        <RelativeLayout
+            android:id="@+id/rlDataEnd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/vLine4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="结束时间"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imgDateEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_right_triangle"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvDateEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/imgDateEnd"
+                android:layout_toStartOf="@+id/imgDateEnd"
+                android:gravity="end"
+                android:text="@string/unlimited"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="14sp"
+                tools:ignore="RelativeOverlap"
+                tools:text="2017-11-14" />
+
+        </RelativeLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0044"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0444444444444444" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0327"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3277777777777778" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0358"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3583333333333333" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0641"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6416666666666667" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0672"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6722222222222222" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/gl0955"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9555555555555556" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

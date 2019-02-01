@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layoutBackground">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fragmentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <com.yaoguang.lib.common.view.LoadingLayout
+                    android:id="@+id/loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/window_background"
+                        android:clipToPadding="false" />
+
+                </com.yaoguang.lib.common.view.LoadingLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/layoutBackground"
+                    android:gravity="left|center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center"
+                        android:text="* 选择放单地点后方可完成接单"
+                        android:textColor="@color/black666" />
+
+                    <!--<include layout="@layout/view_line2" />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_line2" />
+
+            <Button
+                android:id="@+id/btnComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

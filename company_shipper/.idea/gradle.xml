@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="E:/gradle" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../AlbumCameraRecorder/library" />
+            <option value="$PROJECT_DIR$/../AlbumCameraRecorder/progresslibrary" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app_company" />
+            <option value="$PROJECT_DIR$/app_company_shipper" />
+            <option value="$PROJECT_DIR$/app_driver" />
+            <option value="$PROJECT_DIR$/app_shipper" />
+            <option value="$PROJECT_DIR$/../divermvp" />
+            <option value="$PROJECT_DIR$/../divermvp/interactor" />
+            <option value="$PROJECT_DIR$/../divermvp/interfaces" />
+            <option value="$PROJECT_DIR$/../library" />
+            <option value="$PROJECT_DIR$/../library/IMKit" />
+            <option value="$PROJECT_DIR$/../library/IMLib" />
+            <option value="$PROJECT_DIR$/../library/SelectableTextHelper_library" />
+            <option value="$PROJECT_DIR$/../library/UMLibrary" />
+            <option value="$PROJECT_DIR$/../library/appcommon" />
+            <option value="$PROJECT_DIR$/../library/circleindicator" />
+            <option value="$PROJECT_DIR$/../library/datasource" />
+            <option value="$PROJECT_DIR$/../library/expandablelayout_library" />
+            <option value="$PROJECT_DIR$/../library/floatingsearchview" />
+            <option value="$PROJECT_DIR$/../library/gaodemap" />
+            <option value="$PROJECT_DIR$/../library/imagepicker" />
+            <option value="$PROJECT_DIR$/../library/lib" />
+            <option value="$PROJECT_DIR$/../library/loadinglayout_library" />
+            <option value="$PROJECT_DIR$/../library/luban" />
+            <option value="$PROJECT_DIR$/../library/qrcodescan" />
+            <option value="$PROJECT_DIR$/../library/refresh-layout" />
+            <option value="$PROJECT_DIR$/../library/sweetsheet" />
+            <option value="$PROJECT_DIR$/../library/taobao" />
+            <option value="$PROJECT_DIR$/../library/twinklingrefreshlayout_library" />
+            <option value="$PROJECT_DIR$/../library/yaoguang.greendao" />
+            <option value="$PROJECT_DIR$/../library/yaoguang.style" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

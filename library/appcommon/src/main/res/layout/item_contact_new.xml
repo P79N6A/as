@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/ivPhotoGraph"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_qymrtx" />
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/ivPhotoGraph"
+            android:layout_toLeftOf="@+id/flRight"
+            android:layout_toRightOf="@+id/ivPhotoGraph"
+            android:layout_toStartOf="@+id/flRight"
+            android:textColor="@color/black_text"
+            tools:text="1111111111111111111" />
+
+        <FrameLayout
+            android:id="@+id/flRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待通过"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvAgreen"
+                android:layout_width="50dp"
+                android:layout_height="22dp"
+                android:layout_gravity="end"
+                android:background="@drawable/background_shape_2_5_primary"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</layout>

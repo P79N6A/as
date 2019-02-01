@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        //consumerProguardFiles 'consumer-proguard-rules.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:appcompat-v7:$rootProject.ext.androidSupportSdkVersion"
+    compile "com.android.support:design:$rootProject.ext.androidSupportSdkVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.androidSupportSdkVersion"
+    compile "com.android.support:cardview-v7:$rootProject.ext.androidSupportSdkVersion"
+    compile 'com.bartoszlipinski:viewpropertyobjectanimator:1.2.0'
+}
+
+//enable when uploading lib// apply from: 'maven-push.gradle'

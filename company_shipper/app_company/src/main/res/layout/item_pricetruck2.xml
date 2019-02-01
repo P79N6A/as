@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:src="@drawable/ic_z_11" />
+
+        <TextView
+            android:id="@+id/tvPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            tools:text="大连港" />
+
+        <ImageView
+            android:id="@+id/imgPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvPort"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/tvPort"
+            android:layout_toRightOf="@+id/tvPort"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_dc_01" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvPort"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgPort"
+            android:layout_toRightOf="@+id/imgPort"
+            android:textSize="15sp"
+            tools:text="大连港" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvPort"
+            android:layout_marginTop="16dp"
+            android:background="@color/line_grey" />
+
+        <TableLayout
+            android:id="@+id/tlWait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vLine"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:stretchColumns="*">
+
+            <TableRow android:paddingBottom="14dp">
+
+                <TextView
+                    android:id="@+id/tvFee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_feiyong_11"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/ic_feiyong_11"
+                    tools:text="¥2400" />
+
+                <TextView
+                    android:id="@+id/tvGoodsType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:drawableLeft="@drawable/ic_fzp_11"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/ic_fzp_11"
+                    tools:text="陶瓷" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="14dp">
+
+                <TextView
+                    android:id="@+id/tvOtherServiceAndCont"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_huogui_11"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/ic_huogui_11"
+                    tools:text="1X20GP,2X40GP" />
+
+                <TextView
+                    android:id="@+id/tvShipCompany"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:drawableLeft="@drawable/ic_gs_11"
+                    android:drawablePadding="6dp"
+                    android:drawableStart="@drawable/ic_gs_11"
+                    tools:text="远中货代公司" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

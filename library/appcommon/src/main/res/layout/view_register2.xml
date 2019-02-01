@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/interval">
+
+                    <ImageView
+                        android:id="@+id/registerNode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_clzl" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <TextView
+                    style="@style/Text.BigGrey"
+                    android:text="@string/Goopoo" />
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="@string/Goopoo" />
+
+                    <EditText
+                        android:id="@+id/rim"
+                        style="@style/RegisterInput"
+                        android:hint="如珠三角，广佛等"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <TextView
+                    style="@style/Text.BigGrey"
+                    android:text="@string/car_head_data" />
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="车牌号码" />
+
+                    <TextView
+                        android:id="@+id/carNoSpinner"
+                        style="@style/CarNo" />
+
+                    <EditText
+                        android:id="@+id/carNo"
+                        style="@style/RegisterInput.NumberEnglist"
+                        android:hint="车辆号码"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="所有人" />
+
+                    <EditText
+                        android:id="@+id/carHeadPaper"
+                        style="@style/RegisterInput"
+                        android:hint="行驶证所有人姓名"
+                        android:text=""
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="注册时间" />
+
+
+                    <TextView
+                        android:id="@+id/carHeadDate"
+                        style="@style/RegisterInput"
+                        android:hint="证件注册日期"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL.ImageUpload">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/carHeadFront"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_xsz_z" />
+
+                        <ImageView
+                            android:id="@+id/carHeadFrontFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/carHeadBack"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_xsz_f" />
+
+                        <ImageView
+                            android:id="@+id/carHeadBackFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <TextView
+                    style="@style/Text.BigGrey"
+                    android:text="挂车资料" />
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="挂车牌号" />
+
+                    <TextView
+                        android:id="@+id/trailerNoSpinner"
+                        style="@style/CarNo" />
+
+                    <EditText
+                        android:id="@+id/trailerNo"
+                        style="@style/RegisterInput"
+                        android:hint="挂车号码"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="所有人" />
+
+                    <EditText
+                        android:id="@+id/trailerName"
+                        style="@style/RegisterInput"
+                        android:hint="行驶证所有人姓名"
+                        android:text=""
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout style="@style/RegisterLL">
+
+                    <TextView
+                        style="@style/Text.BigGrey.Register_AlertName"
+                        android:text="注册日期" />
+
+                    <TextView
+                        android:id="@+id/trailerDate"
+                        style="@style/RegisterInput"
+                        android:hint="证件注册日期"
+                        android:text="" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    style="@style/RegisterLL.ImageUpload"
+                    android:layout_marginBottom="20dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/trailerFront"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_xsz_z" />
+
+                        <ImageView
+                            android:id="@+id/trailerFrontFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/trailerBack"
+                            style="@style/RegisterUploadImageBox"
+                            android:src="@drawable/ic_xsz_f" />
+
+                        <ImageView
+                            android:id="@+id/trailerBackFlag"
+                            style="@style/RegisterLLDel"></ImageView>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/view_line2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/view_line2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    style="@style/Button.Register"
+                    android:text="@string/next" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

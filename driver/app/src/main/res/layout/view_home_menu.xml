@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_row_height"
+        android:background="@color/banner"
+        android:orientation="vertical">
+        <!--android:background="#efeeee"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/side_interval"
+            android:layout_marginRight="@dimen/side_interval"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNewsList"
+                style="@style/home_text"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_xiaoxi"
+                android:text="最新消息" />
+
+            <TextView
+                android:id="@+id/tvLookAllOrderMessage"
+                style="@style/home_text"
+                android:drawableRight="@drawable/ic_ckqb_blue"
+                android:text="查看全部" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+

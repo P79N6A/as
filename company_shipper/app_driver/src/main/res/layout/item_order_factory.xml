@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/order_detail_left_width"
+                android:layout_weight="1"
+                android:text="装货门点"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout style="@style/order_detail_left_width"
+                android:layout_width="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/order_detail_key"
+                        android:text="单    位: " />
+
+                    <TextView
+                        android:id="@+id/tvGoodsUnit"
+                        style="@style/order_detail_value"
+                        android:text=" -" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/order_detail_left_width"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="物品类型: " />
+
+                <TextView
+                    android:id="@+id/tvOrderType"
+                    style="@style/order_detail_value"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text=" -" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/order_detail_left_width">
+
+                    <TextView
+                        style="@style/order_detail_key"
+                        android:text="联系人: " />
+
+                    <TextView
+                        android:id="@+id/tvContacts"
+                        style="@style/order_detail_value"
+                        android:text=" -" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/order_detail_right_width">
+
+                    <TextView
+                        style="@style/order_detail_key"
+                        android:text="电话: " />
+
+                    <TextView
+                        android:id="@+id/tvMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" -"
+                        android:textColor="@color/primary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/order_detail_left_width"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    style="@style/order_detail_key"
+                    android:text="地址: " />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/order_detail_value"
+                    android:text=" -" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                style="@style/order_detail_left_width"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTmp1"
+                    style="@style/order_detail_key"
+                    android:text="装货说明:" />
+
+                <TextView
+                    android:id="@+id/tvRemarks"
+                    style="@style/order_detail_value"
+                    android:layout_marginRight="@dimen/side_interval"
+                    android:layout_toRightOf="@+id/tvTmp1"
+                    android:text=" -" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ivRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_biaoqian_01"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

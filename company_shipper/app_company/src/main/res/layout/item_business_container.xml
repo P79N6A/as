@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柜型 ︱"
+            android:textColor="@color/black999" />
+
+        <TextView
+            android:id="@+id/tvValueCabinetType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="@dimen/table_value_padding_left"
+            android:paddingLeft="@dimen/table_value_padding_left"
+            android:paddingRight="@dimen/table_value_padding_left"
+            android:paddingStart="@dimen/table_value_padding_left"
+            android:singleLine="true"
+            tools:text="1233322dddddddddddddd2222" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量 ︱"
+            android:textColor="@color/black999" />
+
+        <TextView
+            android:id="@+id/tvValueNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingEnd="@dimen/table_value_padding_left"
+            android:paddingLeft="@dimen/table_value_padding_left"
+            android:paddingRight="@dimen/table_value_padding_left"
+            android:paddingStart="@dimen/table_value_padding_left"
+            android:singleLine="true"
+            tools:text="1233322dddddddddddddd2222" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

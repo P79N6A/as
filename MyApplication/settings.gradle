@@ -1,0 +1,22 @@
+include ':app', ':myapplication2'
+include ':library'
+include ':divermvp'
+project(':library').projectDir = new File('../library/');
+include ':library:test'
+include ':library:appcommon'
+include ':library:floatingsearchview'
+include ':library:yaoguang.style'
+include ':library:yaoguang.greendao'
+include ':library:yaoguang.common'
+include ':library:sweetsheet'
+include ':library:netmodule'
+include ':library:pushsdk'
+include ':library:taobao'
+include ':library:gaodemap'
+include ':library:expandablelayout_library'
+include ':library:twinklingrefreshlayout_library'
+include ':library:datasource'
+
+project(':divermvp').projectDir = new File('../divermvp/');
+include ':divermvp:interactor'
+include ':divermvp:interfaces'

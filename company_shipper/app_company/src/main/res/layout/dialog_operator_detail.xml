@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="300dp">
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cvMain"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_gb_tc" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minWidth="300dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fdead6"
+                    android:minHeight="60dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="详情"
+                        android:textColor="@color/black333"
+                        android:textSize="20sp" />
+
+                </android.support.v7.widget.Toolbar>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="25dp"
+                        android:text="船公司："
+                        android:textColor="@color/black999"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="14dp" />
+
+                    <TextView
+                        android:id="@+id/btnCompanyCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/background_shape_2_5_null_primary"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="3dp"
+                        android:text="复制"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp15"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleCompany"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleCompany"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginRight="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvValueCompanyCopy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="中远物中远物流中远物流中远物流中远物流中远物流中远物流中远物流中远物流中远物流中远物流中远物流中远物流流"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCompanyCopy"
+                        app:layout_constraintStart_toEndOf="@+id/tvTitleCompany"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleCompany"
+                        tools:ignore="HardcodedText" />
+
+                    <!-- 船名 -->
+
+                    <TextView
+                        android:id="@+id/tvTitleShipName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="16dp"
+                        android:text="船名："
+                        android:textColor="@color/black999"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueCompanyCopy"
+                        android:layout_marginLeft="14dp" />
+
+                    <TextView
+                        android:id="@+id/btnShipNameCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/background_shape_2_5_null_primary"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="3dp"
+                        android:text="复制"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp15"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleShipName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleShipName"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginRight="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvValueShipName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="中远物中远物流中远物流中远物流中远物流中远物流流"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShipNameCopy"
+                        app:layout_constraintStart_toEndOf="@+id/tvTitleShipName"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleShipName"
+                        tools:ignore="HardcodedText" />
+
+                    <!-- 航次 -->
+                    <TextView
+                        android:id="@+id/tvTitleVoyage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="16dp"
+                        android:text="航次："
+                        android:textColor="@color/black999"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueShipName"
+                        android:layout_marginLeft="14dp" />
+
+                    <TextView
+                        android:id="@+id/btnVoyageCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/background_shape_2_5_null_primary"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="3dp"
+                        android:text="复制"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp15"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleVoyage"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleVoyage"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginRight="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvValueVoyage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="中远物中远物流中远物中远物流中远物流流中远物流流"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShipNameCopy"
+                        app:layout_constraintStart_toEndOf="@+id/tvTitleVoyage"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleVoyage"
+                        tools:ignore="HardcodedText" />
+
+                    <!-- 运单号 -->
+                    <TextView
+                        android:id="@+id/tvTitleWaybill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="16dp"
+                        android:text="运单号："
+                        android:textColor="@color/black999"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvValueVoyage"
+                        android:layout_marginLeft="14dp" />
+
+                    <TextView
+                        android:id="@+id/btnWaybillCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/background_shape_2_5_null_primary"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="3dp"
+                        android:text="复制"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp15"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleWaybill"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleWaybill"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginRight="14dp" />
+
+                    <FrameLayout
+                        android:id="@+id/flCabinet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/background_shape_2_5_primary"
+                        android:padding="2.5dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btnWaybillCopy"
+                        app:layout_constraintEnd_toStartOf="@+id/btnWaybillCopy"
+                        app:layout_constraintTop_toTopOf="@+id/btnWaybillCopy"
+                        android:layout_marginRight="8dp">
+
+                        <TextView
+                            android:id="@+id/tvCabinet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white_text"
+                            tools:text="20GP" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvValueWaybill"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        tools:text="中远物中远物中远物中远物流流中远物中远物流流流流"
+                        android:textColor="@color/black333"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toStartOf="@+id/flCabinet"
+                        app:layout_constraintStart_toEndOf="@+id/tvTitleWaybill"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitleWaybill"
+                        tools:ignore="HardcodedText"
+                        android:layout_marginRight="4dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/line_grey" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/port1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="35dp"
+                        android:maxEms="5"
+                        android:minEms="5"
+                        android:gravity="right"
+                        android:textColor="@color/black333"
+                        android:textSize="@dimen/sp16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="日"
+                        android:layout_marginLeft="14dp" />
+
+                    <View
+                        android:id="@+id/vLuXian"
+                        android:layout_width="0dp"
+                        android:layout_height="6dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/ic_luxian_01"
+                        app:layout_constraintBottom_toBottomOf="@+id/port1"
+                        app:layout_constraintEnd_toStartOf="@+id/port2"
+                        app:layout_constraintStart_toEndOf="@+id/port1"
+                        app:layout_constraintTop_toTopOf="@+id/port1" />
+
+                    <TextView
+                        android:id="@+id/port2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="35dp"
+                        android:maxEms="5"
+                        android:minEms="5"
+                        android:textColor="@color/black333"
+                        android:textSize="@dimen/sp16"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="日照日照港日照港港" />
+
+                    <TextView
+                        android:id="@+id/tvGoodsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="16dp"
+                        tools:text="陶瓷"
+                        app:layout_constraintBottom_toTopOf="@+id/vLuXian"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

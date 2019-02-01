@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yaoguang.appcommon">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!-- html -->
+        <activity
+            android:name=".html.HtmlActivity"
+            android:label="@string/start"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 商户简介 -->
+        <activity
+            android:name=".phone.register.modifybrief.ModifyBriefActivity"
+            android:label="@string/start"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.DesignDemo"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- 预览已经选择的图片，并可以删除 -->
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+
+        <!-- 华为推送窗体 -->
+        <activity
+            android:name="com.yaoguang.appcommon.push.huawei.MipushTestActivity"
+            android:launchMode="singleTask"
+            android:exported="true" />
+
+
+
+        <receiver android:name="com.yaoguang.lib.broadcastReceiver.NetWorkStateReceiver">
+            <intent-filter>
+                <!-- 进行广播的静态注册 检测网络变化的acton -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 融云的Receiver，推送，这个要放在app处，否则推送会说找不到DemoNotificationReceiver -->
+        <receiver
+            android:name="com.yaoguang.appcommon.push.rongcloudpush.DemoNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.THIRD_PARTY_PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

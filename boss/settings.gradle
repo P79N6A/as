@@ -1,0 +1,9 @@
+include ':app'
+include ':library'
+
+project(':library').projectDir = new File('../library/');
+include ':library:yaoguang.common'
+include ':library:yaoguang.style'
+include ':library:twinklingrefreshlayout_library'
+include ':library:sweetsheet'
+include ':library:pushsdk'

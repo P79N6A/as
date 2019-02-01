@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layoutBackground"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarCommon"
+            layout="@layout/toolbar_common"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rlSearch"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_qybh_yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/ivSearch"
+                android:layout_toRightOf="@+id/ivSearch"
+                android:textColor="@color/black_text"
+                android:text="企业编号/企业全称" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey2" />
+
+        <RelativeLayout
+            android:id="@+id/rlScanning"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/ivScanning"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_sys_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/ivScanning"
+                android:layout_toRightOf="@+id/ivScanning"
+                android:textColor="@color/black_text"
+                android:text="扫一扫添加关联" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <!-- external-path:sd ；path:你的应用保存文件的根目录；name随便定义-->
+    <external-path name="external_files" path="."/>
+
+    <!-- 下载后的文件 -->
+    <external-files-path name="video" path="/YGDriver/Video/" />
+    <external-files-path name="audio" path="/YGDriver/Audio/" />
+
+
+
+
+</paths>
